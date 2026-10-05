@@ -1,0 +1,18 @@
+{
+  "suit": "unconventional:deadpool_xmen_origins",
+  "display": {
+    "description": "\u00A7cRequires \u00A7b\u00A7lSabri Enhanced Heropack"
+  },
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:teleportation",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "sabri:adamantium",
+    "sabri:cyclops_xmen",
+    "sabri:wolverine_xmen",
+    "unconventional:unconventional"
+  ]
+}

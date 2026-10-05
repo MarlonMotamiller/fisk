@@ -1,0 +1,40 @@
+{vel} = sqrt({motX}^2 + {motZ}^2) + (0.3{motY})^2
+{vel_invert} = curve min(1.5{vel}, 1)
+{vel} = 1 - curve min(1.5{vel}, 1)
+{data_0_invert} = {vel_invert}curve({data_0})
+{data_0} = {vel}curve({data_0})
+{data_1_invert} = {data_0_invert}sin(2pi{data_2})
+
+{data_1_invert2} = {data_0_invert}clamp(1.2sin(2pi{data_2} +(0.3pi*{data_0_invert})), -1, 1)
+
+
+{data_1} = 0.2{data_0}sin(2pi{data_1})
+
+{head_rotX} -= 3.5'{data_0} - 5'{data_0} + 15'{data_0_invert}
+{head_rotY} -= 10'{data_0} + 2'{data_1_invert}
+
+{x} = {data_0} + {data_1}
+{rightLeg_rotX} += 20'{x} + 20'{data_0_invert} + (15'{data_1_invert2} + 5'{data_1_invert})
+{rightLeg_rotY} += 5'{data_0}
+{rightLeg_posX} -= 0.3{data_0}
+{rightLeg_posY} -= {x}
+{rightLeg_posZ} -= 2.5({data_0} + 1.5{data_1})
+
+{leftLeg_rotX} += 5'{data_0} - 15'{data_1}  + 20'{data_0_invert}  - (10'{data_1_invert2} + 5'{data_1_invert})
+{leftLeg_rotY} -= 8'{data_0}
+{leftLeg_posX} += 0.1{data_0}
+{leftLeg_posY} -= 0.5{x}
+{leftLeg_posZ} -= {data_0}
+
+{rightArm_rotX} -= 10'{data_0} + 0.1{data_1} + 0.2(10'{data_1_invert2} + 5'{data_1_invert})
+{rightArm_rotY} += 10'{data_0} - 0.1(10'{data_1_invert2} + 5'{data_1_invert})
+{rightArm_rotZ} += 6'{x}
+{leftArm_rotX} += 5'{data_0} + 0.08{data_1} + 0.2(10'{data_1_invert2} + 5'{data_1_invert})
+{leftArm_rotY} -= 20'{data_0} + 0.1(10'{data_1_invert2} + 5'{data_1_invert})
+{leftArm_rotZ} -= 10'{x}
+
+out "pivot" (0, 0.56, 0)
+out "rotate" (-2{data_1_invert}, 0, 1, 0)
+
+out "rotate" (-3.5{data_0} + 5{data_1} - 15{data_0_invert}, 1, 0, 0)
+out "rotate" (-10{data_0}, 0, 1, 0)

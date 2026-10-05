@@ -1,0 +1,188 @@
+{fix1}= animate2({data_1},1,0,0.05,0.2)
+
+
+{leftArm_rotX} @ {fix1} -> 0'
+{leftArm_rotY} @ {fix1} -> 0'
+{leftArm_rotZ} @ {fix1} -> 0'
+{leftArm_posZ} @ {fix1} -> 0
+
+{fix2}= animate2({data_2},1,0,0.05,0.2)
+
+
+{leftArm_rotX} @ {fix2} -> 0'
+{leftArm_rotY} @ {fix2} -> 0'
+{leftArm_rotZ} @ {fix2} -> 0'
+{leftArm_posZ} @ {fix2} -> 0
+
+{fix3}= animate2({data_3},1,0,0.05,0.2)
+
+
+{leftArm_rotX} @ {fix3} -> 0'
+{leftArm_rotY} @ {fix3} -> 0'
+{leftArm_rotZ} @ {fix3} -> 0'
+{leftArm_posZ} @ {fix3} -> 0
+
+;Main Gun
+{main_gun_grab_time}={data_0}
+{main_gun_grab_0}=animate2({main_gun_grab_time},1,0,0.5,0.5)
+
+{head_rotZ}+=-2.5'{main_gun_grab_0}
+{head_posX}+=-1{main_gun_grab_0}
+
+{body_rotZ}+=-5'{main_gun_grab_0}
+{body_posX}+=-1{main_gun_grab_0}
+
+{rightArm_rotX}+=0.6696299537'{main_gun_grab_0}
+{rightArm_rotY}+=-14.9853884562'{main_gun_grab_0}
+{rightArm_rotZ}+=-7.5880725782'{main_gun_grab_0}
+{rightArm_posX}+=-1{main_gun_grab_0}
+{rightArm_posY}+=2{main_gun_grab_0}
+
+{leftArm_rotZ}+=-7.5'{main_gun_grab_0}
+{leftArm_posX}+=-0.75{main_gun_grab_0}
+
+
+;Upgrade 1
+{main_u1_grab_time}={data_1}
+{main_u1_grab_0}=animate2({main_u1_grab_time},1,0,0.5,0.5)
+
+{body_rotX}+=2.5'{main_u1_grab_0}
+{body_rotY}+=10'{main_u1_grab_0}
+{body_posZ}+=-0.5{main_u1_grab_0}
+
+{rightArm_rotY}+=5'{main_u1_grab_0}
+{rightArm_posZ}+=1{main_u1_grab_0}
+
+{leftArm_rotX}+=4.9505235471'{main_u1_grab_0}
+{leftArm_rotY}+=44.6203031837'{main_u1_grab_0}
+{leftArm_rotZ}+=10.5633511485'{main_u1_grab_0}
+{leftArm_posX}+=-0.25{main_u1_grab_0}
+{leftArm_posY}+=2.25{main_u1_grab_0}
+{leftArm_posZ}+=-2.25{main_u1_grab_0}
+
+
+;Upgrade 2
+{main_u2_grab_time}={data_2}
+{main_u2_grab_0}=animate2({main_u2_grab_time},1,0,0.5,0.5)
+
+{head_rotZ}+=2.5'{main_u2_grab_0}
+{head_posX}+=1{main_u2_grab_0}
+
+{body_rotZ}+=5'{main_u2_grab_0}
+{body_posX}+=1{main_u2_grab_0}
+
+{rightArm_rotZ}+=7.5'{main_u2_grab_0}
+{rightArm_posX}+=0.75{main_u2_grab_0}
+
+{leftArm_rotX}+=0.6696299537'{main_u2_grab_0}
+{leftArm_rotY}+=14.9853884562'{main_u2_grab_0}
+{leftArm_rotZ}+=7.5880725782'{main_u2_grab_0}
+{leftArm_posX}+=1{main_u2_grab_0}
+{leftArm_posY}+=2{main_u2_grab_0}
+
+
+;Upgrade 3
+{main_u3_grab_time}={data_3}
+{main_u3_grab_0}=animate2({main_u3_grab_time},1,0,0.5,0.5)
+
+{body_rotY}+=-5'{main_u3_grab_0}
+
+{rightArm_rotY}+=-2.5'{main_u3_grab_0}
+
+{leftArm_rotX}+=23.8179817382'{main_u3_grab_0}
+{leftArm_rotY}+=-52.9459434299'{main_u3_grab_0}
+{leftArm_rotZ}+=-8.637919845'{main_u3_grab_0}
+{leftArm_posZ}+=0.5{main_u3_grab_0}
+
+
+;Multi-Barrel
+{multi_barrel_grab_time}={data_4}
+{multi_barrel_grab_0}=animate2({multi_barrel_grab_time},0.375,0.5416666666666666,0.1666666667,0.2083333333)
+{multi_barrel_grab_1}=animate2({multi_barrel_grab_time},0.375,0,0.2916666667,0.0833333333)
+{multi_barrel_grab_2}=animate2({multi_barrel_grab_time},0.2916666667,0.2916666666666667,0.0833333333,0.2083333333)
+{multi_barrel_grab_3}=animate2({multi_barrel_grab_time},0.3333333333,0.375,0.2083333333,0.125)
+{multi_barrel_grab_4}=animate2({multi_barrel_grab_time},0.4166666667,0.5833333333333334,0.125,0.2916666667)
+
+{body_rotX}+=5'{multi_barrel_grab_0}
+{body_posZ}+=-0.5{multi_barrel_grab_0}
+
+{rightArm_rotX}+=-107.007211881'{multi_barrel_grab_1}
+{rightArm_rotY}+=-67.9292327446'{multi_barrel_grab_1}
+{rightArm_rotZ}+=41.5750754507'{multi_barrel_grab_1}
+{rightArm_rotX}+=-104.0637894877'{multi_barrel_grab_2}
+{rightArm_rotY}+=-63.1101022445'{multi_barrel_grab_2}
+{rightArm_rotZ}+=38.343918765'{multi_barrel_grab_2}
+{rightArm_rotX}+=-51.7408668592'{multi_barrel_grab_3}
+{rightArm_rotY}+=-72.0663095969'{multi_barrel_grab_3}
+{rightArm_rotZ}+=33.3172273024'{multi_barrel_grab_3}
+{rightArm_rotX}+=-59.507211881'{multi_barrel_grab_4}
+{rightArm_rotY}+=-67.9292327446'{multi_barrel_grab_4}
+{rightArm_rotZ}+=41.5750754507'{multi_barrel_grab_4}
+{rightArm_posX}+=-1{multi_barrel_grab_1}
+{rightArm_posX}+=-1.5{multi_barrel_grab_2}
+{rightArm_posY}+=1{multi_barrel_grab_4}
+
+{leftArm_rotX}+=-97.7053723008'{multi_barrel_grab_1}
+{leftArm_rotY}+=67.81732537'{multi_barrel_grab_1}
+{leftArm_rotZ}+=-31.443384213'{multi_barrel_grab_1}
+{leftArm_rotX}+=-96.3703452322'{multi_barrel_grab_2}
+{leftArm_rotY}+=62.8546146985'{multi_barrel_grab_2}
+{leftArm_rotZ}+=-29.9757276863'{multi_barrel_grab_2}
+{leftArm_rotX}+=-40.7589721846'{multi_barrel_grab_3}
+{leftArm_rotY}+=71.3957434109'{multi_barrel_grab_3}
+{leftArm_rotZ}+=-21.3733435903'{multi_barrel_grab_3}
+{leftArm_rotX}+=-50.2053723008'{multi_barrel_grab_4}
+{leftArm_rotY}+=67.81732537'{multi_barrel_grab_4}
+{leftArm_rotZ}+=-31.443384213'{multi_barrel_grab_4}
+{leftArm_posX}+=1{multi_barrel_grab_1}
+{leftArm_posX}+=1.5{multi_barrel_grab_2}
+{leftArm_posY}+=1{multi_barrel_grab_4}
+
+
+;Mace
+{mace_grab_time}={data_5}
+{mace_grab_0}=animate2({mace_grab_time},1,0,0.5,0.5)
+
+{body_rotY}+=-10'{mace_grab_0}
+
+{rightArm_rotX}+=-12.5'{mace_grab_0}
+{rightArm_rotY}+=-60'{mace_grab_0}
+{rightArm_posX}+=2{mace_grab_0}
+{rightArm_posY}+=0.5{mace_grab_0}
+{rightArm_posZ}+=-2{mace_grab_0}
+
+{leftArm_rotX}+=-120.4745937475'{mace_grab_0}
+{leftArm_rotY}+=56.8572422182'{mace_grab_0}
+{leftArm_rotZ}+=-30.9404268924'{mace_grab_0}
+{leftArm_posX}+=-2{mace_grab_0}
+{leftArm_posY}+=1.5{mace_grab_0}
+{leftArm_posZ}+=-1{mace_grab_0}
+
+
+;Sword
+{sword_grab_time}={data_6}
+{sword_grab_0}=animate2({sword_grab_time},0.75,0.25,0.25,0.5)
+{sword_grab_1}=animate2({sword_grab_time},0.5,0,0.4166666667,0.0833333333)
+{sword_grab_2}=animate2({sword_grab_time},0.1666666667,0.4166666666666667,0.0833333333,0.0833333333)
+{sword_grab_3}=animate2({sword_grab_time},0.5,0.5,0.0833333333,0.4166666667)
+
+{body_rotY}+=5'{sword_grab_0}
+
+{rightArm_rotX}+=-202.8525932062'{sword_grab_1}
+{rightArm_rotY}+=12.6144700458'{sword_grab_1}
+{rightArm_rotZ}+=0.1390913063'{sword_grab_1}
+{rightArm_rotX}+=-207.3393558619'{sword_grab_2}
+{rightArm_rotY}+=21.5744283406'{sword_grab_2}
+{rightArm_rotZ}+=1.1381767617'{sword_grab_2}
+{rightArm_rotX}+=-202.8525932062'{sword_grab_3}
+{rightArm_rotY}+=12.6144700458'{sword_grab_3}
+{rightArm_rotZ}+=0.1390913063'{sword_grab_3}
+{rightArm_posY}+=2{sword_grab_1}
+{rightArm_posZ}+=-2{sword_grab_1}
+{rightArm_posX}+=-0.25{sword_grab_2}
+{rightArm_posY}+=3.1{sword_grab_2}
+{rightArm_posZ}+=-1.85{sword_grab_2}
+{rightArm_posY}+=2{sword_grab_3}
+{rightArm_posZ}+=-2{sword_grab_3}
+
+{leftArm_posZ}+=-0.5{sword_grab_0}

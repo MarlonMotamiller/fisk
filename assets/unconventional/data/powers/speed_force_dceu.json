@@ -1,0 +1,82 @@
+{
+  "name": "Speed Force (DCEU)",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "key": "UN/EQUIP_GAUNTLETS",
+      "transformation": {
+        "toggleData": "unconventional:dyn/transformation",
+        "timerData": "unconventional:dyn/transformation_timer",
+        "time": 30
+      }
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/speedforce",
+        "cooldownData": "unconventional:dyn/speedforce_cooldown",
+        "duration": 200,
+        "recovery": 0.0
+      }
+    },
+    "fiskheroes:super_speed": {
+      "canUseTreadmill": true,
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": [],
+        "MOVE": ["unconventional:super_speed_move_loop_the_flash_dceu", "unconventional:super_speed_move_loop_wind"],
+        "SPRINT": ["unconventional:super_speed_sprint_the_flash_dceu"],
+        "STOP": ["unconventional:super_speed_stop_the_flash_dceu"]
+      }
+    },
+    "fiskheroes:slow_motion": {
+      "soundEvents": {
+        "ENABLE": [],
+        "DISABLE": []
+      }
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 4.25
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:nausea", "minecraft:poison", "minecraft:wither"]
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [4.5, 0.0]
+    },
+    "fiskheroes:shield": {
+      "shield": {
+        "health": 200.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 600,
+        "cooldown": 600
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.0,
+      "isToggle": false,
+      "soundEvents": {
+        "BLOCK_START": "fiskheroes:anti_forcefield",
+        "DEFLECT": "fiskheroes:anti_forcefield_deflect"
+      }
+    },
+    "fiskheroes:energy_manipulation": {
+      "chargeTime": 70,
+      "range": 0.0,
+      "damageProfile": {
+        "damage": 0
+      }
+    } 
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/flash_timer.png",
+      "data": "entity.getData('unconventional:dyn/speedforce_cooldown')"
+    }
+  ]
+}

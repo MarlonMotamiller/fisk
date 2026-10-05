@@ -1,0 +1,30 @@
+{
+  "name": "Robin's Bo-Staff",
+  "permission": "MELEE_BOSTAFF_SHIELD",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 5
+  },
+  "activation": {
+    "type": "SHIELD",
+    "shield": {
+      "health": 40.0,
+      "regeneration": 10.0,
+      "recoveryDelay": 20,
+      "cooldown": 40
+    },
+    "coverage": {
+      "yawRadius": 35.0,
+      "pitchRadius": 35.0,
+      "yawOffset": 0.0,
+      "pitchOffset": 0.0
+    },
+    "knockback": 0.2
+  },
+  "soundEvents": {
+    "ENABLE": "unconventional:robin_bostaff_shield_unfold",
+    "DISABLE": "unconventional:robin_bostaff_shield_fold",
+    "DEFLECT": "fiskheroes:shield_deflect",
+    "DISARM": "fiskheroes:shield_disarm"
+  }
+}

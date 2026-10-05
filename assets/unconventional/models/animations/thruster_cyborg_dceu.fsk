@@ -1,0 +1,345 @@
+; data_0 = flight_timer
+; data_1 = flight_boost_timer
+; data_2 = scale
+; data_3 = barrel_roll_timer
+; data_4 = l/r_timer
+
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{data_3} = {data_3}
+{data_4} = curve {data_4}
+
+; Boosted/stationary "base" positioning
+;body
+
+;frontside
+
+{frontside} = min({data_0} + {data_1} ,1)(1-{data_4})
+{thrusterRight_frontsideBody_cap_rotX} -=  25'{frontside}
+{thrusterRight_frontsideBody_rotX} -= 25'{frontside}
+
+{thrusterRight_frontsideBody_cap_rotZ} += 15'{frontside}
+{thrusterRight_frontsideBody_rotZ} += 15'{frontside}
+
+{thrusterRight_frontsideBody_cap_posX} -= 0.75{frontside}
+
+{thrusterRight_frontsideBody_posY} += 0.5{frontside}
+{thrusterRight_frontsideBody_posX} -= 1.25{frontside}
+
+{thrusterLeft_frontsideBody_cap_rotX} -=  25'{frontside}
+{thrusterLeft_frontsideBody_rotX} -= 25'{frontside}
+
+{thrusterLeft_frontsideBody_cap_rotZ} -= 15'{frontside}
+{thrusterLeft_frontsideBody_rotZ} -= 15'{frontside}
+
+{thrusterLeft_frontsideBody_cap_posX} += 0.75{frontside}
+
+{thrusterLeft_frontsideBody_posY} += 0.5{frontside}
+{thrusterLeft_frontsideBody_posX} += 1.25{frontside}
+
+;backside
+{thrusterRight_backsideBody_cap_rotX} +=  35'{data_0}
+{thrusterRight_backsideBody_rotX} += 35'{data_0}
+
+{thrusterRight_backsideBody_cap_rotZ} += 15'{data_0}
+{thrusterRight_backsideBody_rotZ} += 15'{data_0}
+
+{thrusterRight_backsideBody_cap_posX} -= 0.75{data_0}
+
+{thrusterRight_backsideBody_posY} += 0.5{data_0}
+{thrusterRight_backsideBody_posX} -= 0.75{data_0}
+
+{thrusterLeft_backsideBody_cap_rotX} +=  35'{data_0}
+{thrusterLeft_backsideBody_rotX} += 35'{data_0}
+
+{thrusterLeft_backsideBody_cap_rotZ} -= 15'{data_0}
+{thrusterLeft_backsideBody_rotZ} -= 15'{data_0}
+
+{thrusterLeft_backsideBody_cap_posX} += 0.75{data_0}
+
+{thrusterLeft_backsideBody_posY} += 0.5{data_0}
+{thrusterLeft_backsideBody_posX} += 0.75{data_0}
+
+;arms
+
+;front
+{thrusterRight_frontArm_cap_rotX} -= 40'{data_1}{data_4}
+{thrusterRight_frontArm_rotX} -= 40'{data_1}{data_4}
+
+{thrusterRight_frontArm_cap_posZ} -= 0.75{data_1}{data_4}
+
+{thrusterRight_frontArm_posY} += 0.5{data_1}{data_4}
+{thrusterRight_frontArm_posZ} -= 1.25{data_1}{data_4}
+
+{thrusterLeft_frontArm_cap_rotX} -= 40'{data_1}{data_4}
+{thrusterLeft_frontArm_rotX} -= 40'{data_1}{data_4}
+
+{thrusterLeft_frontArm_cap_posZ} -= 0.75{data_1}{data_4}
+
+{thrusterLeft_frontArm_posY} += 0.5{data_1}{data_4}
+{thrusterLeft_frontArm_posZ} -= 1.25{data_1}{data_4}
+
+;side
+
+{arm_side} = ({data_0}*(1-{data_1}) + (min(1.5sin(pi*abs({data_3})), 1))){data_4}
+
+{thrusterRight_sideArm_cap_rotX} +=  20'{arm_side}
+{thrusterRight_sideArm_rotX} += 20'{arm_side}
+
+{thrusterRight_sideArm_cap_rotZ} += 10'{arm_side}
+{thrusterRight_sideArm_rotZ} += 10'{arm_side}
+
+{thrusterRight_sideArm_cap_posX} -= 0.55{arm_side}
+
+{thrusterRight_sideArm_posY} += 0.5{arm_side}
+{thrusterRight_sideArm_posX} -= 0.75{arm_side}
+
+{thrusterLeft_sideArm_cap_rotX} +=  20'{arm_side}
+{thrusterLeft_sideArm_rotX} += 20'{arm_side}
+
+{thrusterLeft_sideArm_cap_rotZ} -= 10'{arm_side}
+{thrusterLeft_sideArm_rotZ} -= 10'{arm_side}
+
+{thrusterLeft_sideArm_cap_posX} += 0.5{arm_side}
+
+{thrusterLeft_sideArm_posY} += 0.5{arm_side}
+{thrusterLeft_sideArm_posX} += 0.75{arm_side}
+
+;back
+{thrusterRight_backArm_cap_rotX} += 25'{data_0}{data_4}
+{thrusterRight_backArm_rotX} += 25'{data_0}{data_4}
+
+{thrusterRight_backArm_cap_posZ} += 0.75{data_0}{data_4}
+
+{thrusterRight_backArm_posY} += 0.5{data_0}{data_4}
+{thrusterRight_backArm_posZ} += 1.25{data_0}{data_4}
+
+{thrusterLeft_backArm_cap_rotX} += 25'{data_0}{data_4}
+{thrusterLeft_backArm_rotX} += 25'{data_0}{data_4}
+
+{thrusterLeft_backArm_cap_posZ} += 0.75{data_0}{data_4}
+
+{thrusterLeft_backArm_posY} += 0.5{data_0}{data_4}
+{thrusterLeft_backArm_posZ} += 1.25{data_0}{data_4}
+
+;legs
+{thrusterRight_cap_rotX} -=  15'{data_0}
+{thrusterRight_rotX} -= 15'{data_0}
+
+{thrusterRight_cap_rotZ} += 15'{data_0}
+{thrusterRight_rotZ} += 15'{data_0}
+
+{thrusterRight_cap_posX} -= 0.75{data_0}
+
+{thrusterRight_posY} += 0.5{data_0}
+{thrusterRight_posX} -= 1.25{data_0}
+
+{thrusterLeft_cap_rotX} -= 15'{data_0}
+{thrusterLeft_rotX} -= 15'{data_0}
+
+{thrusterLeft_cap_rotZ} -= 15'{data_0}
+{thrusterLeft_rotZ} -= 15'{data_0}
+
+{thrusterLeft_cap_posX} -= 0.75{data_0}
+
+{thrusterLeft_posY} += 0.5{data_0}
+{thrusterLeft_posX} += 1.25{data_0}
+
+;foots
+{thrusterRight_foot_cap_rotX} += 15'{data_0}
+{thrusterRight_foot_rotX} += 15'{data_0}
+
+{thrusterRight_foot_cap_posZ} += 0.75{data_0}
+
+{thrusterRight_foot_posY} += 0.5{data_0}
+{thrusterRight_foot_posZ} += 1.25{data_0}
+
+{thrusterLeft_foot_cap_rotX} += 15'{data_0}
+{thrusterLeft_foot_rotX} += 15'{data_0}
+
+{thrusterLeft_foot_cap_posZ} += 0.75{data_0}
+
+{thrusterLeft_foot_posY} += 0.5{data_0}
+{thrusterLeft_foot_posZ} += 1.25{data_0}
+
+; ==============================================
+{data_2} = if({data_2} > 0, {data_2}^0.25, 1)
+{motX} /= {data_2}
+{motY} /= {data_2}
+{motZ} /= {data_2}
+{data_2} = 0
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = {data_0}(1 - {data_1})
+
+;move
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+
+;body
+
+;frontside
+{thrusterRight_frontsideBody_cap_rotX} -= 0.3{adz}{frontside} - 0.2{strafe}
+{thrusterRight_frontsideBody_rotX} -= 0.3{adz}{frontside} - 0.2{strafe}
+
+{thrusterRight_frontsideBody_cap_rotZ} += 0.4{strafe}{frontside}
+{thrusterRight_frontsideBody_rotZ} += 0.4{strafe}{frontside}
+
+{thrusterLeft_frontsideBody_cap_rotX} -= 0.3{adz}{frontside} - 0.2{strafe}
+{thrusterLeft_frontsideBody_rotX} -= 0.3{adz}{frontside} - 0.2{strafe}
+
+{thrusterLeft_frontsideBody_cap_rotZ} += 0.4{strafe}{frontside}
+{thrusterLeft_frontsideBody_rotZ} += 0.4{strafe}{frontside}
+
+;backside
+{thrusterRight_backsideBody_cap_rotX} += 0.3{adz} - 0.2{strafe}
+{thrusterRight_backsideBody_rotX} += 0.3{adz} - 0.2{strafe}
+
+{thrusterRight_backsideBody_cap_rotZ} += 0.4{strafe}
+{thrusterRight_backsideBody_rotZ} += 0.4{strafe}
+
+{thrusterLeft_backsideBody_cap_rotX} += 0.3{adz} - 0.2{strafe}
+{thrusterLeft_backsideBody_rotX} += 0.3{adz} - 0.2{strafe}
+
+{thrusterLeft_backsideBody_cap_rotZ} += 0.4{strafe}
+{thrusterLeft_backsideBody_rotZ} += 0.4{strafe}
+
+;arms
+
+{f_arms} = {data_4}{forward}
+{s_arms} = {data_4}{strafe}
+{adx_arms} = {data_4}{adx}
+{adz_arms} = {data_4}{adz}
+
+;front
+;{thrusterRight_frontArm_cap_rotX} += 0.1{f_arms}
+;{thrusterRight_frontArm_rotX} += 0.1{f_arms}
+
+;{thrusterRight_frontArm_cap_rotZ} -= 0.2{s_arms}
+;{thrusterRight_frontArm_rotZ} -= 0.2{s_arms}
+
+;{thrusterLeft_frontArm_cap_rotX} += 0.1{f_arms}
+;{thrusterLeft_frontArm_rotX} += 0.1{f_arms}
+
+;{thrusterLeft_frontArm_cap_rotZ} -= 0.2{s_arms}
+;{thrusterLeft_frontArm_rotZ} -= 0.2{s_arms}
+
+;side
+{thrusterRight_sideArm_cap_rotX} -= 0.9clamp({f_arms}, -0.25, 1.5)
+{thrusterRight_sideArm_rotX} -= 0.9clamp({f_arms}, -0.25, 1.5)
+
+{thrusterRight_sideArm_cap_rotZ} += 0.25clamp({s_arms}, -0.5, 1.5)
+{thrusterRight_sideArm_rotZ} += 0.25clamp({s_arms}, -0.5, 1.5)
+
+{thrusterLeft_sideArm_cap_rotX} -= 0.9clamp({f_arms}, -0.25, 1.5)
+{thrusterLeft_sideArm_rotX} -= 0.9clamp({f_arms}, -0.25, 1.5)
+
+{thrusterLeft_sideArm_cap_rotZ} += 0.25clamp({s_arms}, -1.5, 0.5)
+{thrusterLeft_sideArm_rotZ} += 0.25clamp({s_arms}, -1.5, 0.5)
+
+;back
+;{thrusterRight_backArm_cap_rotX} -= 0.25clamp({f_arms}, -1.5, 0.5)
+;{thrusterRight_backArm_rotX} -= 0.25clamp({f_arms}, -1.5, 0.5)
+
+;{thrusterLeft_backArm_cap_rotX} -= 0.25clamp({f_arms}, -1.5, 0.5)
+;{thrusterLeft_backArm_rotX} -= 0.25clamp({f_arms}, -1.5, 0.5)
+
+{thrusterRight_backArm_cap_rotX} += 0.35{adz_arms}
+{thrusterRight_backArm_rotX} += 0.35{adz_arms}
+
+{thrusterLeft_backArm_cap_rotX} += 0.35{adz_arms}
+{thrusterLeft_backArm_rotX} += 0.35{adz_arms}
+
+{thrusterRight_backArm_cap_rotZ} += 0.3{s_arms}
+{thrusterRight_backArm_rotZ} += 0.3{s_arms}
+
+{thrusterLeft_backArm_cap_rotZ} += 0.3{s_arms}
+{thrusterLeft_backArm_rotZ} += 0.3{s_arms}
+
+;legs
+{thrusterRight_cap_rotX} -= 0.8clamp({forward}, -1.5, 0.45)
+{thrusterRight_rotX} -= 0.8clamp({forward}, -1.5, 0.45)
+
+{thrusterRight_cap_rotZ} += 0.3clamp({strafe}, -0.5, 1.5)
+{thrusterRight_rotZ} += 0.3clamp({strafe}, -0.5, 1.5)
+
+{thrusterLeft_cap_rotX} -= 0.8clamp({forward}, -1.5, 0.45)
+{thrusterLeft_rotX} -= 0.8clamp({forward}, -1.5, 0.45)
+
+{thrusterLeft_cap_rotZ} += 0.3clamp({strafe}, -1.5, 0.5)
+{thrusterLeft_rotZ} += 0.3clamp({strafe}, -1.5, 0.5)
+
+;foots
+{thrusterRight_foot_cap_rotX} += 0.15clamp({forward}, -1, 0.5)
+{thrusterRight_foot_rotX} += 0.15clamp({forward}, -1, 0.5)
+
+{thrusterLeft_foot_cap_rotX} += 0.15clamp({forward}, -1, 0.5)
+{thrusterLeft_foot_rotX} += 0.15clamp({forward}, -1, 0.5)
+
+;boost
+
+{y} = min({vel}, 1){data_1}{d1}{d} / 2.5
+
+;barrel_roll
+
+{roll} = signum({data_3})curve({data_3}){data_4}
+{x_roll} = sin(abs({roll})pi)
+{y_roll} = {x}signum({roll})'
+
+;body
+
+;frontside
+{thrusterRight_frontsideBody_cap_rotX} += 0.8{y} + {y_roll}30
+{thrusterRight_frontsideBody_rotX} += 0.8{y} + {y_roll}30
+
+{thrusterLeft_frontsideBody_cap_rotX} -= 0.8{y} + {y_roll}30
+{thrusterLeft_frontsideBody_rotX} -= 0.8{y} + {y_roll}30
+
+;backside
+{thrusterRight_backsideBody_cap_rotX} += 0.8{y} + {y_roll}30
+{thrusterRight_backsideBody_rotX} += 0.8{y} + {y_roll}30
+
+{thrusterLeft_backsideBody_cap_rotX} -= 0.8{y} + {y_roll}30
+{thrusterLeft_backsideBody_rotX} -= 0.8{y} + {y_roll}30
+
+;arms
+
+;front
+{thrusterRight_frontArm_cap_rotX} += 0.3{y} + {y_roll}10
+{thrusterRight_frontArm_rotX} += 0.3{y} + {y_roll}10
+
+{thrusterLeft_frontArm_cap_rotX} -= 0.3{y} + {y_roll}10
+{thrusterLeft_frontArm_rotX} -= 0.3{y} + {y_roll}10
+
+{thrusterRight_backArm_cap_rotX} += 0.3{y} + {y_roll}10
+{thrusterRight_backArm_rotX} += 0.3{y} + {y_roll}10
+
+{thrusterLeft_backArm_cap_rotX} -= 0.3{y} + {y_roll}10
+{thrusterLeft_backArm_rotX} -= 0.3{y} + {y_roll}10
+
+;legs
+{thrusterRight_cap_rotX} += 0.8clamp({y}, -1.5, 0.7) + {y_roll}20
+{thrusterRight_rotX} += 0.8clamp({y}, -1.5, 0.7) + {y_roll}20
+
+{thrusterLeft_cap_rotX} -= 0.8clamp({y}, -1.5, 0.7) + {y_roll}20
+{thrusterLeft_rotX} -= 0.8clamp({y}, -1.5, 0.7) + {y_roll}20
+
+{thrusterRight_foot_cap_rotX} += 0.2{y} + {y_roll}10
+{thrusterRight_foot_rotX} += 0.2{y} + {y_roll}10
+
+{thrusterLeft_foot_cap_rotX} -= 0.2{y} + {y_roll}10
+{thrusterLeft_foot_rotX} -= 0.2{y} + {y_roll}10
+

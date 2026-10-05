@@ -1,0 +1,26 @@
+; data_1 = gliding_timer
+
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{rightArm_posZ} -= 0.5{data_1}
+{leftArm_posZ} -= 0.5{data_1}
+
+{vel} = sqrt({motX}^2 + {motY}^2 + {motZ}^2)
+{dive} = if({vel} >= 0.0001, (abs({motY}) / {vel})^1.5 * signum({motY}), 0)
+
+
+{rightArm_rotX} -= 1'{data_1} - 0.2{x} - abs(0.2{x}) + 0.1{dive}
+{rightArm_rotY} += 7'{data_1} + 0.1{dive}
+{leftArm_rotX} -= 2'{data_1} + 0.2{x} - abs(0.2{x}) + 0.1{dive}
+{leftArm_rotY} -= 8'{data_1} + 0.1{dive}
+{rightLeg_rotX} += 6'{data_1} + 0.2{x}
+{rightLeg_rotY} += 2'{data_1}
+{rightLeg_rotZ} += 4'{data_1} + 0.1{dive}
+{leftLeg_rotX} += 4'{data_1} - 0.3{x}
+{leftLeg_rotY} -= 2'{data_1}
+{leftLeg_rotZ} -= 4'{data_1} + 0.1{dive}
+
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (5{data_1}, 1, 0, 0)
+out "translate" (0, 0, -0.05{data_1})

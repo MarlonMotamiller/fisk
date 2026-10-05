@@ -1,0 +1,29 @@
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+
+{x} = curve 60*min(1.5{vel}, 1)
+
+{x} = min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{ponytail_rotX} += {lookY} - 0.2{motY}
+{ponytail_rotZ} += 1{strafe}
+
+{top_rotX} += 0.3{forward} - 0.2{motY}
+{top_rotZ} += 0.5 {strafe}
+
+{middle_posZ} += 0.5 {lookY}
+{middle_rotX} += 0.2 {lookY} + 0.8{forward} - 0.1{motY}
+{middle_rotZ} += 1.1{strafe}
+
+{bottom_rotX} += 0.3{forward} - 0.1{motY}
+{bottom_rotZ} += 1.8{strafe}

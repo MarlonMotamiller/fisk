@@ -1,0 +1,11 @@
+{
+  "suit": "unconventional:batman_reeves",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "unconventional:unconventional"
+  ]
+}

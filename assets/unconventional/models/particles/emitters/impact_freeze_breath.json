@@ -1,0 +1,11 @@
+{
+  "particles": [
+    {
+      "type": "CRYO_SMOKE",
+      "amount": 20,
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.05, 0.05, 0.05],
+      "randMotion": [0.3, 0.3, 0.3]
+    }
+  ]
+}

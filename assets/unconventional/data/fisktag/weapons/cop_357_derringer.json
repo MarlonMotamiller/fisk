@@ -1,0 +1,43 @@
+{
+  "name": "COP 357 Derringer",
+  "permission": "USE_GUN",
+  "holdingPose": "SINGLE",
+  "cooldown": 4,
+  "damageProfile": {
+    "damage": 5.0,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "ammo": {
+    "amount": 4,
+    "reloadTime": 40
+  },
+  "scope": {
+    "zoom": 0.45
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "scopingFactor": 0.8
+  },
+  "recoil": {
+    "amount": 0.5,
+    "cameraShake": 0.7
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.5,
+      "speed": 15.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:p90_shooting"
+  }
+}

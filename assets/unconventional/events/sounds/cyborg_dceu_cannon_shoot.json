@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:cyborg.dceu.cannon.shoot",
+  "volume": 2.0,
+  "pitch": "1 / (Math.random() * 0.3 + 0.7)"
+}

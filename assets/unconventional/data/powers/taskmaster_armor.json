@@ -1,0 +1,37 @@
+{
+  "name": "Taskmaster Armor",
+  "modifiers": {
+    "fiskheroes:damage_resistance|explosion": {
+      "damageType": "EXPLOSION",
+      "factor": 0.15
+    },
+    "fiskheroes:archery": {
+    },
+    "fiskheroes:arrow_catching": {
+	  },
+    "fiskheroes:shield_throwing": {
+      "cooldownTime": 45,
+      "soundEvents": {
+        "THROW": "fiskheroes:shield_throw"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "SHIELD_THROW",
+      "transformation": {
+        "toggleData": "unconventional:dyn/shield_throw",
+        "timerData": "unconventional:dyn/shield_throw_timer",
+        "time": 4
+      },
+      "isToggle": false
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.4, 0.0]
+    },
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:panther_claws_enable",
+        "DISABLE": "fiskheroes:panther_claws_disable"
+      }
+    }
+  }
+}

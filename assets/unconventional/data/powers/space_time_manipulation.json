@@ -1,0 +1,23 @@
+{
+  "name": "Space-Time Manipulation",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/teleport",
+        "timerData": "unconventional:dyn/teleport_timer",
+        "time": 40
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 64.0,
+      "soundEvents": {
+        "TELEPORT": "unconventional:five_teleport"
+      }
+    },
+    "fiskheroes:arrow_catching": {
+	  },
+	  "fiskheroes:slow_motion": {
+	  }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:data.drive.copy",
+  "fadeOut": 10
+}

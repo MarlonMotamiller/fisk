@@ -1,0 +1,13 @@
+{
+  "suit": "unconventional:ghost",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:intangibility",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "fiskheroes:ant_man",
+    "unconventional:shield_tech",
+    "unconventional:unconventional"
+  ]
+}

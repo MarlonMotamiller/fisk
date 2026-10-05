@@ -1,0 +1,3 @@
+; data = weapon_animation_spin_timer
+
+{mag_rotZ} -= 45'{data}

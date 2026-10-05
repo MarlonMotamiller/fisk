@@ -1,0 +1,17 @@
+{wanda_blind_spell1_time}={data}
+
+{rightArm_rotX} @ {data} -> -60'
+{rightArm_rotY} @ {data} -> 7.5'
+{rightArm_rotZ} @ {data} -> -40'
+
+{rightArm_posX} @ {data} -> -4.5
+{rightArm_posY} @ {data} -> 3
+{rightArm_posZ} @ {data} -> 1.5
+
+{leftArm_rotX} @ {data} -> -150'
+{leftArm_rotY} @ {data} -> 30'
+{leftArm_rotZ} @ {data} -> -90'
+
+{leftArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 3
+{leftArm_posZ} @ {data} -> -3

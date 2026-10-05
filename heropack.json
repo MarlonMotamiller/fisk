@@ -1,0 +1,498 @@
+{
+  "name": "Unconventional Heropack",
+  "description": "\u00A7bvP.2.3.0 \u00A77- By \u00A76Oliver_Fitzovich\u00A77. Also try \u00A7dSecret Heroes <3\u00A77",
+  "watermark": "&6&lUnconventional&r",
+  "domain": "unconventional",
+  "packFormat": 1,
+  "sounds": {
+    "download": {
+      "repository": "Unconventional-Heropack/DEVSOUNDS",
+      "version": 1
+    },
+
+  "range": {
+	"black_bolt_comics_chargeup": 32.0,
+	"black_bolt_comics_shooting": { "distance": 96.0, "target": "ALL" },
+	
+	"electro_beam_loop": { "distance": 48.0, "target": "ALL" },
+	"electro_beam_music_loop": { "distance": 48.0, "target": "ALL" },
+  "electro_beam_start": { "distance": 48.0, "target": "ALL" },
+	"electro_energyform_disable": { "distance": 48.0, "target": "ALL" },
+	"electro_energyform_enable": { "distance": 48.0, "target": "ALL" },
+	"electro_energyform_loop": { "distance": 48.0, "target": "ALL" },
+	"electro_energyform_music_disable": { "distance": 48.0, "target": "ALL" },
+	"electro_energyform_music_loop": { "distance": 48.0, "target": "ALL" },
+	"electro_teleport": { "distance": 48.0, "target": "ALL" },
+	"electro_teleport_music": { "distance": 48.0, "target": "ALL" },
+	
+	"ghost_intang_off": 24.0,
+	"ghost_intang_on": 24.0,
+	"ghost_invis_off": 24.0,
+	"ghost_invis_on": 24.0,
+  "ghost_idle_loop": 24.0,
+	
+	"miles_venom_boost": 24.0,
+	"miles_venom_charge": { "target": "ALL" },
+	
+	"soldier_boy_chargeup": { "distance": 48.0, "target": "ALL" },
+	"soldier_boy_shooting": { "distance": 80.0, "target": "ALL" },
+	"soldier_boy_stop": 80.0,
+	
+  "grapple_stress_loop": { "target": "ONLY_SELF" },
+	
+	"wanda_aim": { "target": "ALL" },
+	"wanda_flight_loop1": { "distance": 32.0, "target": "ALL" },
+	"wanda_flight_loop2": { "distance": 32.0, "target": "ALL" },
+	"wanda_shield": { "target": "ALL" },
+	"wanda_shooting": { "distance": 32.0, "target": "ALL" },
+	"wanda_stop": 32.0,
+	"wanda_throw": 24.0,
+
+  "d_m_a": { "target": "ONLY_SELF" },
+  "d_m_d": { "target": "ONLY_SELF" },
+  "scan_zone_swipe": { "target": "ONLY_SELF" },
+  "scan_zone_cycle": { "target": "ONLY_SELF" },
+
+  "data_drive_copy": { "distance": 4.0, "target": "ALL" },
+  "data_drive_paste": { "distance": 4.0, "target": "ALL" },
+  "data_drive_delete": { "distance": 4.0, "target": "ALL" },
+
+  "mosquito_flight_loop": { "distance": 10.0, "target": "ALL_IN_RANGE" },
+  "mosquito_music_loop": {"target": "ONLY_SELF" }
+    }
+  },
+
+  "damageTypes": {
+    "RADIATION": "Radiation",
+    "HELLFIRE": "Hellfire",
+    "ADAMANTIUM": "Adamantium"
+  },
+
+  "dataVars": {
+    "i": "SHORT",
+    "lvl": "SHORT",
+
+    "id": "INTEGER",
+	
+    "mosquito_walking": "FLOAT",
+	
+    "wet_timer": "FLOAT_INTERP",
+    "ground_timer": "FLOAT_INTERP",
+	
+    "riptide": "BOOLEAN",
+    "riptide_timer": "FLOAT_INTERP",
+    "riptide_cooldown": "FLOAT",
+	
+    "riptide_anim_timer": "FLOAT_INTERP",
+	
+	"rocket": "BOOLEAN",
+    "rocket_timer": "FLOAT_INTERP",
+    "rocket_cooldown": "FLOAT",
+
+    "transformation": "BOOLEAN",
+    "transformation_timer": "FLOAT_INTERP",
+    "transformation_cooldown": "FLOAT",
+
+    "invisibility": "BOOLEAN",
+    "invisibility_timer": "FLOAT_INTERP",
+    "invisibility_cooldown": "FLOAT",
+
+    "venom_boost": "BOOLEAN",
+    "venom_boost_timer": "FLOAT_INTERP",
+    "venom_boost_cooldown": "FLOAT",
+
+    "web_zip": "BOOLEAN",
+    "web_zip_timer": "FLOAT_INTERP",
+    "web_zip_cooldown": "FLOAT",
+
+    "nanites": "BOOLEAN",
+    "nanite_timer": "FLOAT_INTERP",
+    "nanite_cooldown": "FLOAT",
+
+    "wingsuit": { "type": "BOOLEAN", "resetWithoutSuit": true , "resetOnDeath": true},
+    "wingsuit_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true , "resetOnDeath": true},
+    "wingsuit_cooldown": { "type": "FLOAT", "resetWithoutSuit": true , "resetOnDeath": true},
+
+    "cooldown_1": "FLOAT_INTERP",
+    "cooldown_2": "FLOAT_INTERP",
+
+    "goggle": "BOOLEAN",
+    "goggle_timer": "FLOAT_INTERP",
+    "goggle_cooldown": "FLOAT",
+
+    "grenade_switch": "BYTE",
+
+    "shield_throw": "BOOLEAN",
+    "shield_throw_timer": "FLOAT_INTERP",
+    "shield_throw_cooldown": "FLOAT",
+
+
+
+    "toggle": "BYTE",
+    "vision_intangible_toggle": "BOOLEAN",
+    "vision_intangible_toggle_timer": "FLOAT",
+
+    "psionic_fists": "BOOLEAN",
+    "psionic_fists_timer": "FLOAT_INTERP",
+
+	  "mask_on": "BOOLEAN",
+	  "mask_on_timer": "FLOAT_INTERP",
+	  
+	  "mask_off": "BOOLEAN",
+	  "mask_off_timer": "FLOAT_INTERP",
+
+    
+    "solar_healing": "BOOLEAN",
+	  "solar_healing_timer": "FLOAT_INTERP",
+	  "solar_healing_cooldown": "FLOAT",
+
+    "sonic_boom": { "type": "BYTE", "resetWithoutSuit": true },
+    "sonic_boom_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+    "sonic_boom_cooldown": "FLOAT",
+    "sonic_boom_timeout": { "type": "BYTE", "resetWithoutSuit": true },
+
+
+	  "mjolnir_charging": "BOOLEAN",
+	  "mjolnir_charging_timer": "FLOAT_INTERP",
+	  "mjolnir_charging_cooldown": "FLOAT",
+	
+	  "mjolnir_charge_timer": "FLOAT_INTERP",
+	  "mjolnir_charge": "FLOAT",
+	
+	  "mjolnir_landing_charge": "FLOAT_INTERP",
+	  "mjolnir_landing_timer": "FLOAT_INTERP",
+	
+	  "spin_charge": "FLOAT",
+	  
+	  "mjolnir_pieces_shooting_timer": "FLOAT_INTERP",
+	  
+	  "mjolnir_mode": "BOOLEAN",
+	  "mjolnir_mode_timer": "FLOAT_INTERP",
+	  "mjolnir_mode_cooldown": "FLOAT",
+
+
+
+    "main_gun": "BOOLEAN",
+    "main_gun_timer": "FLOAT_INTERP",
+    "main_gun_cooldown": "FLOAT",
+
+    "main_gun_upgrade1": "BOOLEAN",
+    "main_gun_upgrade1_timer": "FLOAT_INTERP",
+    "main_gun_upgrade1_cooldown": "FLOAT",
+
+    "main_gun_upgrade2": "BOOLEAN",
+    "main_gun_upgrade2_timer": "FLOAT_INTERP",
+    "main_gun_upgrade2_cooldown": "FLOAT",
+
+    "main_gun_upgrade3": "BOOLEAN",
+    "main_gun_upgrade3_timer": "FLOAT_INTERP",
+    "main_gun_upgrade3_cooldown": "FLOAT",
+
+    "sword": "BOOLEAN",
+    "sword_timer": "FLOAT_INTERP",
+    "sword_cooldown": "FLOAT",
+
+    "flamethrower": "BOOLEAN",
+    "flamethrower_timer": "FLOAT_INTERP",
+    "flamethrower_cooldown": "FLOAT",
+
+    "pistol": "BOOLEAN",
+    "pistol_timer": "FLOAT_INTERP",
+    "pistol_cooldown": "FLOAT",
+
+    "chest_guns": "BOOLEAN",
+    "chest_guns_timer": "FLOAT_INTERP",
+    "chest_guns_cooldown": "FLOAT",
+
+    "mask": "BOOLEAN",
+    "mask_timer": "FLOAT_INTERP",
+    "mask_cooldown": "FLOAT",
+
+
+    
+    "weapon": "BYTE",
+
+    "weapon1": "BOOLEAN",
+    "weapon1_timer": "FLOAT_INTERP",
+    "weapon1_cooldown": "FLOAT",
+
+    "weapon2": "BOOLEAN",
+    "weapon2_timer": "FLOAT_INTERP",
+    "weapon2_cooldown": "FLOAT",
+
+    "weapon3": "BOOLEAN",
+    "weapon3_timer": "FLOAT_INTERP",
+    "weapon3_cooldown": "FLOAT",
+
+    "weapon4": "BOOLEAN",
+    "weapon4_timer": "FLOAT_INTERP",
+    "weapon4_cooldown": "FLOAT",
+
+    "weapon5": "BOOLEAN",
+    "weapon5_timer": "FLOAT_INTERP",
+    "weapon5_cooldown": "FLOAT",
+
+    "teleport": "BOOLEAN",
+    "teleport_timer": "FLOAT_INTERP",
+    "teleport_cooldown": "FLOAT",
+
+
+
+    "punch": "BYTE",
+    "punch_saved": "BYTE",
+	
+    "jab_1_timer": "FLOAT_INTERP",
+    "jab_2_timer": "FLOAT_INTERP",
+	
+	  "shield_damaged_timer": "FLOAT_INTERP",
+    "shield_1_timer": "FLOAT_INTERP",
+    "shield_2_timer": "FLOAT_INTERP",
+    "shield_3_timer": "FLOAT_INTERP",
+    "shield_4_timer": "FLOAT_INTERP",
+    "shield_5_timer": "FLOAT_INTERP",
+    "shield_6_timer": "FLOAT_INTERP",
+    "shield_7_timer": "FLOAT_INTERP",
+    "shield_8_timer": "FLOAT_INTERP",
+	
+    "shield_shock_timer": "FLOAT_INTERP",
+
+    "phasing": "BOOLEAN",
+    "phasing_timer": "FLOAT_INTERP",
+    "phasing_cooldown": "FLOAT",
+
+    "teleportation_timer": "FLOAT_INTERP",
+
+    "invisible_float": { "type": "FLOAT", "resetWithoutSuit": true },
+    "invisible_float_test": { "type": "FLOAT", "resetWithoutSuit": true },
+    "invisible": { "type": "BOOLEAN", "resetWithoutSuit": true },
+    "invisible_opacity":  { "type": "BOOLEAN", "resetWithoutSuit": true },
+
+    "speedforce": "BOOLEAN",
+    "speedforce_timer": "FLOAT_INTERP",
+    "speedforce_cooldown": "FLOAT",
+	
+	"sprint_break": "BOOLEAN",
+    "sprint_break_timer": "FLOAT_INTERP",
+    "sprint_break_cooldown": "FLOAT",
+
+    "shield": "BOOLEAN",
+    "shield_timer": "FLOAT_INTERP",
+    "shield_cooldown": "FLOAT",
+
+    "bostaff": "BOOLEAN",
+    "bostaff_timer": "FLOAT_INTERP",
+    "bostaff_cooldown": "FLOAT",
+
+    "sequencer": "BOOLEAN",
+    "sequencer_timer": "FLOAT_INTERP",
+    "sequencer_cooldown": "FLOAT",
+	
+	"switch": "BOOLEAN",
+    "switch_timer": "FLOAT_INTERP",
+    "switch_cooldown": "FLOAT",
+
+    "sliding": "BOOLEAN",
+    "sliding_timer": "FLOAT_INTERP",
+    "sliding_cooldown": "FLOAT",
+
+    "sneaking": "BOOLEAN",
+    "sneaking_timer": "FLOAT_INTERP",
+    "sneaking_cooldown": "FLOAT",
+
+    "perch": "BOOLEAN",
+    "perch_timer": "FLOAT_INTERP",
+    "perch_cooldown": "FLOAT",
+
+    "diving": "BOOLEAN",
+    "diving_timer": "FLOAT_INTERP",
+    "diving_cooldown": "FLOAT",
+	
+	"ticks_since_on_ground": "FLOAT",
+	
+	"trick": "BYTE",
+	"trick_count": "BYTE",
+	"trick_toggle": "BOOLEAN",
+    "trick_timer": "FLOAT_INTERP",
+    "trick_cooldown": "FLOAT",
+  "trick_reverse_toggle": "BOOLEAN",
+    "trick_reverse_timer": "FLOAT_INTERP",
+    "trick_reverse_cooldown": "FLOAT",
+
+    "grapple": "BOOLEAN",
+    "grapple_timer": "FLOAT_INTERP",
+    "grapple_cooldown": "FLOAT",
+
+    "prev_speed_sprint_timer": { "type": "FLOAT_INTERP", "resetWithoutSuit": true },
+
+    "sprint": "BOOLEAN",
+    "sprint_timer": "FLOAT_INTERP",
+    "sprint_cooldown": "FLOAT",
+
+    "leap": "BOOLEAN",
+    "leap_timer": "FLOAT_INTERP",
+    "leap_cooldown": "FLOAT",
+
+    "roll": "BOOLEAN",
+    "roll_timer": "FLOAT_INTERP",
+    "roll_cooldown": "FLOAT",
+	
+	"dash": "BOOLEAN",
+    "dash_timer": "FLOAT_INTERP",
+    "dash_cooldown": "FLOAT",
+
+    
+
+    "posing": "BOOLEAN",
+    "posing_timer": "FLOAT_INTERP",
+    "posing_cooldown": "FLOAT",
+
+    "pose": "BYTE",
+    "pose_timer": "FLOAT_INTERP",
+    "pose_cooldown": "FLOAT",
+
+    "pose1": "BOOLEAN",
+    "pose1_timer": "FLOAT_INTERP",
+    "pose1_cooldown": "FLOAT",
+
+    "pose2": "BOOLEAN",
+    "pose2_timer": "FLOAT_INTERP",
+    "pose2_cooldown": "FLOAT",
+
+    "pose3": "BOOLEAN",
+    "pose3_timer": "FLOAT_INTERP",
+    "pose3_cooldown": "FLOAT",
+
+    "pose4": "BOOLEAN",
+    "pose4_timer": "FLOAT_INTERP",
+    "pose4_cooldown": "FLOAT",
+
+    "pose5": "BOOLEAN",
+    "pose5_timer": "FLOAT_INTERP",
+    "pose5_cooldown": "FLOAT"
+  },
+  
+  "alts": {
+    "fiskheroes:rip_hunter": {
+      "hat": "Cowboy Hat | \u00A76\u00A7lUHP\u00A7r",
+      "time_hat": "Time Master, Cowboy Hat | \u00A76\u00A7lUHP\u00A7r"
+    },
+    "fiskheroes:black_lightning": {
+      "old_days": {
+        "name": "Old Days | \u00A76\u00A7lUHP\u00A7r",
+        "disableMaskToggle": true
+      }
+    },
+    "unconventional:captain_america_jw": {
+      "us": "U.S. Agent"
+    },
+    "unconventional:wanda": {
+      "cw": "Civil War",
+      "civi": "Civilian",
+      "civi_cap": "Civilian (Baseball Cap)"
+    },
+    "unconventional:spider_man_miles_ps5": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      },
+      "uptown_pride": { "name": "Uptown Pride", "maskToggleTicks": 12 },
+      "cat": { "name": "Cat-Pack", "maskToggleTicks": 12 },
+      "the_end": { "name": "The End Suit", "maskToggleTicks": 12 },
+      "2020": { 
+        "name": "2020", "maskToggleTicks": 12,
+        "disableMaskToggle": true
+      }
+    },
+    "unconventional:spider_man_miles_sv": {
+      "$DEFAULT": {
+        "maskToggleTicks": 12
+      },
+      "hoodie": { "name": "Hoodie", "maskToggleTicks": 12 }
+    },
+    "unconventional:electro": {
+      "mcu": {
+        "name": "MCU",
+        "armor": {
+          "HELMET": "Crown"
+        },
+        "maskToggleTicks": 8
+      }
+    },
+    "unconventional:soldier_boy": {
+      "wb": "With Beard",
+      "wh": {
+        "name": "Without Helmet",
+        "armor": {
+          "HELMET": "Beard"
+        }
+      }
+    },
+    "unconventional:batman_rocksteady": {
+      "$DEFAULT": {
+        "maskToggleTicks": 40
+      },
+      "beyond": { "name": "Beyond", "maskToggleTicks": 40 },
+      "ac": { "name": "Arkham City", "maskToggleTicks": 40 },
+      "g": {
+        "name": "Gold",
+        "vanity": "achievement.fiskheroes.allSuits",
+        "maskToggleTicks": 40
+      },
+      "futura": {
+        "name": "Futura Knight",
+        "vanity": "achievement.fiskheroes.allSuits",
+        "maskToggleTicks": 40
+      }
+    },
+    "unconventional:robin_rocksteady": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      }
+    },
+    "unconventional:the_flash_dceu": {
+      "$DEFAULT": {
+        "soundProfile": "SAVITAR"
+      }
+    },
+    "unconventional:pietro": {
+      "$DEFAULT": {
+        "soundProfile": "TEST"
+      }
+    },
+    "unconventional:hawkeye": {
+      "endgame": "Endgame"
+    },
+    "unconventional:batman_dceu_tactical": {
+      "$DEFAULT": {
+        "maskToggleTicks": 14
+      },
+      "nogoggles": { 
+        "name": "No Goggles" ,
+        "disableMaskToggle": true
+      }
+    },
+    "unconventional:deathstroke_rocksteady": {
+        "eyepatch": "Eyepatch"
+    },
+    "unconventional:mosquito": {
+        "creetle": "Creetle",
+        "metal": "Metal"
+    },
+    "unconventional:john_wick": {
+        "white_shirt_vest": "White Shirt Vest",
+        "black_shirt": "Black Shirt",
+        "black_shirt_vest": "Black Shirt Vest"
+    },
+    "unconventional:taskmaster": {
+      "$DEFAULT": {
+        "maskToggleTicks": 15
+      }
+    },
+    "unconventional:tigress_yj": {
+      "polar": "Polar"
+    },
+    "unconventional:five": {
+      "mask": "Masked",
+      "suit": "Suit"
+    }
+  }
+}

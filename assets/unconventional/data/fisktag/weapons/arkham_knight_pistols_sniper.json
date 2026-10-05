@@ -1,0 +1,42 @@
+{
+  "name": "Arkham Knight Pistols (Combined)",
+  "permission": "USE_GUN",
+  "holdingPose": "DOUBLE",
+  "cooldown": 20,
+  "damageProfile": {
+    "damage": 10,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "ammo": {
+    "amount": 6,
+    "reloadTime": 30
+  },
+  "scope": {
+    "zoom": 0.45
+  },
+  "spread": {
+    "fallingFactor": 0.95,
+    "scopingFactor": 0.2
+  },
+  "recoil": {
+    "amount": 1.2,
+    "cameraShake": 1.4
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.0,
+      "speed": 150.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": ["unconventional:arkham_knight_sniper_shooting", "unconventional:arkham_knight_sniper_shooting_base"]
+  }
+}

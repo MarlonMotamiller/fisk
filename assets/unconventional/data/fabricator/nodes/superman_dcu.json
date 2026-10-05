@@ -1,0 +1,11 @@
+{
+  "suit": "unconventional:superman_dcu",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "unconventional:unconventional"
+  ]
+}

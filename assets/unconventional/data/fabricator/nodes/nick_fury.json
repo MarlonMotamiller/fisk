@@ -1,0 +1,9 @@
+{
+  "suit": "unconventional:nick_fury",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:marksmanship",
+    "unconventional:shield_tech",
+    "unconventional:unconventional"
+  ]
+}

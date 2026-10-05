@@ -1,0 +1,4 @@
+; data = weapon_animation_timer
+
+{blowback_posZ} += clamp(3{data}, 0, 3)
+{blowback2_posZ} += clamp(2.5{data}, 0, 2.5)

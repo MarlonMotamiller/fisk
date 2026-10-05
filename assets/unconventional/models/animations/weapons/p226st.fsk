@@ -1,0 +1,9 @@
+{reload} = {data_1}
+
+{sliding_part_posZ} += 0.75sin(2pi{data_0}-0.5pi)+0.75
+;{sliding_part_posZ} += 2{data_0}
+
+{cannon_rotX} -= 2.5'(0.5sin(2pi{data_0}-0.5pi)+0.5)
+
+{sliding_part_posZ} += min(sin(pi{reload})*4,1.5)
+

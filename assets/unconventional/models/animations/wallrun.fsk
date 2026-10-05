@@ -1,0 +1,48 @@
+{data_0} = curve {data_0}
+{d1} = 0.2{data_0}(sin(2pi({data_1}+0.3))+1.0)
+{d2} = 0.2{data_0}(sin(2pi({data_1}-0.3))+1.0)
+{data_1} = 0.2{data_0}sin(2pi{data_1})
+{d0abs} = abs {data_0}
+{data_0} *= {data_2}
+
+
+
+
+{body_rotX} @ {d0abs} -> 0.1
+{body_rotZ} @ {data_0} -> 0.1
+
+{head_rotX} @ {d0abs} -> 0.0
+{head_rotZ} += 0.1{data_0}
+
+{leftArm_posY} @ {d0abs} -> if({data_0} >0, 2.2, 1.1)
+{leftArm_rotX} @ {d0abs} -> if({data_0} >0, 0.5, 0.7) - 0.5{data_1}
+{leftArm_rotZ} = 0.0
+{leftArm_rotZ} @ {data_0} -> if({data_0} >0, 0.0, 1.8)
+
+{rightArm_posY} @ {d0abs} -> if({data_0} >0, 1.1, 2.2)
+{rightArm_rotX} @ {d0abs} -> if({data_0} >0, 0.7, 0.5) + 0.5{data_1}
+{rightArm_rotZ} = 0.0
+{rightArm_rotZ} @ {data_0} -> if({data_0} >0, 1.8, 0.0)
+
+{leftLeg_posZ} @ {d0abs} -> 1.1
+{leftLeg_posX} @ {data_0} -> 0.7
+{leftLeg_posY} @ {d0abs} -> if({data_0} >0, 12.0, 11.5)
+{leftLeg_rotZ} @ {data_0} -> if({data_0} >0, 0.3, 0.4)
+{leftLeg_rotX} -= 3{data_1}
+{leftLeg_posY} -= 5{d1}
+{leftLeg_posZ} -= 5{d1}
+{leftLeg_posX} += if({data_0} >0, 2{d1}, -2{d1})
+
+{rightLeg_posZ} @ {d0abs} -> 1.1
+{rightLeg_posX} @ {data_0} -> -3.3
+{rightLeg_posY} @ {d0abs} -> if({data_0} >0, 11.5, 12.0)
+{rightLeg_rotZ} @ {data_0} -> if({data_0} >0, 0.4, 0.3)
+{rightLeg_rotX} += 3{data_1}
+{rightLeg_posY} -= 5{d2}
+{rightLeg_posZ} -= 5{d2}
+{rightLeg_posX} += if({data_0} >0, 2{d2}, -2{d2})
+
+out "rotate" ({d0abs}*90 , 1, 0, 0)
+out "translate" (0, -1.2{d0abs}, 0, 0)
+out "rotate" (30{data_1} , 0, 1, 0)
+out "rotate" ({data_0}*10 - {data_3} , 0, 0, 1)

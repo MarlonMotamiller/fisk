@@ -1,0 +1,85 @@
+{fix}= curve animate2({data},1,0,0.05,0.15)
+{rightArm_rotX} @ {fix} -> 0'
+{rightArm_rotY} @ {fix} -> 0'
+{rightArm_rotZ} @ {fix} -> 0'
+{rightArm_posZ} @ {fix} -> 0
+
+{leftArm_rotX} @ {fix} -> 0'
+{leftArm_rotY} @ {fix} -> 0'
+{leftArm_rotZ} @ {fix} -> 0'
+{leftArm_posZ} @ {fix} -> 0
+
+{m4a1_g_reload_time}={data}
+{m4a1_g_reload_0}=curve animate2({m4a1_g_reload_time},0.3333333333,0,0.2083333333,0.125)
+{m4a1_g_reload_1}=curve animate2({m4a1_g_reload_time},0.1666666667,0.20833333333333334,0.125,0.0416666667)
+{m4a1_g_reload_2}=curve animate2({m4a1_g_reload_time},0.2083333333,0.3333333333333333,0.0416666667,0.1666666667)
+{m4a1_g_reload_3}=curve animate2({m4a1_g_reload_time},0.375,0.375,0.1666666667,0.2083333333)
+{m4a1_g_reload_4}=curve animate2({m4a1_g_reload_time},0.4583333333,0.5416666666666666,0.2083333333,0.25)
+{m4a1_g_reload_5}=curve animate2({m4a1_g_reload_time},0.125,0.3333333333333333,0.0416666667,0.0833333333)
+{m4a1_g_reload_6}=curve animate2({m4a1_g_reload_time},0.1666666667,0.375,0.0833333333,0.0833333333)
+{m4a1_g_reload_7}=curve animate2({m4a1_g_reload_time},0.2916666667,0.4583333333333333,0.0833333333,0.2083333333)
+{m4a1_g_reload_8}=curve animate2({m4a1_g_reload_time},0.2916666667,0,0.1666666667,0.125)
+{m4a1_g_reload_9}=curve animate2({m4a1_g_reload_time},0.25,0.16666666666666666,0.125,0.125)
+{m4a1_g_reload_10}=curve animate2({m4a1_g_reload_time},0.2083333333,0.2916666666666667,0.125,0.0833333333)
+{m4a1_g_reload_11}=curve animate2({m4a1_g_reload_time},0.3333333333,0.4166666666666667,0.0833333333,0.25)
+{m4a1_g_reload_12}=curve animate2({m4a1_g_reload_time},0.5,0.5,0.25,0.25)
+
+{rightArm_rotX}+=-70.170307834'{m4a1_g_reload_0}
+{rightArm_rotY}+=-33.1644837201'{m4a1_g_reload_0}
+{rightArm_rotZ}+=-9.3696295651'{m4a1_g_reload_0}
+{rightArm_rotX}+=-70.170307834'{m4a1_g_reload_1}
+{rightArm_rotY}+=-33.1644837201'{m4a1_g_reload_1}
+{rightArm_rotZ}+=-9.3696295651'{m4a1_g_reload_1}
+{rightArm_rotX}+=-70.6933373761'{m4a1_g_reload_2}
+{rightArm_rotY}+=-30.8088082174'{m4a1_g_reload_2}
+{rightArm_rotZ}+=-8.3824888988'{m4a1_g_reload_2}
+{rightArm_rotX}+=-70.170307834'{m4a1_g_reload_3}
+{rightArm_rotY}+=-33.1644837201'{m4a1_g_reload_3}
+{rightArm_rotZ}+=-9.3696295651'{m4a1_g_reload_3}
+{rightArm_rotX}+=-70.170307834'{m4a1_g_reload_4}
+{rightArm_rotY}+=-33.1644837201'{m4a1_g_reload_4}
+{rightArm_rotZ}+=-9.3696295651'{m4a1_g_reload_4}
+{rightArm_posX}+=-1{m4a1_g_reload_0}
+{rightArm_posY}+=1.5{m4a1_g_reload_0}
+{rightArm_posZ}+=2.5{m4a1_g_reload_0}
+{rightArm_posX}+=-1{m4a1_g_reload_1}
+{rightArm_posY}+=1.5{m4a1_g_reload_1}
+{rightArm_posZ}+=2.5{m4a1_g_reload_1}
+{rightArm_posX}+=-1.25{m4a1_g_reload_5}
+{rightArm_posY}+=1.5{m4a1_g_reload_5}
+{rightArm_posZ}+=2.75{m4a1_g_reload_5}
+{rightArm_posX}+=-1.25{m4a1_g_reload_6}
+{rightArm_posY}+=1.5{m4a1_g_reload_6}
+{rightArm_posZ}+=2.75{m4a1_g_reload_6}
+{rightArm_posX}+=-1{m4a1_g_reload_7}
+{rightArm_posY}+=1.5{m4a1_g_reload_7}
+{rightArm_posZ}+=2.5{m4a1_g_reload_7}
+{rightArm_posX}+=-1{m4a1_g_reload_4}
+{rightArm_posY}+=1.5{m4a1_g_reload_4}
+{rightArm_posZ}+=2.5{m4a1_g_reload_4}
+
+{leftArm_rotX}+=-99.4395793093'{m4a1_g_reload_8}
+{leftArm_rotY}+=-9.8482532013'{m4a1_g_reload_8}
+{leftArm_rotZ}+=76.5706537777'{m4a1_g_reload_8}
+{leftArm_rotX}+=-99.4395793093'{m4a1_g_reload_9}
+{leftArm_rotY}+=-9.8482532013'{m4a1_g_reload_9}
+{leftArm_rotZ}+=76.5706537777'{m4a1_g_reload_9}
+{leftArm_rotX}+=-86.7208340026'{m4a1_g_reload_10}
+{leftArm_rotY}+=-10.8155542614'{m4a1_g_reload_10}
+{leftArm_rotZ}+=89.2395767209'{m4a1_g_reload_10}
+{leftArm_rotX}+=-99.4395793093'{m4a1_g_reload_11}
+{leftArm_rotY}+=-9.8482532013'{m4a1_g_reload_11}
+{leftArm_rotZ}+=76.5706537777'{m4a1_g_reload_11}
+{leftArm_rotX}+=-99.4395793093'{m4a1_g_reload_12}
+{leftArm_rotY}+=-9.8482532013'{m4a1_g_reload_12}
+{leftArm_rotZ}+=76.5706537777'{m4a1_g_reload_12}
+{leftArm_posY}+=2{m4a1_g_reload_8}
+{leftArm_posZ}+=-3{m4a1_g_reload_8}
+{leftArm_posY}+=2{m4a1_g_reload_9}
+{leftArm_posZ}+=-3{m4a1_g_reload_9}
+{leftArm_posY}+=2{m4a1_g_reload_10}
+{leftArm_posZ}+=-3{m4a1_g_reload_10}
+{leftArm_posY}+=2{m4a1_g_reload_11}
+{leftArm_posZ}+=-3{m4a1_g_reload_11}
+{leftArm_posY}+=2{m4a1_g_reload_12}
+{leftArm_posZ}+=-3{m4a1_g_reload_12}

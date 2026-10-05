@@ -1,0 +1,15 @@
+{
+  "suit": "unconventional:radioactive_man",
+  "display": {
+    "description": "\u00A7cRequires \u00A7d\u00A7lSecret Heroes Heropack"
+  },
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:flight",
+    "fiskheroes:defense3",
+    "fiskheroes:regeneration2",
+    "fiskheroes:ranged3",
+    "secretheroes:gamma_mutation",
+    "unconventional:unconventional"
+  ]
+}

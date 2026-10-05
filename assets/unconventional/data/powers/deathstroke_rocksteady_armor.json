@@ -1,0 +1,161 @@
+{
+  "name": "Deathstroke Armor (Rocksteady)",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.2,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "canRoll": true,
+      "barrelRoll": {
+        "duration": 21,
+        "speed": 0.1,
+        "drag": 0.0
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.0
+    },
+    "fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+      "factor": 0.8
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 100,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "SOUND": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 1.25,
+              "EFFECTS": [
+                {
+                  "id": "fiskheroes:flashbang",
+                  "duration": 35,
+                  "amplifier": 0,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "duration": 15,
+                  "amplifier": 0,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:nausea",
+                  "duration": 25,
+                  "amplifier": 0,
+                  "chance": 0.5
+                }
+              ]
+            }
+          },
+          "isInstant": true,
+          "affectsUser": true,
+          "fuseTime": 50,
+          "radius": 6.0
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:equipment|explosive": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 150,
+          "uses": 2,
+          "damageProfile": {
+            "damage": 25.0,
+            "types": {
+              "EXPLOSION": 1.0
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 25,
+          "radius": 8.0,
+          "soundEvents": {
+            "USE": "fiskheroes:grenade_throw"
+          }
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:equipment|smoke": {
+      "equipment": {
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 225,
+          "uses": 2
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:equipment|neural": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 200,
+          "uses": 1,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "SOUND": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 1.25,
+              "EFFECTS": [
+                {
+                  "id": "minecraft:nausea",
+                  "duration": 80,
+                  "amplifier": 1,
+                  "chance": 1.0
+                },
+                {
+                  "id": "fiskheroes:flashbang",
+                  "duration": 25,
+                  "amplifier": 0,
+                  "chance": 0.5
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "duration": 70,
+                  "amplifier": 0,
+                  "chance": 0.75
+                }
+              ]
+            }
+          },
+          "isInstant": false,
+          "affectsUser": true,
+          "fuseTime": 40,
+          "radius": 12.0
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/sliding_timer.png",
+      "data": "var x = entity.getData('unconventional:dyn/sliding_cooldown'); x == 0 ? 0 : 1 - x"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+; data_0 = toggle_timer
+; data_1 = flight_boost_timer
+; data_2 = loop
+; data_3 = barrel_roll_timer
+; data_4 = l/r_timer
+
+{data_0} = curve (1-{data_0})
+{data_1} = curve {data_1}
+{data_2} = {data_2}(1-{data_0})
+{data_3} = min(1.5sin(pi*abs({data_3})), 1)
+{data_4} = curve {data_4}
+
+;extend============================
+
+;left
+{leftMechArm_0_posZ} -= 0.5{data_0}
+
+{leftMechArm_0_rotX} -= 125'{data_0}
+{leftMechArm_0_rotY} -= 25'{data_0}
+{leftMechArm_0_rotZ} -= 16'{data_0}
+
+{leftMechArm_1_rotX} += 115'{data_0} - 35'sin(pi{data_0}) - 25'(1-{data_0})
+{leftMechArm_1_rotY} += 120'{data_0} - 35'sin(pi{data_0})
+{leftMechArm_1_rotZ} += 2'{data_0} - 65'sin(pi{data_0})
+
+{leftMechArm_2_rotY} += 40'{data_0} 
+{leftMechArm_2_rotZ} += 90'{data_0} - 10'(1-{data_0})
+
+{leftMechArm_3_rotX} += 2'{data_0} 
+{leftMechArm_3_rotZ} -= 95'{data_0} - 30'sin(pi{data_0})
+
+{leftMechArm_4_rotX} -= 20'{data_0}
+{leftMechArm_4_posY} += 4{data_0}
+
+;left_ov
+{leftMechArm_ov_0_posZ} -= 0.5{data_0}
+
+{leftMechArm_ov_0_rotX} -= 125'{data_0}
+{leftMechArm_ov_0_rotY} -= 25'{data_0}
+{leftMechArm_ov_0_rotZ} -= 16'{data_0}
+
+{leftMechArm_ov_1_rotX} += 115'{data_0} - 35'sin(pi{data_0}) - 25'(1-{data_0})
+{leftMechArm_ov_1_rotY} += 120'{data_0} - 35'sin(pi{data_0})
+{leftMechArm_ov_1_rotZ} += 2'{data_0} - 65'sin(pi{data_0})
+
+{leftMechArm_ov_2_rotY} += 40'{data_0}
+{leftMechArm_ov_2_rotZ} += 90'{data_0} - 10'(1-{data_0})
+
+{leftMechArm_ov_3_rotX} += 2'{data_0} 
+{leftMechArm_ov_3_rotZ} -= 95'{data_0} - 30'sin(pi{data_0})
+
+{leftMechArm_ov_4_rotX} -= 20'{data_0}
+{leftMechArm_ov_4_posY} += 4{data_0}
+
+
+;right
+{rightMechArm_0_posZ} -= 0.5{data_0}
+
+{rightMechArm_0_rotX} -= 125'{data_0}
+{rightMechArm_0_rotY} += 25'{data_0}
+{rightMechArm_0_rotZ} += 16'{data_0}
+
+{rightMechArm_1_rotX} += 115'{data_0} - 35'sin(pi{data_0}) - 25'(1-{data_0})
+{rightMechArm_1_rotY} -= 120'{data_0} - 35'sin(pi{data_0})
+{rightMechArm_1_rotZ} -= 2'{data_0} - 65'sin(pi{data_0})
+
+{rightMechArm_2_rotY} -= 40'{data_0}
+{rightMechArm_2_rotZ} -= 90'{data_0} - 10'(1-{data_0})
+
+{rightMechArm_3_rotX} += 2'{data_0} 
+{rightMechArm_3_rotZ} += 95'{data_0} - 30'sin(pi{data_0})
+
+{rightMechArm_4_rotX} -= 20'{data_0}
+{rightMechArm_4_posY} += 4{data_0}
+
+;right_ov
+{rightMechArm_ov_0_posZ} -= 0.5{data_0}
+
+{rightMechArm_ov_0_rotX} -= 125'{data_0}
+{rightMechArm_ov_0_rotY} += 25'{data_0}
+{rightMechArm_ov_0_rotZ} += 16'{data_0}
+
+{rightMechArm_ov_1_rotX} += 115'{data_0} - 35'sin(pi{data_0}) - 25'(1-{data_0})
+{rightMechArm_ov_1_rotY} -= 120'{data_0} - 35'sin(pi{data_0})
+{rightMechArm_ov_1_rotZ} -= 2'{data_0} - 65'sin(pi{data_0})
+
+{rightMechArm_ov_2_rotY} -= 40'{data_0}
+{rightMechArm_ov_2_rotZ} -= 90'{data_0} - 10'(1-{data_0})
+
+{rightMechArm_ov_3_rotX} += 2'{data_0} 
+{rightMechArm_ov_3_rotZ} += 95'{data_0} - 30'sin(pi{data_0})
+
+{rightMechArm_ov_4_rotX} -= 20'{data_0}
+{rightMechArm_ov_4_posY} += 4{data_0}
+
+;loop============================
+
+{loop_1} = sin(pi{data_2})
+{loop_2} = sin(2pi{data_2})
+{loop_3} = curve sin(pi{data_2})
+
+;left
+{leftMechArm_0_rotX} += 0.5'{loop_2}
+{leftMechArm_0_rotY} -= 0.5'{loop_2}
+
+{leftMechArm_1_rotY} += 0.5'{loop_2}
+{leftMechArm_1_rotZ} += 0.5'{loop_2} - 1'{loop_3}
+
+{leftMechArm_2_rotY} -= 1.5'{loop_3}
+{leftMechArm_2_rotZ} += 0.5'{loop_2}
+
+{leftMechArm_3_rotY} += 1'{loop_2}
+{leftMechArm_3_rotZ} += 1'{loop_2}
+
+{leftMechArm_4_rotX} += 1'{loop_2} - 1'{loop_3}
+
+;left_ov
+{leftMechArm_ov_0_rotX} += 0.5'{loop_2}
+{leftMechArm_ov_0_rotY} -= 0.5'{loop_2}
+
+{leftMechArm_ov_1_rotY} += 0.5'{loop_2}
+{leftMechArm_ov_1_rotZ} += 0.5'{loop_2} - 1'{loop_3}
+
+{leftMechArm_ov_2_rotY} -= 1.5'{loop_3}
+{leftMechArm_ov_2_rotZ} += 0.5'{loop_2}
+
+{leftMechArm_ov_3_rotY} += 1'{loop_2}
+{leftMechArm_ov_3_rotZ} += 1'{loop_2}
+
+{leftMechArm_ov_4_rotX} += 1'{loop_2} - 1'{loop_3}
+
+;right
+{rightMechArm_0_rotX} -= 0.5'{loop_2}
+{rightMechArm_0_rotY} += 0.5'{loop_2}
+
+{rightMechArm_1_rotY} -= 0.5'{loop_2}
+{rightMechArm_1_rotZ} += 0.5'{loop_2} + 1'{loop_3}
+
+{rightMechArm_2_rotY} += 1.5'{loop_3}
+{rightMechArm_2_rotZ} += 0.5'{loop_2}
+
+{rightMechArm_3_rotY} += 1'{loop_2}
+{rightMechArm_3_rotZ} += 1'{loop_2}
+
+{rightMechArm_4_rotX} += 1'{loop_2} + 1'{loop_3}
+
+;right_ov
+{rightMechArm_ov_0_rotX} -= 0.5'{loop_2}
+{rightMechArm_ov_0_rotY} += 0.5'{loop_2}
+
+{rightMechArm_ov_1_rotY} -= 0.5'{loop_2}
+{rightMechArm_ov_1_rotZ} += 0.5'{loop_2} + 1'{loop_3}
+
+{rightMechArm_ov_2_rotY} += 1.5'{loop_3}
+{rightMechArm_ov_2_rotZ} += 0.5'{loop_2}
+
+{rightMechArm_ov_3_rotY} += 1'{loop_2}
+{rightMechArm_ov_3_rotZ} += 1'{loop_2}
+
+{rightMechArm_ov_4_rotX} += 1'{loop_2} + 1'{loop_3}
+
+; ==============================================
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = {data_0}(1 - {data_1})
+
+;move
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+
+
+;boost
+
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5

@@ -1,0 +1,22 @@
+{
+  "texture": {
+    "in": "unconventional:marvel/deadpool_xmen_origins_full",
+    "transform": [
+      {
+        "operation": "XOR",
+        "supply": "unconventional:marvel/xor/carnage_suit_<TIMER>"
+      }
+    ],
+    "out": "unconventional:generated/deadpool_xmen_origins_full_<TIMER>"
+  },
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(15 * (1-0.65*entity.getInterpolatedData('fiskheroes:teleport_timer'))) | 0",
+      "values": {
+        "min": 1,
+        "max": 15
+      }
+    }
+  },
+  "isDynamic": true
+}

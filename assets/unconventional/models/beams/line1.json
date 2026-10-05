@@ -1,0 +1,17 @@
+{
+  "aspects": [
+    {
+      "type": "LINE",
+      "opacity": 1.0,
+      "scale": 1.0,
+      "isGlowing": true,
+      "bloom": {
+        "strength": 0.5,
+        "spread": 5.0,
+        "dropoff": 1.0,
+        "quality": 1.0,
+        "scaleToSize": true
+      }
+    }
+  ]
+}

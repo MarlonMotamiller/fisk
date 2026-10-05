@@ -1,0 +1,24 @@
+{
+  "display": {
+    "name": "The Duality of ShueShue",
+    "description": "ShueShue is the creator of Secret Heroes Heropack. Check out Secret Heroes. <3",
+    "icon": {
+      "texture": "unconventional:textures/gui/nodes/shue_moon.png"
+    }
+  },
+  "requirements": [ 
+    "unconventional:unconventional"
+  ],
+  "criteria": {
+    "moon_knight": {
+      "trigger": "fiskheroes:tick",
+      "description": "Wear the \u00A7oMoon Knight\u00A7r suit from Secret Heroes Heropack",
+      "condition": {
+        "variables": {
+          "player": "PLAYER_TICKING"
+        },
+        "check": "player.getEquipmentInSlot(3).suitType() == 'secretheroes:moon_knight'"
+      }
+    }
+  }
+}

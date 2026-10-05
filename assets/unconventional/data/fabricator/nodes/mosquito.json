@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:mosquito",
+  "requirements": [
+    "fiskheroes:ant_man",
+    "fiskheroes:flight",
+    "fiskheroes:ranged",
+    "fiskheroes:defense3",
+    "fiskheroes:size_manipulation",
+    "fiskheroes:tier10",
+    "unconventional:unconventional"
+  ]
+}

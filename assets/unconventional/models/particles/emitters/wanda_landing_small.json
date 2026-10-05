@@ -1,0 +1,24 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson && entity.getData('fiskheroes:dyn/superhero_landing_timer') > 0.4",
+      "type": "ENERGY_SMOKE",
+      "anchor": "body",
+      "amount": 4,
+      "offset": [6.0, 18.0, 0.0],
+      "randOffset": [0.0, 0.1, 0.0],
+      "motion": [1.0, 0.05, 0.1],
+      "mirror": true
+    },
+    {
+      "condition": "!firstPerson && entity.getData('fiskheroes:dyn/superhero_landing_timer') > 0.99",
+      "type": "ENERGY_SMOKE",
+      "anchor": "body",
+      "amount": 4,
+      "offset": [14.0, 18.0, 0.0],
+      "randOffset": [0.0, 0.1, 0.0],
+      "motion": [1.0, 0.05, 0.1],
+      "mirror": true
+    }
+  ]
+}

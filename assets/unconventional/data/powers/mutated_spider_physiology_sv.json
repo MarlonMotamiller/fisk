@@ -1,0 +1,61 @@
+{
+  "name": "Mutated Spider Physiology",
+  "modifiers": {
+    "fiskheroes:cooldown|invisibility": {
+      "cooldown": {
+        "toggleData": "fiskheroes:invisible",
+        "cooldownData": "unconventional:dyn/invisibility_cooldown",
+        "duration": 120,
+        "recovery": 0.2
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 3
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [9, 19, 20]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.55]
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:shape_shifting": {
+    },
+    "fiskheroes:invisibility": {
+      "isToggle": true
+    },
+    "fiskheroes:energy_manipulation": {
+      "chargeTime": 20,
+      "range": 0.0,
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "LIGHTNING_STRIKE": 0.01
+        }
+      },
+      "soundEvents": {
+        "CHARGE": "unconventional:miles_venom_charge"
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/miles_invisibility.png",
+      "data": "1- entity.getData('unconventional:dyn/invisibility_cooldown')"
+    }
+  ]
+}

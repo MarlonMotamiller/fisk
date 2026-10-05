@@ -1,0 +1,81 @@
+{flash_pose_jl2_time}={data}
+{flash_pose_jl2_0}=curve animate2({flash_pose_jl2_time},0.5,0,0.1,0.4)
+{flash_pose_jl2_1}=curve animate2({flash_pose_jl2_time}, 10,0,0.5,1.5)
+{flash_pose_jl2_2}=curve animate2({flash_pose_jl2_time},0.35,0,0.1,0.25)
+{flash_pose_jl2_3}=curve animate2({flash_pose_jl2_time},0.5,0,0.25,0.25)
+{flash_pose_jl2_4}=curve animate2({flash_pose_jl2_time},9.75,0.25,0.25,9.5)
+
+{head_rotX} @ {flash_pose_jl2_0} -> 10'
+{head_rotX} @ {flash_pose_jl2_1} -> 47.5'
+{head_posX} @ {flash_pose_jl2_0} -> 3
+{head_posY} @ {flash_pose_jl2_0} -> 6
+{head_posZ} @ {flash_pose_jl2_0} -> -2
+{head_posX} @ {flash_pose_jl2_1} -> 3
+{head_posY} @ {flash_pose_jl2_1} -> 10
+{head_posZ} @ {flash_pose_jl2_1} -> -7.5
+
+{body_rotX} @ {flash_pose_jl2_0} -> 10'
+{body_rotY} @ {flash_pose_jl2_0} -> -1.2'
+{body_rotZ} @ {flash_pose_jl2_0} -> 7.3'
+{body_rotX} @ {flash_pose_jl2_1} -> 60'
+{body_rotY} @ {flash_pose_jl2_1} -> -1.2'
+{body_rotZ} @ {flash_pose_jl2_1} -> 7'
+{body_posX} @ {flash_pose_jl2_0} -> 3
+{body_posY} @ {flash_pose_jl2_0} -> 6
+{body_posZ} @ {flash_pose_jl2_0} -> -2
+{body_posX} @ {flash_pose_jl2_1} -> 2.5
+{body_posY} @ {flash_pose_jl2_1} -> 11
+{body_posZ} @ {flash_pose_jl2_1} -> -8
+
+{rightArm_rotX} @ {flash_pose_jl2_2} -> 37.2 '
+{rightArm_rotY} @ {flash_pose_jl2_2} -> 23.7'
+{rightArm_rotZ} @ {flash_pose_jl2_2} -> 26'
+{rightArm_rotX} @ {flash_pose_jl2_3} -> -14'
+{rightArm_rotY} @ {flash_pose_jl2_3} -> -25'
+{rightArm_rotZ} @ {flash_pose_jl2_3} -> 87.5'
+{rightArm_rotX} @ {flash_pose_jl2_4} -> -9.2'
+{rightArm_rotY} @ {flash_pose_jl2_4} -> -68.5'
+{rightArm_rotZ} @ {flash_pose_jl2_4} -> 6'
+{rightArm_posX} @ {flash_pose_jl2_2} -> -1.75
+{rightArm_posY} @ {flash_pose_jl2_2} -> 7
+{rightArm_posZ} @ {flash_pose_jl2_2} -> 0.5
+{rightArm_posX} @ {flash_pose_jl2_3} -> -1.75
+{rightArm_posY} @ {flash_pose_jl2_3} -> 9.5
+{rightArm_posZ} @ {flash_pose_jl2_3} -> -3
+{rightArm_posX} @ {flash_pose_jl2_4} -> -1.75
+{rightArm_posY} @ {flash_pose_jl2_4} -> 14
+{rightArm_posZ} @ {flash_pose_jl2_4} -> -8.5
+
+{leftArm_rotX} @ {flash_pose_jl2_0} -> -120.3'
+{leftArm_rotY} @ {flash_pose_jl2_0} -> 8.5'
+{leftArm_rotZ} @ {flash_pose_jl2_0} -> -50'
+{leftArm_rotX} @ {flash_pose_jl2_1} -> 85'
+{leftArm_rotY} @ {flash_pose_jl2_1} -> 8.5'
+{leftArm_rotZ} @ {flash_pose_jl2_1} -> -50.3'
+{leftArm_posX} @ {flash_pose_jl2_0} -> 8
+{leftArm_posY} @ {flash_pose_jl2_0} -> 11
+{leftArm_posZ} @ {flash_pose_jl2_0} -> -2
+{leftArm_posX} @ {flash_pose_jl2_1} -> 8
+{leftArm_posY} @ {flash_pose_jl2_1} -> 9.5
+{leftArm_posZ} @ {flash_pose_jl2_1} -> -6
+
+{rightLeg_rotX} @ {flash_pose_jl2_0} -> 7'
+{rightLeg_rotY} @ {flash_pose_jl2_0} -> -5.5'
+{rightLeg_rotZ} @ {flash_pose_jl2_0} -> 61.8'
+{rightLeg_rotX} @ {flash_pose_jl2_1} -> 7.2'
+{rightLeg_rotY} @ {flash_pose_jl2_1} -> -13'
+{rightLeg_rotZ} @ {flash_pose_jl2_1} -> 60.8'
+{rightLeg_posY} @ {flash_pose_jl2_0} -> 17
+{rightLeg_posY} @ {flash_pose_jl2_1} -> 17
+
+{leftLeg_rotX} @ {flash_pose_jl2_0} -> 53'
+{leftLeg_rotY} @ {flash_pose_jl2_0} -> -55.5'
+{leftLeg_rotX} @ {flash_pose_jl2_1} -> 55.1'
+{leftLeg_rotY} @ {flash_pose_jl2_1} -> -53.5'
+{leftLeg_rotZ} @ {flash_pose_jl2_1} -> -2.6'
+{leftLeg_posX} @ {flash_pose_jl2_0} -> 9.9
+{leftLeg_posY} @ {flash_pose_jl2_0} -> 15.5
+{leftLeg_posZ} @ {flash_pose_jl2_0} -> -4
+{leftLeg_posX} @ {flash_pose_jl2_1} -> 9.9
+{leftLeg_posY} @ {flash_pose_jl2_1} -> 15.5
+{leftLeg_posZ} @ {flash_pose_jl2_1} -> -4.5

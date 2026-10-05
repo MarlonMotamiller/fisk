@@ -1,0 +1,13 @@
+{
+  "fade": 12,
+  "lightning": {
+    "color": "0x626282",
+    "density": 8,
+    "differ": 0.5,
+    "opacity": 0.35
+  },
+  "blur": {
+    "color": "0x7C7C9C",
+    "opacity": 0.3
+  }
+}

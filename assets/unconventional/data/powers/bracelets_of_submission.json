@@ -1,0 +1,55 @@
+{
+  "name": "Bracelets of Submission",
+  "modifiers": {
+    "fiskheroes:shield": {
+	  "isToggle": false,
+      "shield": {
+        "health": 200.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 20,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 60.0,
+        "pitchRadius": 60.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect",
+        "DISARM": "fiskheroes:shield_disarm"
+      }
+    },
+	"fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 9.0,
+        "types": {
+          "ENERGY": 1.0
+        },
+		"properties": {
+		  "ADD_KNOCKBACK": 2.5
+        }
+      },
+      "chargeTime": 25,
+      "duration": 30,
+      "cooldownTime": 100,
+      "range": 20.0,
+      "radius": 100,
+      "canDoGriefing": false,
+      "soundEvents": {
+        "CHARGE": "unconventional:wonder_woman_dceu_gauntlet_chargeup",
+        "SHOOT": "unconventional:wonder_woman_dceu_gauntlet_clash",
+        "SHOOT_STOP": [],
+        "BEAM_AMBIENT": []
+      }
+	}
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

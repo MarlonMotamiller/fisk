@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:ronin",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:melee2",
+    "fiskheroes:archery",
+    "fiskheroes:marksmanship",
+    "sabri:thanos",
+    "unconventional:hawkeye",
+    "unconventional:unconventional"
+  ]
+}

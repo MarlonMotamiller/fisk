@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:electro.energyform.enable",
+  "condition": "fiskheroes:shadowform",
+  "pitch": "1.2 + Math.random() * 0.1",
+  "fadeOut": 5
+}

@@ -1,0 +1,220 @@
+{1} = curve min(animate2({data_0}, 0.8, 0.05, 0.0025, 0.0025), 1)
+{2} = curve min(animate2({data_0}, 0.79875, 0.05125, 0.0025, 0.0025), 1)
+{3} = curve min(animate2({data_0}, 0.7975, 0.0525, 0.0025, 0.0025), 1)
+{4} = curve min(animate2({data_0}, 0.79625, 0.05375, 0.0025, 0.0025), 1)
+{5} = curve min(animate2({data_0}, 0.795, 0.055, 0.0025, 0.0025), 1)
+{6} = curve min(animate2({data_0}, 0.79375, 0.05625, 0.0025, 0.0025), 1)
+{7} = curve min(animate2({data_0}, 0.7925, 0.0575, 0.0025, 0.0025), 1)
+{8} = curve min(animate2({data_0}, 0.79125, 0.05875, 0.005, 0.0025), 1)
+{9} = curve min(animate2({data_0}, 0.7875, 0.062, 0.005, 0.0025), 1)
+
+
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim_1} = curve min(animate2({data_1}, 0.2, 0.4, 0.075, 0.075),1)
+{anim_2} = curve min(animate2({data_1}, 0.2, 0.6, 0.075, 0.075),1)
+
+{idle} = curve min(animate2({data_2}, 0.8, 0.1, 0.3, 0.3),1)
+
+{lick_1} = curve min(animate2({data_0}, 0.08, 0.32, 0.01, 0.01),1)
+{lick_2} = curve min(animate2({data_0}, 0.06, 0.33, 0.01, 0.01),1)
+{lick_3} = curve min(animate2({data_0}, 0.02, 0.34, 0.01, 0.01),1)
+{lick_4} = curve min(animate2({data_0}, 0.02, 0.35, 0.01, 0.01),1)
+{lick_5} = curve min(animate2({data_0}, 0.02, 0.36, 0.01, 0.01),1)
+
+;frame 1
+{backpack_pocket_1_rotX} @ {1} -> -5'
+{backpack_pocket_2_rotX} @ {1} -> -29'
+{backpack_pocket_3_rotX} @ {1} -> -20'
+
+{cat_body_posY} @ {1} -> 6.09
+{cat_body_posZ} @ {1} -> 2.0
+ 
+;frame 2
+{backpack_pocket_1_rotX} @ {2} -> -8'
+{backpack_pocket_2_rotX} @ {2} -> -29'
+{backpack_pocket_3_rotX} @ {2} -> -22'
+
+{cat_r_arm_posY} @ {2} -> 1.3
+{cat_r_arm_posZ} @ {2} -> 0.6
+
+{cat_l_arm_posY} @ {2} -> 1.3
+{cat_l_arm_posZ} @ {2} -> 0.6
+
+;frame 3
+{cat_head_rotX} @ {3} -> -50'
+
+{backpack_pocket_1_rotX} @ {3} -> -10'
+{backpack_pocket_2_rotX} @ {3} -> -30'
+{backpack_pocket_3_rotX} @ {3} -> -22'
+
+{cat_r_arm_rotY} @ {3} -> 6'
+{cat_r_arm_rotZ} @ {3} -> -9'
+
+{cat_l_arm_rotY} @ {3} -> -8'
+{cat_l_arm_rotZ} @ {3} -> 12'
+
+;frame 4
+{backpack_pocket_1_rotX} @ {4} -> -10'
+{backpack_pocket_2_rotX} @ {4} -> -32'
+{backpack_pocket_3_rotX} @ {4} -> -28'
+
+{cat_body_rotX} @ {4} -> 6'
+
+{cat_body_posY} @ {4} -> 5.5
+{cat_body_posZ} @ {4} -> 1.0
+
+{cat_head_rotX} @ {4} -> -32'
+
+{cat_r_arm_rotX} @ {4} -> -146'
+{cat_l_arm_rotX} @ {4} -> -146'
+
+;frame 5
+{backpack_pocket_1_rotX} @ {5} -> -19'
+{backpack_pocket_2_rotX} @ {5} -> -32'
+{backpack_pocket_3_rotX} @ {5} -> -28'
+
+{cat_body_posY} @ {5} -> 4.99
+{cat_body_posZ} @ {5} -> 0.0
+
+{cat_body_rotX} @ {5} -> 11'
+
+{cat_body_posY} @ {5} -> 4.29
+{cat_body_posZ} @ {5} -> 1.7
+{cat_body_posZ} @ {5} -> 1.8
+
+{cat_head_rotX} @ {5} -> -27'
+
+{cat_r_arm_rotX} @ {5} -> -139'
+{cat_l_arm_rotX} @ {5} -> -139'
+
+{cat_r_arm_posY} @ {5} -> 2.2
+{cat_r_arm_posZ} @ {5} -> 1.5
+
+{cat_l_arm_posY} @ {5} -> 2.2
+{cat_l_arm_posZ} @ {5} -> 1.5
+
+;frame 6
+{backpack_pocket_1_rotX} @ {6} -> -31'
+{backpack_pocket_2_rotX} @ {6} -> -38'
+{backpack_pocket_3_rotX} @ {6} -> -28'
+
+{cat_body_rotX} @ {6} -> 25'
+
+{cat_body_posY} @ {6} -> 3.89
+{cat_body_posZ} @ {6} -> 2.1
+
+{cat_head_rotX} @ {6} -> -33'
+
+{cat_r_arm_rotX} @ {6} -> -142'
+{cat_l_arm_rotX} @ {6} -> -142'
+
+{cat_r_arm_rotZ} @ {6} -> -7'
+{cat_l_arm_rotZ} @ {6} -> 10'
+
+{cat_r_arm_posY} @ {6} -> 2.7
+{cat_r_arm_posZ} @ {6} -> 2.0
+
+{cat_l_arm_posY} @ {6} -> 2.7
+{cat_l_arm_posZ} @ {6} -> 2.0
+
+;frame 7
+{backpack_pocket_1_rotX} @ {7} -> -41'
+{backpack_pocket_2_rotX} @ {7} -> -38'
+{backpack_pocket_3_rotX} @ {7} -> -28'
+
+{cat_body_rotX} @ {7} -> 34'
+
+{cat_body_posY} @ {7} -> 3.79
+{cat_body_posZ} @ {7} -> 2.5
+
+{cat_head_rotX} @ {7} -> -42'
+
+{cat_r_arm_rotX} @ {7} -> -168'
+{cat_l_arm_rotX} @ {7} -> -168'
+
+{cat_r_arm_posY} @ {7} -> 11.5
+{cat_r_arm_posZ} @ {7} -> 0.2
+
+{cat_l_arm_posY} @ {7} -> 11.5
+{cat_l_arm_posZ} @ {7} -> 0.2
+
+
+
+;frame 8
+{backpack_pocket_1_rotX} @ {8} -> -71.8'
+{backpack_pocket_2_rotX} @ {8} -> -43'
+{backpack_pocket_3_rotX} @ {8} -> -38'
+
+{cat_body_rotX} @ {8} -> 54'
+
+{cat_body_posY} @ {8} -> 2.39
+{cat_body_posZ} @ {8} -> 4.3
+
+{cat_head_rotX} @ {8} -> -47'
+
+{cat_head_posY} @ {8} -> -1.7
+{cat_head_posZ} @ {8} -> -2.5
+
+{cat_r_arm_rotX} @ {8} -> -240'
+{cat_l_arm_rotX} @ {8} -> -240'
+
+{cat_r_arm_posY} @ {8} -> 10.0
+{cat_r_arm_posZ} @ {8} -> -6
+
+{cat_l_arm_posY} @ {8} -> 10.0
+{cat_l_arm_posZ} @ {8} -> -6
+
+
+;frame 9
+{backpack_pocket_1_rotX} @ {9} -> -61.8'
+{backpack_pocket_2_rotX} @ {9} -> -43'
+{backpack_pocket_3_rotX} @ {9} -> -38'
+
+{cat_body_rotX} @ {9} -> 54'
+
+{cat_body_posY} @ {9} -> 2.19
+{cat_body_posZ} @ {9} -> 4.8
+
+{cat_head_rotX} @ {9} -> -47'
+
+{cat_head_posY} @ {9} -> -1.7
+{cat_head_posZ} @ {9} -> -0.2
+
+;cat idle anims
+;-15 15, 22 -29
+{cat_head_rotY} -= {anim_1} * 15'
+{cat_head_rotY} += {anim_2} * 22'
+
+{cat_head_rotZ} += {anim_1} * 15'
+{cat_head_rotZ} -= {anim_2} * 29'
+
+{cat_body_posY} -= 0.1*{idle}
+
+{cat_ear1_rotZ} -= 10'*{idle}^3
+{cat_ear2_rotZ} += 13'*{idle}
+
+;cat lick anims
+{cat_l_arm_rotX} @ {lick_1} -> -168'
+
+{cat_l_arm_posY} @ {lick_1} -> 11.5
+{cat_l_arm_posZ} @ {lick_1} -> 0.2
+
+{cat_l_arm_posY} @ {lick_2} -> 2.5
+
+{cat_head_rotY} @ {lick_2} -> -47'
+{cat_head_rotZ} @ {lick_2} -> -19'
+
+{cat_head_rotZ} @ {lick_3} -> -24'
+{cat_l_arm_rotX} @ {lick_3} -> -163'
+{cat_tongue_posZ} @ {lick_3} -> -3.9
+
+{cat_head_rotZ} @ {lick_4} -> -26'
+{cat_l_arm_rotX} @ {lick_4} -> -165'
+{cat_tongue_rotX} @ {lick_4} -> 6'
+{cat_tongue_posZ} @ {lick_4} -> -3.9
+
+{cat_head_rotZ} @ {lick_5} -> -23'
+{cat_l_arm_rotX} @ {lick_5} -> -161'
+{cat_tongue_rotX} @ {lick_5} -> 4'
+{cat_tongue_posZ} @ {lick_5} -> -3.9

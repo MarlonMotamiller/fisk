@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.stop",
+  "fadeIn": 10
+}

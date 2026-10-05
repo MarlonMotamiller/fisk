@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:black.bolt.comics.shooting",
+  "condition": "fiskheroes:beam_shooting",
+  "pitch": "0.9 + Math.random() * 0.1",
+  "fadeOut": 15
+}

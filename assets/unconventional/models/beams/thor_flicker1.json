@@ -1,0 +1,50 @@
+{
+  "aspects": [
+    {
+      "type": "LASER",
+      "opacity": 0.0,
+      "scale": 0.2,
+      "spin": 3.0,
+      "pulse": {
+        "length": 1.0,
+        "size": 0.25,
+        "frequency": 0.5
+      },
+      "core": {
+        "color": "0xFFFFFF",
+        "additiveBlending": true
+	  },
+      "bloom": {
+        "strength": 0.3,
+        "spread": 1.0,
+        "dropoff": 3.0,
+        "quality": 1.0,
+        "scaleToSize": false
+      }
+    },
+    {
+      "type": "LIGHTNING",
+      "opacity": 0.6,
+      "scale": 0.4,
+      "amount": 1,
+      "segments": {
+        "min": 7,
+        "spacing": 1.0
+      },
+      "intensity": 0.4,
+      "changeRate": 0.6,
+      "bounds": [1.5, 1.5],
+      "core": {
+        "color": "0x6663FF",
+        "additiveBlending": true
+	  },
+      "bloom": {
+        "strength": 1.0,
+        "spread": 5.0,
+        "dropoff": 2.0,
+        "quality": 1.0,
+        "scaleToSize": true
+      }
+    }
+  ]
+}

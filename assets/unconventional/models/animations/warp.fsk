@@ -1,0 +1,24 @@
+{data} = {data}
+;{shrink}=curve animate2(1-{data}, 0.1, 0 , 0, 0.1)
+{shrink2}=curve animate2(1-{data}, 0.375, 0 , 0, 0.3)
+
+
+{warp} = max(min(1.052sin(1.6pi{data}),0),-1)
+
+{head_posY} -= 1{warp}
+
+;{body_posY} += 2{warp}
+
+{rightArm_posX} -= 5{warp}
+{rightArm_posY} += 4{warp}
+{leftArm_posX} += 5{warp}
+{leftArm_posY} += 4{warp}
+
+{rightLeg_posX} -= 2{warp}
+{rightLeg_posY} += 14{warp}
+{leftLeg_posX} += 2{warp}
+{leftLeg_posY} += 14{warp}
+
+out "rotate" (70{warp}, 0, 0)
+;out "translate" (0, 0.5{shrink}, 0)
+out "translate" (0, 1.4{shrink2}, 0)

@@ -1,0 +1,13 @@
+{
+  "suit": "unconventional:red_guardian",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:vibranium",
+    "fiskheroes:regeneration",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:captain_america",
+    "unconventional:unconventional"
+  ]
+}

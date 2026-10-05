@@ -1,0 +1,76 @@
+{
+  "name": "Compound V (Soldier Boy)",
+  "modifiers": {
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:fire_resistance": {
+      "duration": 80
+    },
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.6
+    },
+    "fiskheroes:damage_resistance|radiation": {
+      "damageType": "RADIATION",
+      "factor": 0.6
+    },
+    "fiskheroes:regeneration": {
+      "factor": 2.5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [7, 19, 20]
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.25, 0.05]
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 8.5,
+        "types": {
+          "ENERGY": 0.8,
+          "RADIATION": 0.5
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 16,
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:tutridium",
+              "duration": 120,
+              "amplifier": 0,
+              "chance": 1
+            },
+            {
+              "id": "fiskheroes:disable_speed",
+              "duration": 120,
+              "amplifier": 0,
+              "chance": 1
+            },
+            {
+              "id": "fiskheroes:disable_phasing",
+              "duration": 120,
+              "amplifier": 0,
+              "chance": 1
+            }
+          ]
+        }
+      },
+      "chargeTime": 60,
+      "duration": 40,
+      "cooldownTime": 100,
+      "range": 30.0,
+      "radius": 0.3,
+      "soundEvents": {
+        "CHARGE": "unconventional:soldier_boy_chargeup",
+        "BEAM_AMBIENT": "unconventional:soldier_boy_shooting",
+        "SHOOT_STOP": "unconventional:soldier_boy_stop"
+      }
+    }
+  },
+  "hud": [{
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

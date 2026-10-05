@@ -1,0 +1,11 @@
+{
+  "suit": "unconventional:black_cat_ps4",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal2",
+    "fiskheroes:melee",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:spider_man_ps4",
+    "unconventional:unconventional"
+  ]
+}

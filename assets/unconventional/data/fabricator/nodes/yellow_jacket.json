@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:yellow_jacket",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:size_manipulation",
+    "fiskheroes:melee",
+    "fiskheroes:ranged3",
+    "fiskheroes:flight",
+    "fiskheroes:ant_man",
+    "unconventional:unconventional"
+  ]
+}

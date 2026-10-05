@@ -1,0 +1,289 @@
+; data_0 = flight_timer
+; data_1 = flight_boost_timer
+; data_2 = scale
+
+; data_3 = pose
+
+{data_0} = curve {data_0}{pose}(1-{data_4})
+{data_1} = curve {data_1}{pose}(1-{data_4})
+{data_4} = curve {data_4}{pose}
+{off_pose} = curve (1-{data_3})
+{pose} = curve {data_3}
+
+; Boosted/stationary "base" positioning
+{antenna_1_R_rotX} @ {off_pose} -> -175'
+{antenna_1_R_rotY} @ sin(pi{off_pose}) -> -55'
+{antenna_1_R_rotZ} @ {off_pose} -> 1'
+{antenna_1_L_rotX} @ {off_pose} -> -175'
+{antenna_1_L_rotY} @ sin(pi{off_pose}) -> 55'
+{antenna_1_L_rotZ} @ {off_pose} -> -1'
+
+{antenna_1_R_rotX} @ {pose} -> -35'
+{antenna_1_R_rotY} @ {pose} -> -15'
+
+{antenna_1_L_rotX} @ {pose} -> -35'
+{antenna_1_L_rotY} @ {pose} -> 15'
+
+{stinger_1_R_posX} @ {off_pose} -> -3.5
+{stinger_1_R_posZ} @ {off_pose} -> 2
+{stinger_1_R_rotX} @ {off_pose} -> -10'
+{stinger_1_R_rotY} @ {off_pose} -> 80'
+
+{stinger_1_R_rotX} -= 40'sin(pi{off_pose})
+{stinger_1_R_rotY} -= 40'sin(pi{off_pose})
+{stinger_1_R_rotZ} -= 40'sin(pi{off_pose})
+
+{stinger_2_R_posX} @ {off_pose} -> -0.5
+{stinger_2_R_posZ} @ {off_pose} -> -0.5
+{stinger_2_R_rotX} @ {off_pose} -> 170'
+
+{stinger_2_R_rotY} += 90'sin(pi{off_pose})
+
+
+{stinger_3_R_posX} @ {off_pose} -> 0.25
+{stinger_3_R_rotX} @ {off_pose} -> -160'
+
+{stinger_3_R_rotX} -= 20'sin(pi{off_pose})
+{stinger_3_R_rotY} -= 10'sin(pi{off_pose})
+{stinger_3_R_rotZ} += 70'sin(pi{off_pose})
+
+{stinger_1_L_posX} @ {off_pose} -> 3.5
+{stinger_1_L_posZ} @ {off_pose} -> 2
+{stinger_1_L_rotX} @ {off_pose} -> -10'
+{stinger_1_L_rotY} @ {off_pose} -> -80'
+
+{stinger_1_L_rotX} -= 40'sin(pi{off_pose})
+{stinger_1_L_rotY} += 40'sin(pi{off_pose})
+{stinger_1_L_rotZ} += 40'sin(pi{off_pose})
+
+{stinger_2_L_posX} @ {off_pose} -> 0.5
+{stinger_2_L_posZ} @ {off_pose} -> -0.5
+{stinger_2_L_rotX} @ {off_pose} -> 170'
+
+{stinger_2_R_rotY} -= 90'sin(pi{off_pose})
+
+{stinger_3_L_posX} @ {off_pose} -> -0.25
+{stinger_3_L_rotX} @ {off_pose} -> -160'
+
+{stinger_3_R_rotX} -= 20'sin(pi{off_pose})
+{stinger_3_R_rotY} += 10'sin(pi{off_pose})
+{stinger_3_R_rotZ} -= 70'sin(pi{off_pose})
+
+{stinger_1_R_rotX} @ {pose} -> -20'
+{stinger_1_R_rotY} @ {pose} -> 7'
+{stinger_1_R_rotZ} @ {pose} -> -25'
+{stinger_2_R_rotX} @ {pose} -> 47'
+{stinger_2_R_rotY} @ {pose} -> -5'
+{stinger_2_R_rotZ} @ {pose} -> 2.5'
+{stinger_3_R_rotX} @ {pose} -> 82.5'
+
+{stinger_1_L_rotX} @ {pose} -> -20'
+{stinger_1_L_rotY} @ {pose} -> -7'
+{stinger_1_L_rotZ} @ {pose} -> 25'
+{stinger_2_L_rotX} @ {pose} -> 47'
+{stinger_2_L_rotY} @ {pose} -> 5'
+{stinger_2_L_rotZ} @ {pose} -> -2.5'
+{stinger_3_L_rotX} @ {pose} -> 82.5'
+
+
+{stinger_1_ov_R_posX} @ {off_pose} -> -3.5
+{stinger_1_ov_R_posZ} @ {off_pose} -> 5.5
+{stinger_1_ov_R_rotX} @ {off_pose} -> -10'
+{stinger_1_ov_R_rotY} @ {off_pose} -> 80'
+
+{stinger_1_ov_R_rotX} -= 40'sin(pi{off_pose})
+{stinger_1_ov_R_rotY} -= 40'sin(pi{off_pose})
+{stinger_1_ov_R_rotZ} -= 40'sin(pi{off_pose})
+
+{stinger_2_ov_R_posX} @ {off_pose} -> -0.5
+{stinger_2_ov_R_posZ} @ {off_pose} -> -0.5
+{stinger_2_ov_R_rotX} @ {off_pose} -> 170'
+
+{stinger_2_ov_R_rotY} += 90'sin(pi{off_pose})
+
+
+{stinger_1_ov_L_posX} @ {off_pose} -> 3.5
+{stinger_1_ov_L_posZ} @ {off_pose} -> 5.5
+{stinger_1_ov_L_rotX} @ {off_pose} -> -10'
+{stinger_1_ov_L_rotY} @ {off_pose} -> -80'
+
+{stinger_1_ov_L_rotX} -= 40'sin(pi{off_pose})
+{stinger_1_ov_L_rotY} += 40'sin(pi{off_pose})
+{stinger_1_ov_L_rotZ} += 40'sin(pi{off_pose})
+
+{stinger_2_ov_L_posX} @ {off_pose} -> 0.5
+{stinger_2_ov_L_posZ} @ {off_pose} -> -0.5
+{stinger_2_ov_L_rotX} @ {off_pose} -> 170'
+
+{stinger_2_ov_R_rotY} -= 90'sin(pi{off_pose})
+
+{stinger_1_ov_R_rotX} @ {pose} -> -20'
+{stinger_1_ov_R_rotY} @ {pose} -> 7'
+{stinger_1_ov_R_rotZ} @ {pose} -> -25'
+{stinger_2_ov_R_rotX} @ {pose} -> 47'
+{stinger_2_ov_R_rotY} @ {pose} -> -5'
+{stinger_2_ov_R_rotZ} @ {pose} -> 2.5'
+{stinger_3_R_posX} @ {pose} -> 0.25'
+
+{stinger_1_ov_L_rotX} @ {pose} -> -20'
+{stinger_1_ov_L_rotY} @ {pose} -> -7'
+{stinger_1_ov_L_rotZ} @ {pose} -> 25'
+{stinger_2_ov_L_rotX} @ {pose} -> 47'
+{stinger_2_ov_L_rotY} @ {pose} -> 5'
+{stinger_2_ov_L_rotZ} @ {pose} -> -2.5'
+{stinger_3_L_posX} @ {pose} -> -0.25'
+
+
+; ==============================================
+{data_2} = if({data_2} > 0, {data_2}^0.25, 1)
+{motX} /= {data_2}
+{motY} /= {data_2}
+{motZ} /= {data_2}
+{data_2} = 0
+
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = {data_0}(1 - {data_1})
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{antenna_1_R_rotX} -= 0.2{forward} - 0.1{strafe}
+{antenna_1_R_rotY} += 0.1{forward}
+{antenna_1_R_rotZ} += 0.2{strafe}
+
+{antenna_booster_rot_R_rotX} += 0.1{forward}
+
+{antenna_1_L_rotX} -= 0.2{forward} + 0.1{strafe}
+{antenna_1_L_rotY} -= 0.1{forward}
+{antenna_1_L_rotZ} += 0.2{strafe}
+
+{antenna_booster_rot_L_rotX} += 0.1{forward}
+
+{stinger_1_R_rotX} -= 0.2{forward} + 0.1{strafe}
+{stinger_2_R_rotX} += 0.25{forward}
+{stinger_3_R_rotX} -= 0.3{forward}
+
+{stinger_1_L_rotX} -= 0.25{forward} - 0.1{strafe}
+{stinger_2_L_rotX} += 0.2{forward}
+{stinger_3_L_rotX} -= 0.3{forward}
+
+{stinger_1_R_rotZ} += 0.1{strafe}
+{stinger_1_L_rotZ} += 0.1{strafe}
+
+{stinger_1_ov_R_rotX} -= 0.2{forward} + 0.1{strafe}
+{stinger_2_ov_R_rotX} += 0.25{forward}
+
+{stinger_1_ov_L_rotX} -= 0.25{forward} - 0.1{strafe}
+{stinger_2_ov_L_rotX} += 0.2{forward}
+
+
+{stinger_1_ov_R_rotZ} += 0.1{strafe}
+{stinger_1_ov_L_rotZ} += 0.1{strafe}
+
+
+
+
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+
+{antenna_1_R_posX} -= 0.5{data_1}
+{antenna_1_L_posX} += 0.5{data_1}
+
+{antenna_1_R_rotX} -= 65'{data_1} - 0.3{x}
+{antenna_1_R_rotY} += 10'{data_1}
+{antenna_1_R_rotZ} += 10'{data_1}
+{antenna_booster_rot_R_posZ} += 1{data_1}
+{antenna_booster_rot_R_posY} -= 0.5{data_1}
+{antenna_booster_rot_R_rotX} += 45'{data_1}
+
+{antenna_1_L_rotX} -= 65'{data_1} + 0.3{x}
+{antenna_1_L_rotY} -= 10'{data_1}
+{antenna_1_L_rotZ} -= 10'{data_1}
+{antenna_booster_rot_L_posZ} += 1{data_1}
+{antenna_booster_rot_L_posY} -= 0.5{data_1}
+{antenna_booster_rot_L_rotX} += 45'{data_1}
+
+
+{stinger_1_R_rotX} += 110'{data_1} - 0.4{x}
+{stinger_1_R_rotY} += 135'{data_1} + 70'sin(pi{data_1}) + 0.2{x}
+{stinger_1_R_rotZ} += 30'{data_1} + 0.2{x}
+
+{stinger_2_R_posZ} -= 0.5sin(pi{data_1}) 
+
+{stinger_2_R_rotX} += 30'{data_1} + 30'sin(pi{data_1}) + 0.4{x}
+{stinger_3_R_rotX} -= 50'{data_1} - 0.3{x}
+
+{stinger_1_L_rotX} += 110'{data_1} + 0.4{x}
+{stinger_1_L_rotY} -= 135'{data_1} + 70'sin(pi{data_1}) - 0.2{x}
+{stinger_1_L_rotZ} -= 30'{data_1} - 0.2{x}
+
+{stinger_2_L_posZ} -= 0.5sin(pi{data_1}) 
+
+{stinger_2_L_rotX} += 30'{data_1} + 30'sin(pi{data_1})  - 0.4{x}
+{stinger_3_L_rotX} -= 50'{data_1} + 0.3{x}
+
+
+
+{stinger_1_ov_R_rotX} += 110'{data_1} - 0.4{x}
+{stinger_1_ov_R_rotY} += 135'{data_1} + 70'sin(pi{data_1}) + 0.2{x}
+{stinger_1_ov_R_rotZ} += 30'{data_1} + 0.2{x}
+
+{stinger_2_ov_R_posZ} -= 0.5sin(pi{data_1}) 
+
+{stinger_2_ov_R_rotX} += 30'{data_1} + 30'sin(pi{data_1}) + 0.4{x}
+
+{stinger_1_ov_L_rotX} += 110'{data_1} + 0.4{x}
+{stinger_1_ov_L_rotY} -= 135'{data_1} + 70'sin(pi{data_1}) - 0.2{x}
+{stinger_1_ov_L_rotZ} -= 30'{data_1} - 0.2{x}
+
+{stinger_2_ov_L_posZ} -= 0.5sin(pi{data_1}) 
+
+{stinger_2_ov_L_rotX} += 30'{data_1} + 30'sin(pi{data_1})  - 0.4{x}
+
+;beam
+{stinger_1_R_rotX} @ {data_4} -> -20'
+{stinger_1_R_rotY} @ {data_4} -> 7'
+{stinger_1_R_rotZ} @ {data_4} -> -25'
+{stinger_2_R_rotX} @ {data_4} -> 47'
+{stinger_2_R_rotY} @ {data_4} -> -5'
+{stinger_2_R_rotZ} @ {data_4} -> 2.5'
+{stinger_3_R_rotX} @ {data_4} -> 70'
+{stinger_3_R_rotY} @ {data_4} -> -5'
+{stinger_3_R_rotZ} @ {data_4} -> 20'
+
+{stinger_1_L_rotX} @ {data_4} -> -20'
+{stinger_1_L_rotY} @ {data_4} -> -7'
+{stinger_1_L_rotZ} @ {data_4} -> 25'
+{stinger_2_L_rotX} @ {data_4} -> 47'
+{stinger_2_L_rotY} @ {data_4} -> 5'
+{stinger_2_L_rotZ} @ {data_4} -> -2.5'
+{stinger_3_L_rotX} @ {data_4} -> 70'
+{stinger_3_L_rotY} @ {data_4} -> 5'
+{stinger_3_L_rotZ} @ {data_4} -> -20'
+
+{stinger_1_ov_R_rotX} @ {data_4} -> -20'
+{stinger_1_ov_R_rotY} @ {data_4} -> 7'
+{stinger_1_ov_R_rotZ} @ {data_4} -> -25'
+{stinger_2_ov_R_rotX} @ {data_4} -> 47'
+{stinger_2_ov_R_rotY} @ {data_4} -> -5'
+{stinger_2_ov_R_rotZ} @ {data_4} -> 2.5'
+{stinger_3_R_posX} @ {data_4} -> 0.25'
+
+{stinger_1_ov_L_rotX} @ {data_4} -> -20'
+{stinger_1_ov_L_rotY} @ {data_4} -> -7'
+{stinger_1_ov_L_rotZ} @ {data_4} -> 25'
+{stinger_2_ov_L_rotX} @ {data_4} -> 47'
+{stinger_2_ov_L_rotY} @ {data_4} -> 5'
+{stinger_2_ov_L_rotZ} @ {data_4} -> -2.5'
+{stinger_3_L_posX} @ {data_4} -> -0.25'

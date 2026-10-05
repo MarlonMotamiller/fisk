@@ -1,0 +1,20 @@
+{data_0} = curve {data_0}
+
+{1} = 1-{data_0}
+
+{cannon_bot_posY} -= 4{1}
+
+{cannon_1_1_posY} -= 7{1}
+{cannon_1_2_posY} -= 7{1}
+{cannon_1_3_posY} -= 7{1}
+{cannon_1_4_posY} -= 7{1}
+
+{side_1_posY} -= 5{1}
+{side_2_posY} -= 5{1}
+
+{side_3_posY} -= 12{1}
+{side_4_posY} -= 12{1}
+
+{cannon_2_posY} -= 8{1}
+
+{cannon_top_posY} -= 9{1}

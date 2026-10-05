@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:bloodsport.rifle.upgrade.shoot",
+  "volume": 0.85,
+  "pitch": "0.8 + Math.random() * 0.2"
+}

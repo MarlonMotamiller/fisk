@@ -1,0 +1,72 @@
+{
+  "name": "Weapon XI Physiology",
+  "modifiers": {
+	"fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 7.5,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 50
+        }
+      },
+	  "chargeTime": 20,
+      "duration": 50,
+      "cooldownTime": 35,
+      "range": 32.0,
+      "radius": 0.1,
+      "soundEvents": {
+        "CHARGE": "unconventional:deadpool_xmen_origins_beam_charge",
+        "SHOOT": "unconventional:deadpool_xmen_origins_beam_start",
+        "SHOOT_STOP": "unconventional:deadpool_xmen_origins_beam_stop",
+        "BEAM_AMBIENT": "unconventional:deadpool_xmen_origins_beam_loop"
+      }
+    },
+	"fiskheroes:teleportation": {
+      "canReachMoon": false,
+      "range": 100.0,
+      "soundEvents": {
+        "TELEPORT": "unconventional:deadpool_xmen_origins_teleport"
+      }
+    },
+	"fiskheroes:blade": {
+	  "soundEvents": {
+        "ENABLE": "unconventional:deadpool_xmen_origins_blade_enable",
+        "DISABLE": "unconventional:deadpool_xmen_origins_blade_disable"
+      }
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.0, 0.1]
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:wither"]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+      "factor": 0.75
+    },
+    "fiskheroes:damage_resistance|sharp": {
+      "damageType": "SHARP",
+      "factor": 0.75
+    },
+    "fiskheroes:damage_resistance|shuriken": {
+      "damageType": "SHURIKEN",
+      "factor": 0.9
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

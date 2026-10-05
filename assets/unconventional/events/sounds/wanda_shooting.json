@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.shooting",
+  "condition": "fiskheroes:beam_shooting",
+  "fadeOut": 10
+}

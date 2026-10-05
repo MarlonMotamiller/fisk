@@ -1,0 +1,37 @@
+{
+  "name": "Spoiler Suit",
+  "modifiers": {
+    "fiskheroes:transformation|grapple_transformation": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/grapple",
+        "timerData": "unconventional:dyn/grapple_timer",
+        "time": 6
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:batarang": {
+          "cooldown": 60,
+          "uses": 4,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 300,
+          "uses": 2
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

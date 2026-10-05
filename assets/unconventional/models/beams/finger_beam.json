@@ -1,0 +1,25 @@
+{
+  "aspects": [
+    {
+      "type": "LASER",
+      "opacity": {
+        "start": 0.7,
+        "end": 0.0
+      },
+      "scale": 0.85,
+      "spin": 0.0,
+      "pulse": null,
+      "core": {
+        "color": "0xFFFFFF",
+        "additiveBlending": true
+      },
+      "bloom": {
+        "strength": 1.0,
+        "spread": 1.5,
+        "dropoff": 2.0,
+        "quality": 1.0,
+        "scaleToSize": false
+      }
+    }
+  ]
+}

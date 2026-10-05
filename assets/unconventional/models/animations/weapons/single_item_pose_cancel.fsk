@@ -1,0 +1,13 @@
+{disable} = curve (1-min({data_0}*2,1))*(1-{data_1})
+{toggle} = curve (1-min({data_0}*2,1))
+;{rightArm_rotX} += 50' total_cancel
+{rightArm_rotX} += 30'{toggle}
+{rightArm_rotY} += 40'{toggle}
+{rightArm_rotZ} -=5'{toggle}
+
+{rightArm_posX} +=0.5{toggle}
+{rightArm_posZ} -=1{toggle}
+
+{leftArm_rotX} += 40'{disable}
+{leftArm_rotY} -= 25'{disable}
+{leftArm_rotZ} +=10'{disable}

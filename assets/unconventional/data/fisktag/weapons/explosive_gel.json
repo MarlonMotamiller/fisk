@@ -1,0 +1,61 @@
+{
+  "name": "Explosive Gel",
+  "permission": "USE_EXPLOSIVE_GEL",
+  "holdingPose": "SINGLE",
+  "cooldown": 15,
+  "damageProfile": {
+    "damage": 6.5,
+    "types": {
+      "EXPLOSION": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.2,
+      "EFFECTS": [
+        {
+          "id": "minecraft:blindness",
+          "duration": 25,
+          "amplifier": 0,
+          "chance": 1
+        },
+        {
+          "id": "minecraft:nausea",
+          "duration": 30,
+          "amplifier": 0,
+          "chance": 1.0
+        }
+      ]
+    }
+  },
+  "ammo": {
+    "amount": 3,
+    "reloadTime": 50
+  },
+  "scope": null,
+  "spread": {
+    "sprintingFactor": 0.8,
+    "fallingFactor": 1.4,
+    "scopingFactor": 0.3
+  },
+  "recoil": {
+    "amount": 0.1,
+    "cameraShake": 0.05
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 0.5,
+      "speed": 7.0,
+      "trail": 1,
+      "hitRadius": 0.5,
+      "impact": {
+        "type": "EXPLOSION",
+        "radius": 3.0,
+        "affectsUser": false
+      }
+    }  
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:explosive_gel_shooting"
+  }
+}

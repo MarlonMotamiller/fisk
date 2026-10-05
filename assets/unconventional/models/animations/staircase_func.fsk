@@ -1,0 +1,16 @@
+{a} = 6
+{o} = 0.999
+{data} = {data}
+{staircase} = 2/{a}*( (0.5{a}{data}) - (1/2) - ( (atan((-{o}*sin({a}*pi*{data})) / (1-{o}*cos({a}*pi*{data})) ) )/pi ) )
+
+{head_rotX} = {head_rotX}{staircase}
+{head_rotY} = {head_rotY}{staircase}
+{head_rotZ} = {head_rotZ}{staircase}
+
+{rightArm_rotX} = {rightArm_rotX}{staircase}
+{rightArm_rotY} = {rightArm_rotY}{staircase}
+{rightArm_rotZ} = {rightArm_rotZ}{staircase}
+
+{leftArm_rotX} = {leftArm_rotX}{staircase}
+{leftArm_rotY} = {leftArm_rotY}{staircase}
+{leftArm_rotZ} = {leftArm_rotZ}{staircase}

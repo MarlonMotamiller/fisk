@@ -1,0 +1,14 @@
+{
+  "suit": "unconventional:soldier_boy",
+  "requirements": [
+    "fiskheroes:tier8_9",
+    "fiskheroes:traversal",
+    "fiskheroes:regeneration",
+    "fiskheroes:defense3",
+    "fiskheroes:melee3",
+    "fiskheroes:ranged3",
+    "fiskheroes:marksmanship",
+    "unconventional:compound_v",
+    "unconventional:unconventional"
+  ]
+}

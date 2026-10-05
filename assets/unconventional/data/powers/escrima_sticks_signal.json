@@ -1,0 +1,11 @@
+{
+  "name": "Escrima Sticks",
+  "modifiers": {
+    "fiskheroes:blade": {
+      "soundEvents": {
+        "ENABLE": "fiskheroes:utility_belt_switch",
+        "DISABLE": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

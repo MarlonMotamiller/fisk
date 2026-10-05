@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:grapple.stress.loop",
+  "override": "unconventional:funcs/grapple_stress_loop",
+  "loop": true,
+  "fadeOut": 5
+}

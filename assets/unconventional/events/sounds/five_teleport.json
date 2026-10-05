@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:five.teleport",
+  "volume": 1.5,
+  "pitch": "0.9 / (Math.random() * 0.2 + 0.8)"
+}

@@ -1,0 +1,54 @@
+{m} = clamp(-{motY}, -120', 120')
+
+{m1} = clamp(-{motY}, -120, 0)
+
+{m2} = clamp(-{motY}, -1, 1)
+
+{m3} = clamp(-{motY}, -1', 1')
+
+{vel} = min(sqrt({motX}^2 + {motY}^2 + {motZ}^2), 1)
+{data} = curve {data}
+
+;{head_rotX} @ {data} -> -{head_rotX} + 0.4
+
+{rightArm_posX} @ {data} -> 3 
+{rightArm_posY} @ {data} -> 1 
+; {rightArm_posZ} @ {data} -> -0.2
+; {rightArm_rotX} @ {data} -> -0.75 + 0.5{m1}
+{rightArm_rotY} @ {data} -> -0.8 - 0.45{m1}
+{rightArm_rotZ} @ {data} -> 0 - 1.35{m1}
+
+{leftArm_posX} @ {data} -> -2
+{leftArm_posY} @ {data} -> -10
+; {leftArm_posZ} @ {data} -> -0.2
+{leftArm_rotX} @ {data} -> -0.75 + 0.10{m1}
+{leftArm_rotY} @ {data} -> 0.8 + 0.20{m1}
+{leftArm_rotZ} @ {data} -> 0 + 0.225{m1}
+
+out "pivot" (0, 0.6, 0)
+
+
+
+{data} *= {vel}
+{head_rotY} @ {data} -> -{head_rotY}
+
+{body_rotX} -= 0.2{data}
+
+{rightLeg_posX} @ {data} -> -6.9 - 0.5{m1}
+{rightLeg_posY} @ {data} -> 8 
+{rightLeg_posZ} @ {data} -> -5 
+{rightLeg_rotX} @ {data} -> 0.4 - 0.1{m}
+{rightLeg_rotY} @ {data} -> 1 + 0.1{m}
+{rightLeg_rotZ} @ {data} -> -0.2 - 0.1{m}
+
+{leftLeg_posX} @ {data} -> 6.9 + 0.5{m1}
+{leftLeg_posY} @ {data} -> 8 
+{leftLeg_posZ} @ {data} -> -5
+{leftLeg_rotX} @ {data} -> 0.4 - 0.1{m}
+{leftLeg_rotY} @ {data} -> -1 - 0.1{m}
+{leftLeg_rotZ} @ {data} -> 0.2 + 0.1{m}
+
+
+out "rotate" (180{data}, 1, 0, 0)
+;out "rotate" (180{data}, 0, 1, 0)
+

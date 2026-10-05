@@ -1,0 +1,8 @@
+{x} = min({vel}, 1){data_3}{d1}{d} / 3.5
+{rightArm_rotX} += 165'{data_3}
+{rightArm_rotY} += 15'{data_3}
+{rightArm_rotZ} += 3'{data_3}
+
+{leftArm_rotX} += 165'{data_3}
+{leftArm_rotY} -= 15'{data_3}
+{leftArm_rotZ} -= 3'{data_3}

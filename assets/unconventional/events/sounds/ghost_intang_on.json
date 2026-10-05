@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:ghost.intangibility.enable",
+  "volume": 0.8
+}

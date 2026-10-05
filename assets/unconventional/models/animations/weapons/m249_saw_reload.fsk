@@ -1,0 +1,89 @@
+{fix}= curve animate2({data},1,0,0.05,0.15)
+{rightArm_rotX} @ {fix} -> 0'
+{rightArm_rotY} @ {fix} -> 0'
+{rightArm_rotZ} @ {fix} -> 0'
+{rightArm_posZ} @ {fix} -> 0
+
+{leftArm_rotX} @ {fix} -> 0'
+{leftArm_rotY} @ {fix} -> 0'
+{leftArm_rotZ} @ {fix} -> 0'
+{leftArm_posZ} @ {fix} -> 0
+
+{m249_saw_reload_time}={data}
+{m249_saw_reload_0}=curve animate2({m249_saw_reload_time},0.4166666667,0,0.2083333333,0.2083333333)
+{m249_saw_reload_1}=curve animate2({m249_saw_reload_time},0.2916666667,0.20833333333333334,0.2083333333,0.0833333333)
+{m249_saw_reload_2}=curve animate2({m249_saw_reload_time},0.25,0.4166666666666667,0.0833333333,0.1666666667)
+{m249_saw_reload_3}=curve animate2({m249_saw_reload_time},0.2916666667,0.5,0.1666666667,0.125)
+{m249_saw_reload_4}=curve animate2({m249_saw_reload_time},0.3333333333,0.6666666666666666,0.125,0.2083333333)
+{m249_saw_reload_5}=curve animate2({m249_saw_reload_time},0.3333333333,0,0.25,0.0833333333)
+{m249_saw_reload_6}=curve animate2({m249_saw_reload_time},0.125,0.25,0.0833333333,0.0416666667)
+{m249_saw_reload_7}=curve animate2({m249_saw_reload_time},0.125,0.3333333333333333,0.0416666667,0.0833333333)
+{m249_saw_reload_8}=curve animate2({m249_saw_reload_time},0.125,0.375,0.0833333333,0.0416666667)
+{m249_saw_reload_9}=curve animate2({m249_saw_reload_time},0.0833333333,0.4583333333333333,0.0416666667,0.0416666667)
+{m249_saw_reload_10}=curve animate2({m249_saw_reload_time},0.1666666667,0.5,0.0416666667,0.125)
+{m249_saw_reload_11}=curve animate2({m249_saw_reload_time},0.2083333333,0.5416666666666666,0.125,0.0833333333)
+{m249_saw_reload_12}=curve animate2({m249_saw_reload_time},0.125,0.6666666666666666,0.0833333333,0.0416666667)
+{m249_saw_reload_13}=curve animate2({m249_saw_reload_time},0.1666666667,0.75,0.0416666667,0.125)
+{m249_saw_reload_14}=curve animate2({m249_saw_reload_time},0.2083333333,0.7916666666666666,0.125,0.0833333333)
+{m249_saw_reload_15}=curve animate2({m249_saw_reload_time},0.375,0,0.25,0.125)
+{m249_saw_reload_16}=curve animate2({m249_saw_reload_time},0.5416666667,0.25,0.125,0.4166666667)
+{m249_saw_reload_17}=curve animate2({m249_saw_reload_time},0.5416666667,0.375,0.4166666667,0.125)
+
+{rightArm_rotX}+=-50.4230608687'{m249_saw_reload_0}
+{rightArm_rotY}+=-9.5840548567'{m249_saw_reload_0}
+{rightArm_rotZ}+=-7.9875682193'{m249_saw_reload_0}
+{rightArm_rotX}+=-50.4230608687'{m249_saw_reload_1}
+{rightArm_rotY}+=-9.5840548567'{m249_saw_reload_1}
+{rightArm_rotZ}+=-7.9875682193'{m249_saw_reload_1}
+{rightArm_rotX}+=-50.6388207841'{m249_saw_reload_2}
+{rightArm_rotY}+=-5.4178779137'{m249_saw_reload_2}
+{rightArm_rotZ}+=-9.0793032488'{m249_saw_reload_2}
+{rightArm_rotX}+=-50.4230608687'{m249_saw_reload_3}
+{rightArm_rotY}+=-9.5840548567'{m249_saw_reload_3}
+{rightArm_rotZ}+=-7.9875682193'{m249_saw_reload_3}
+{rightArm_rotX}+=-52.1886937335'{m249_saw_reload_4}
+{rightArm_rotY}+=-15.8461021817'{m249_saw_reload_4}
+{rightArm_rotZ}+=0.0099317249'{m249_saw_reload_4}
+{rightArm_posZ}+=-2{m249_saw_reload_0}
+{rightArm_posZ}+=-2{m249_saw_reload_1}
+{rightArm_posZ}+=-2{m249_saw_reload_2}
+{rightArm_posZ}+=-2{m249_saw_reload_3}
+{rightArm_posZ}+=-2{m249_saw_reload_4}
+
+{leftArm_rotX}+=-92.2305553415'{m249_saw_reload_5}
+{leftArm_rotY}+=20.6462907772'{m249_saw_reload_5}
+{leftArm_rotZ}+=-76.5717167289'{m249_saw_reload_5}
+{leftArm_rotX}+=-98.1'{m249_saw_reload_6}
+{leftArm_rotY}+=19.51'{m249_saw_reload_6}
+{leftArm_rotZ}+=-84.01'{m249_saw_reload_6}
+{leftArm_rotX}+=-97.0452248569'{m249_saw_reload_7}
+{leftArm_rotY}+=19.9092099412'{m249_saw_reload_7}
+{leftArm_rotZ}+=-80.8376036519'{m249_saw_reload_7}
+{leftArm_rotX}+=-69.1965648279'{m249_saw_reload_8}
+{leftArm_rotY}+=11.4342628685'{m249_saw_reload_8}
+{leftArm_rotZ}+=-62.3646305231'{m249_saw_reload_8}
+{leftArm_rotX}+=-65.8536060719'{m249_saw_reload_9}
+{leftArm_rotY}+=9.4214082592'{m249_saw_reload_9}
+{leftArm_rotZ}+=-57.7105169823'{m249_saw_reload_9}
+{leftArm_rotX}+=-69.1965648279'{m249_saw_reload_10}
+{leftArm_rotY}+=11.4342628685'{m249_saw_reload_10}
+{leftArm_rotZ}+=-62.3646305231'{m249_saw_reload_10}
+{leftArm_rotX}+=-69.1965648279'{m249_saw_reload_11}
+{leftArm_rotY}+=11.4342628685'{m249_saw_reload_11}
+{leftArm_rotZ}+=-62.3646305231'{m249_saw_reload_11}
+{leftArm_rotX}+=-98.1'{m249_saw_reload_12}
+{leftArm_rotY}+=19.51'{m249_saw_reload_12}
+{leftArm_rotZ}+=-84.01'{m249_saw_reload_12}
+{leftArm_rotX}+=-97.0452248569'{m249_saw_reload_13}
+{leftArm_rotY}+=19.9092099412'{m249_saw_reload_13}
+{leftArm_rotZ}+=-80.8376036519'{m249_saw_reload_13}
+{leftArm_rotX}+=-21.5774992293'{m249_saw_reload_14}
+{leftArm_rotY}+=24.5707406396'{m249_saw_reload_14}
+{leftArm_rotZ}+=-15.7049419832'{m249_saw_reload_14}
+{leftArm_posZ}+=-2{m249_saw_reload_15}
+{leftArm_posX}+=-0.25{m249_saw_reload_16}
+{leftArm_posZ}+=-2.5{m249_saw_reload_16}
+{leftArm_posX}+=-0.25{m249_saw_reload_17}
+{leftArm_posZ}+=-2.5{m249_saw_reload_17}
+{leftArm_posX}+=-0.25{m249_saw_reload_14}
+{leftArm_posZ}+=-2.5{m249_saw_reload_14}

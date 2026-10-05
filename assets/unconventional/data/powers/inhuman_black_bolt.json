@@ -1,0 +1,47 @@
+{
+  "name": "Electron Manipulation",
+  "modifiers": {
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 6.0,
+        "types": {
+          "SOUND": 1.0
+        }
+      },
+      "chargeTime": 35,
+      "duration": 100,
+      "cooldownTime": 100,
+      "range": 36.0,
+      "radius": 1.5,
+      "soundEvents": {
+          "CHARGE": "unconventional:black_bolt_comics_chargeup",
+          "BEAM_AMBIENT": "unconventional:black_bolt_comics_shooting"
+      }
+    },
+    "fiskheroes:gliding": {
+      "gliding": {
+        "speed": 1.3,
+        "lift": 1.5,
+        "gravity": 1.25,
+        "stall": 1.0
+      },
+      "isPowered": true,
+      "isControlled": false,
+      "canJumpActivate": true,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:gliding"
+	    }
+    },
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:arrow_catching": {
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

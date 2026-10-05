@@ -1,0 +1,33 @@
+{data} = curve {data}
+{head_rotX} @ {data} -> -{head_rotX} + 0.4
+{head_rotY} @ {data} -'> -{head_rotY}
+{body_rotX} -= 0.5{data}
+
+{leftArm_posX} -= 0.5{data}
+{leftArm_posZ} -= 0.2{data}
+{rightArm_rotX} @ {data} -> -0.25
+{rightArm_rotY} @ {data} -'> 0
+{rightArm_rotZ} @ {data} -> 2.1
+
+{leftArm_posX} += 0.5{data}
+{leftArm_posZ} -= 0.2{data}
+{leftArm_rotX} @ {data} -> 0.4
+{leftArm_rotY} @ {data} -'> 0
+{leftArm_rotZ} @ {data} -> 0.2
+
+{rightLeg_posX} -= 1{data}
+{rightLeg_posY} -= -4{data}
+{rightLeg_posZ} -= 5{data}
+{rightLeg_rotX} @ {data} -> 1.4
+{rightLeg_rotY} @ {data} -'> 0.1
+{rightLeg_rotZ} @ {data} -> 0.2
+
+{leftLeg_posX} += 4{data}
+{leftLeg_posY} -= -2{data}
+{leftLeg_posZ} -= 7{data}
+{leftLeg_rotX} @ {data} -> 0.3
+{leftLeg_rotY} @ {data} -'> -0.6
+{leftLeg_rotZ} @ {data} -> 0.2
+
+out "pivot" (0, 0.5, 0)
+out "rotate" (180{data}, 0, 0, 1)

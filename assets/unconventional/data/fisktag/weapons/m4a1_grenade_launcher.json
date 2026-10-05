@@ -1,0 +1,46 @@
+{
+  "name": "M4a1 Carbine | RM Equipment M203PI",
+  "permission": "USE_GUN",
+  "holdingPose": "DOUBLE",
+  "isHidden": true,
+  "cooldown": 0,
+  "damageProfile": {
+    "damage": 20,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "ammo": {
+    "amount": 1,
+    "reloadTime": 30
+  },
+  "scope": {
+    "zoom": 0.25
+  },
+  "spread": {
+    "fallingFactor": 0.95,
+    "scopingFactor": 0.3
+  },
+  "recoil": {
+    "amount": 6.0,
+    "cameraShake": 3.0
+  },
+  "projectiles": [
+    {
+      "type": "GRENADE",
+      "spread": 2.5,
+      "isInstant": true,
+      "affectsUser": true,
+      "fuseTime": 80,
+      "radius": 3.0,
+      "speed": 2.0
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:grenade_launcher_shooting"
+  }
+}

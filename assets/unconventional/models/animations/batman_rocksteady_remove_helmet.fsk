@@ -1,0 +1,70 @@
+
+{data} = curve {data}
+;{anim} = curve min(animate2({data}, length, delay, turn on time, turn off time), 1)
+
+{anim1} = curve min(animate2({data}, 1, 0.5, 0.5, 0.0), 1)
+{anim2} = curve min(animate2({data}, 1, 0.8, 0.8, 0.0), 1)
+
+{helmet_posY} @ {anim1} -> -4
+{helmet_posZ} @ {anim1} -> -10
+
+{helmet_posY} @ {anim2} -> 200
+{helmet_posZ} @ {anim2} -> 10
+
+{helmet_toggle_time}={data}
+{helmet_toggle_0}=curve animate2({helmet_toggle_time},10,0,0.53,9.47)
+{helmet_toggle_1}=curve animate2({helmet_toggle_time},0.53,0,0.19,0.34)
+{helmet_toggle_2}=curve animate2({helmet_toggle_time},9.81,0.19,0.34,9.47)
+{helmet_toggle_3}=curve animate2({helmet_toggle_time},0.53,0,0.27,0.26)
+{helmet_toggle_4}=curve animate2({helmet_toggle_time},9.73,0.27,0.26,9.47)
+{helmet_toggle_5}=curve animate2({helmet_toggle_time},10,0,0.44,9.56)
+{helmet_toggle_6}=curve animate2({helmet_toggle_time},0.44,0,0.15,0.29)
+{helmet_toggle_7}=curve animate2({helmet_toggle_time},9.85,0.15,0.29,9.56)
+{helmet_toggle_8}=curve animate2({helmet_toggle_time},10,0,0.42,9.58)
+{helmet_toggle_9}=curve animate2({helmet_toggle_time},0.42,0,0.13,0.29)
+{helmet_toggle_10}=curve animate2({helmet_toggle_time},9.87,0.13,0.29,9.58)
+
+{front_top_rotX}+=2.5'{helmet_toggle_0}
+{front_top_posY}+=-0.5{helmet_toggle_1}
+{front_top_posZ}+=-0.25{helmet_toggle_1}
+{front_top_posY}+=-0.5{helmet_toggle_2}
+{front_top_posZ}+=-0.5{helmet_toggle_2}
+
+{front_bottom_rotX}+=-5'{helmet_toggle_0}
+{front_bottom_posY}+=0.75{helmet_toggle_3}
+{front_bottom_posY}+=1{helmet_toggle_4}
+{front_bottom_posZ}+=-0.75{helmet_toggle_4}
+
+{back_top_rotX}+=7.5'{helmet_toggle_5}
+{back_top_posZ}+=0.5{helmet_toggle_6}
+{back_top_posY}+=-1{helmet_toggle_7}
+{back_top_posZ}+=0.25{helmet_toggle_7}
+
+{back_bottom_rotX}+=-5'{helmet_toggle_8}
+{back_bottom_posZ}+=1.25{helmet_toggle_9}
+{back_bottom_posY}+=0.5{helmet_toggle_10}
+{back_bottom_posZ}+=1{helmet_toggle_10}
+
+;===========================================;
+
+{data} = sin(pi{data})
+
+{x} = {data}sin(1.5pi{data} - pi)
+
+{head_rotX} @ {data} -> 30'
+{head_rotY} @ {data} -'> 0'
+
+{rightArm_rotX} @ {data} -> -210'
+{rightArm_rotZ} @ {x} -> 20'
+{rightArm_rotY} @ {data} -> -7.5'
+
+{leftArm_rotX} @ {data} -> -210'
+{leftArm_rotZ} @ {x} -> -20'
+{leftArm_rotY} @ {data} -> 7.5'
+
+{rightArm_posY} += 1{x}
+{rightArm_posX} -= 0.25{data}
+{rightArm_posZ} -= 1{data}
+{leftArm_posY} += 1{x}
+{leftArm_posX} += 0.25{data}
+{leftArm_posZ} -= 1{data}

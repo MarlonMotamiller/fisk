@@ -1,0 +1,152 @@
+{fix1}= animate2({data},10,0,0,9)
+
+{rightArm_rotX} @ {fix1} -> 0'
+{rightArm_rotY} @ {fix1} -> 0'
+{rightArm_rotZ} @ {fix1} -> 0'
+{rightArm_posZ} @ {fix1} -> 0
+
+{leftArm_rotX} @ {fix1} -> 0'
+{leftArm_rotY} @ {fix1} -> 0'
+{leftArm_rotZ} @ {fix1} -> 0'
+{leftArm_posZ} @ {fix1} -> 0
+
+
+{rightLeg_rotX} @ {fix1} -> 0'
+{rightLeg_rotY} @ {fix1} -> 0'
+{rightLeg_rotZ} @ {fix1} -> 0'
+{rightLeg_posZ} @ {fix1} -> 0
+
+{leftLeg_rotX} @ {fix1} -> 0'
+{leftLeg_rotY} @ {fix1} -> 0'
+{leftLeg_rotZ} @ {fix1} -> 0'
+{leftLeg_posZ} @ {fix1} -> 0
+
+{web_zip_time}={data}
+{web_zip_0}=curve animate2({web_zip_time},0.375,0,0.1666666667,0.2083333333)
+{web_zip_1}=curve animate2({web_zip_time},0.4166666667,0.16666666666666666,0.2083333333,0.2083333333)
+{web_zip_2}=curve animate2({web_zip_time},0.25,0.375,0.2083333333,0.0416666667)
+{web_zip_3}=curve animate2({web_zip_time},0.125,0.5833333333333334,0.0416666667,0.0833333333)
+{web_zip_4}=curve animate2({web_zip_time},9.375,0.625,0.0833333333,9.2916666667)
+{web_zip_5}=curve animate2({web_zip_time},9.8333333333,0.16666666666666666,0.2083333333,9.625)
+{web_zip_6}=curve animate2({web_zip_time},0.2916666667,0.16666666666666666,0.2083333333,0.0833333333)
+{web_zip_7}=curve animate2({web_zip_time},0.2083333333,0.375,0.0833333333,0.125)
+{web_zip_8}=curve animate2({web_zip_time},9.5416666667,0.4583333333333333,0.125,9.4166666667)
+{web_zip_9}=curve animate2({web_zip_time},9.625,0.375,0.2083333333,9.4166666667)
+
+{head_rotZ}+=-2.5'{web_zip_0}
+{head_rotZ}+=-2.5'{web_zip_1}
+{head_rotX}+=5'{web_zip_2}
+{head_rotX}+=2.5'{web_zip_3}
+{head_rotX}+=5'{web_zip_4}
+{head_posZ}+=-5{web_zip_0}
+{head_posZ}+=-5{web_zip_5}
+
+{body_rotX}+=49.7884744814'{web_zip_0}
+{body_rotY}+=-25.5321103649'{web_zip_0}
+{body_rotZ}+=-11.3087307798'{web_zip_0}
+{body_rotX}+=49.7884744814'{web_zip_1}
+{body_rotY}+=-25.5321103649'{web_zip_1}
+{body_rotZ}+=-11.3087307798'{web_zip_1}
+{body_rotX}+=53.6822695851'{web_zip_2}
+{body_rotY}+=-5.631962644'{web_zip_2}
+{body_rotZ}+=-3.7151256665'{web_zip_2}
+{body_rotX}+=53.5100935012'{web_zip_3}
+{body_rotY}+=-4.1481271522'{web_zip_3}
+{body_rotZ}+=-1.6956950359'{web_zip_3}
+{body_rotX}+=53.6822695851'{web_zip_4}
+{body_rotY}+=-5.631962644'{web_zip_4}
+{body_rotZ}+=-3.7151256665'{web_zip_4}
+{body_posZ}+=-4{web_zip_0}
+{body_posZ}+=-4{web_zip_5}
+
+{rightArm_rotX}+=-89.8254232853'{web_zip_0}
+{rightArm_rotY}+=6.9261819243'{web_zip_0}
+{rightArm_rotZ}+=-87.1158068098'{web_zip_0}
+{rightArm_rotX}+=-89.8254232853'{web_zip_1}
+{rightArm_rotY}+=6.9261819243'{web_zip_1}
+{rightArm_rotZ}+=-87.1158068098'{web_zip_1}
+{rightArm_rotX}+=55.6211216508'{web_zip_2}
+{rightArm_rotY}+=8.7555495028'{web_zip_2}
+{rightArm_rotZ}+=47.5325148628'{web_zip_2}
+{rightArm_rotX}+=55.8121176886'{web_zip_3}
+{rightArm_rotY}+=6.6897883482'{web_zip_3}
+{rightArm_rotZ}+=48.9535438222'{web_zip_3}
+{rightArm_rotX}+=53.1211216508'{web_zip_4}
+{rightArm_rotY}+=8.7555495028'{web_zip_4}
+{rightArm_rotZ}+=47.5325148628'{web_zip_4}
+{rightArm_posZ}+=-7{web_zip_0}
+{rightArm_posZ}+=-7{web_zip_6}
+{rightArm_posX}+=-1{web_zip_7}
+{rightArm_posY}+=-1{web_zip_7}
+{rightArm_posZ}+=-2{web_zip_7}
+{rightArm_posX}+=-0.75{web_zip_8}
+{rightArm_posY}+=-1{web_zip_8}
+{rightArm_posZ}+=-1{web_zip_8}
+
+{leftArm_rotX}+=51.7013821185'{web_zip_0}
+{leftArm_rotY}+=-22.6608996174'{web_zip_0}
+{leftArm_rotZ}+=-56.4180132828'{web_zip_0}
+{leftArm_rotX}+=51.7013821185'{web_zip_1}
+{leftArm_rotY}+=-22.6608996174'{web_zip_1}
+{leftArm_rotZ}+=-56.4180132828'{web_zip_1}
+{leftArm_rotX}+=67.4304541954'{web_zip_2}
+{leftArm_rotY}+=-17.8026436407'{web_zip_2}
+{leftArm_rotZ}+=-50.1572246997'{web_zip_2}
+{leftArm_rotX}+=67.7156835471'{web_zip_3}
+{leftArm_rotY}+=-15.4916660879'{web_zip_3}
+{leftArm_rotZ}+=-51.1526441899'{web_zip_3}
+{leftArm_rotX}+=67.4304541954'{web_zip_4}
+{leftArm_rotY}+=-17.8026436407'{web_zip_4}
+{leftArm_rotZ}+=-50.1572246997'{web_zip_4}
+{leftArm_posX}+=-2{web_zip_0}
+{leftArm_posY}+=-2{web_zip_0}
+{leftArm_posX}+=-2{web_zip_1}
+{leftArm_posY}+=-2{web_zip_1}
+{leftArm_posY}+=-2{web_zip_9}
+
+{rightLeg_rotX}+=60.6027571651'{web_zip_0}
+{rightLeg_rotY}+=12.384002013'{web_zip_0}
+{rightLeg_rotZ}+=-11.3646263769'{web_zip_0}
+{rightLeg_rotX}+=60.6027571651'{web_zip_1}
+{rightLeg_rotY}+=12.384002013'{web_zip_1}
+{rightLeg_rotZ}+=-11.3646263769'{web_zip_1}
+{rightLeg_rotX}+=88.6935747202'{web_zip_2}
+{rightLeg_rotY}+=-0.4265149077'{web_zip_2}
+{rightLeg_rotZ}+=10.9321592844'{web_zip_2}
+{rightLeg_rotX}+=86.1935747202'{web_zip_3}
+{rightLeg_rotY}+=-0.4265149077'{web_zip_3}
+{rightLeg_rotZ}+=10.9321592844'{web_zip_3}
+{rightLeg_rotX}+=88.6935747202'{web_zip_4}
+{rightLeg_rotY}+=-0.4265149077'{web_zip_4}
+{rightLeg_rotZ}+=10.9321592844'{web_zip_4}
+{rightLeg_posX}+=-5{web_zip_0}
+{rightLeg_posY}+=-4{web_zip_0}
+{rightLeg_posZ}+=-5{web_zip_0}
+{rightLeg_posX}+=-5{web_zip_1}
+{rightLeg_posY}+=-4{web_zip_1}
+{rightLeg_posZ}+=-5{web_zip_1}
+{rightLeg_posX}+=-1{web_zip_9}
+{rightLeg_posY}+=-4{web_zip_9}
+{rightLeg_posZ}+=4{web_zip_9}
+
+{leftLeg_rotX}+=71.7925270895'{web_zip_0}
+{leftLeg_rotY}+=-34.9840074941'{web_zip_0}
+{leftLeg_rotZ}+=-26.232922248'{web_zip_0}
+{leftLeg_rotX}+=71.7925270895'{web_zip_1}
+{leftLeg_rotY}+=-34.9840074941'{web_zip_1}
+{leftLeg_rotZ}+=-26.232922248'{web_zip_1}
+{leftLeg_rotX}+=66.5772800887'{web_zip_2}
+{leftLeg_rotY}+=-12.1639449136'{web_zip_2}
+{leftLeg_rotZ}+=-20.2867224985'{web_zip_2}
+{leftLeg_rotX}+=64.0772800887'{web_zip_3}
+{leftLeg_rotY}+=-12.1639449136'{web_zip_3}
+{leftLeg_rotZ}+=-20.2867224985'{web_zip_3}
+{leftLeg_rotX}+=66.5772800887'{web_zip_4}
+{leftLeg_rotY}+=-12.1639449136'{web_zip_4}
+{leftLeg_rotZ}+=-20.2867224985'{web_zip_4}
+{leftLeg_posX}+=1{web_zip_0}
+{leftLeg_posY}+=-4{web_zip_0}
+{leftLeg_posX}+=1{web_zip_1}
+{leftLeg_posY}+=-4{web_zip_1}
+{leftLeg_posY}+=-5{web_zip_9}
+{leftLeg_posZ}+=5{web_zip_9}

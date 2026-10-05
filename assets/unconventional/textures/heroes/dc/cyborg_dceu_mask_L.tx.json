@@ -1,0 +1,13 @@
+{
+  "texture": "unconventional:dc/xor/cyborg_dceu/L/<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(13 * entity.getInterpolatedData('fiskheroes:mask_open_timer2')) | 0",
+      "values": {
+        "min": 0,
+        "max": 13
+      }
+    }
+  },
+  "isDynamic": true
+}

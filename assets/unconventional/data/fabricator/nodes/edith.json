@@ -1,0 +1,10 @@
+{
+  "suit": "unconventional:edith",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:stark",
+    "fiskheroes:iron_man_mk50",
+    "fiskheroes:mysterio",
+    "unconventional:unconventional"
+  ]
+}

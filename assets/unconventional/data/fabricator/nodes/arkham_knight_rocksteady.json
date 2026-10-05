@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:arkham_knight_rocksteady",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "fiskheroes:object_manipulation",
+    "unconventional:unconventional"
+  ]
+}

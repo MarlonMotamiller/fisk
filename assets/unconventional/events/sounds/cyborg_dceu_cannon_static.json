@@ -1,0 +1,7 @@
+{
+  "sound": "unconventional:cyborg.dceu.cannon.static",
+  "condition": "fiskheroes:aiming",
+  "volume": "entity.getInterpolatedData('fiskheroes:aimed_timer')",
+  "pitch": 1,
+  "loop": true
+}

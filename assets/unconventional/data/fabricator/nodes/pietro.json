@@ -1,0 +1,11 @@
+{
+  "suit": "unconventional:pietro",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:vision",
+    "unconventional:unconventional"
+  ]
+}

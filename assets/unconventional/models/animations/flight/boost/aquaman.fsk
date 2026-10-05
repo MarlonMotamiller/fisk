@@ -1,0 +1,47 @@
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+
+{legs_flap} = sin(2pi{data_3}){data_1}*(1-{data_4})
+{legs_flap2} = clamp(1.2sin(2pi{data_3} +(0.3pi*{data_1})), -1, 1){data_1}*(1-{data_4})
+
+{boost_0} = sin(pi{data_4})
+{boost_1} = sin(2pi{data_4})
+
+{data_5} = {data_5}{data_1}
+
+{hand_weapon} = {data_5}
+{hand_empty} = 1-{data_5}
+
+{head_rotX} -= 10'{data_1}
+{head_rotY} += 3'{legs_flap}
+{rightArm_rotX} += 8'{data_1}{hand_empty} + 0.5abs({x}) - (1'{legs_flap2}+1'{legs_flap})
+{rightArm_rotY} += 18'{data_1}{hand_empty} 
+{rightArm_rotZ} += 12'{data_1}{hand_empty} 
+
+{rightArm_posX} += 0.5{hand_weapon}
+{rightArm_posY} += 4{hand_weapon}^3
+{rightArm_posZ} += 2.5{hand_weapon}
+{rightArm_rotX} -= 115'{hand_weapon}
+{rightArm_rotY} += 25'{hand_weapon}
+{rightArm_rotZ} += 5'{hand_weapon}
+
+{leftArm_rotX} += 8'{data_1} + 0.5abs({x})  + (1'{legs_flap2}+1'{legs_flap})
+{leftArm_rotY} -= 18'{data_1} 
+{leftArm_rotZ} -= 12'{data_1}
+
+{rightLeg_rotX} += 15'{data_1} + 0.3{x} + (9'{legs_flap2}+6'{legs_flap})
+{rightLeg_rotY} += 2'{data_1}
+{rightLeg_rotZ} += 3'{data_1}
+{leftLeg_rotX} += 15'{data_1} - 0.3{x} - (9'{legs_flap2}+6'{legs_flap})
+{leftLeg_rotY} -= 2'{data_1}
+{leftLeg_rotZ} -= 3'{data_1}
+
+{d} *= {data_1} / 1'
+{d1} *= {data_1}
+{x} = {data_1}min({vel} / 2, 1) / 2
+out "rotate" (-3{legs_flap}, 0, 0, 1)
+
+out "rotate" (-{data_1}({pitch} + 80), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_1}, 0)

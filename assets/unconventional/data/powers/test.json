@@ -1,0 +1,22 @@
+{
+  "name": "Test",
+  "modifiers": {
+    "fiskheroes:shadowdome": {
+      "chargeTime": 5,
+      "duration": 800,
+      "radius": 10.0,
+      "soundEvents": {
+        "CAST": "fiskheroes:shadowdome_cast_loop",
+        "DISSOLVE": "fiskheroes:shadowdome_dissolve",
+        "FORM": ["fiskheroes:shadowdome_form", "fiskheroes:shadowdome_form_loop"]
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "0x33334D",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

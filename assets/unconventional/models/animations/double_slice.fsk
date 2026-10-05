@@ -1,0 +1,12 @@
+{data} = sin(pi{data})
+{rightArm_posY} -= -0.25pi *1{data}
+{rightArm_posZ} -= 0.25pi *2{data}
+{rightArm_rotX} -= 0.5pi * 0.5{data}
+{rightArm_rotY} -= 0.5 * 0.75{data}
+{rightArm_rotZ} -= -0.2{data}
+
+{leftArm_posY} -= -0.25pi *1{data}
+{leftArm_posZ} -= 0.25pi *2{data}
+{leftArm_rotX} -= 0.5pi * 1.1{data}
+{leftArm_rotY} -= -0.5 * 0.75{data}
+{leftArm_rotZ} -= 1.00{data}

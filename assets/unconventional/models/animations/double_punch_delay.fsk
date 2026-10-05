@@ -1,0 +1,4 @@
+{data} = curve {data}
+{leftArm_rotX} += {rightArm_rotX}-{rightArm_rotX}*0.3{data}
+{leftArm_rotY} = -{rightArm_rotY}min({data}*3,1)+{rightArm_rotY}*0.3{data}
+{leftArm_rotZ} = -{rightArm_rotZ}min({data}*3,1)+{rightArm_rotZ}*0.3{data}

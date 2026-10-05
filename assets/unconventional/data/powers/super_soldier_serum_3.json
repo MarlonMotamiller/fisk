@@ -1,0 +1,16 @@
+{
+  "name": "Super-Soldier Serum 3.0",
+  "modifiers": {
+    "fiskheroes:regeneration": {
+      "factor": 3.5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [9, 19, 20]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.3, 0.0]
+    }
+  }
+}

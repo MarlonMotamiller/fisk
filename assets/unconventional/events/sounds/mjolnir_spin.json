@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:thor.mjolnir.spin.loop",
+  "condition": "entity.getData('fiskheroes:beam_charge') > 0 || entity.getData('fiskheroes:beam_charging')",
+  "volume": "entity.getData('fiskheroes:beam_charge')",
+  "pitch": 1.2,
+  "loop": true,
+  "fadeOut": 20,
+  "fadeIn": 10 
+}

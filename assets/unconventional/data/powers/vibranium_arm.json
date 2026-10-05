@@ -1,0 +1,23 @@
+{
+  "name": "Vibranium Arm",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "isToggle": false,
+      "shield": {
+        "health": 95.0,
+        "regeneration": 10.0,
+        "recoveryDelay": 20,
+        "cooldown": 80
+      },
+      "coverage": {
+        "yawRadius": 30.0,
+        "pitchRadius": 30.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    }
+  }
+}

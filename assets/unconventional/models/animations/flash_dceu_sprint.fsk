@@ -1,0 +1,54 @@
+{data} = curve {data}
+{horVel} = sqrt({motX}^2 + {motZ}^2)
+
+{m} = clamp({horVel}^2, 0, 10)
+
+{limbSwingAmount} *= {data}
+{rightArm_rotZ} += clamp(0.5{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), 0, 1) + clamp(0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), -1, 0)
+{leftArm_rotZ} += clamp(0.5{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), -1, 0) + clamp(0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), -1, 0)
+{rightArm_rotY} -= clamp(0.6{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), -1, 0) + clamp(0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), 0, 1) + 1.3{m}'
+{leftArm_rotY} -= clamp(0.6{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), -1, 0) + clamp(0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4), 0, 1) + 1.3{m}'
+{rightArm_rotX} += 0.65{limbSwingAmount}cos(0.6662{limbSwing} + pi)
+{leftArm_rotX} += 0.65{limbSwingAmount}cos(0.6662{limbSwing})
+
+;{rightLeg_rotZ} -= 0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+;{leftLeg_rotZ} -= 0.3{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+{rightArm_rotZ} -= 1.3clamp({limbSwingAmount}sin(0.6662{limbSwing} - 0.3), -5, 0)
+{leftArm_rotZ} -= 1.3clamp({limbSwingAmount}sin(0.6662{limbSwing} - 0.3), 0, 5)
+
+{f} = {limbSwingAmount}cos(0.6662{limbSwing} - 0.3)
+{f2} = {limbSwingAmount}cos(0.6662{limbSwing} - 0.3)
+{body_rotY} -= 0.5{f}
+
+{rightArm_posZ} -= 4.4{f}
+{leftArm_posZ} += 4.4{f}
+
+{rightLeg_posZ} += 1.4{f}
+{leftLeg_posZ} -= 1.4{f}
+
+{rightArm_posY} += 0.5{data}
+{leftArm_posY} += 0.5{data}
+
+{rightArm_posX} += abs(1.2{f})
+{leftArm_posX} -= abs(1.2{f})
+
+{rightLeg_rotY} += 0.1{f}
+{leftLeg_rotY} += 0.1{f}
+
+;{rightArm_rotZ} += 0.4{m}'{data}
+;{leftArm_rotZ} -= 0.4{m}'{data}
+
+{head_rotX} -= 15'{data}+{m}'
+
+{rightArm_rotX} -= 30'{data}+{m}'
+{leftArm_rotX} -= 30'{data}+{m}'
+ 
+;{rightArm_rotZ} += 22'{data} + 0.3{f} + 1.2{m}'
+;{leftArm_rotZ} -= 22'{data} - 0.3{f} + 1.2{m}'
+
+{rightLeg_rotX} -= 7'{data}+0.7{m}' +35'(cos({body_rotY})-1)
+{leftLeg_rotX} -= 7'{data}+0.7{m}' +35'(cos({body_rotY})-1)
+
+out "translate" (0, 0.005{m}, 0.1{data}+0.01{m})
+out "rotate" (-15{data}-{m}, 1, 0, 0)

@@ -1,0 +1,28 @@
+{
+  "name": "Soldier Boy's Shield",
+  "permission": "USE_SOLDIER_BOY_SHIELD",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 6
+  },
+  "activation": {
+    "type": "SHIELD",
+    "shield": {
+      "health": 60.0,
+      "regeneration": 10.0,
+      "recoveryDelay": 18,
+      "cooldown": 100
+    },
+    "coverage": {
+      "yawRadius": 35.0,
+      "pitchRadius": 35.0,
+      "yawOffset": 0.0,
+      "pitchOffset": 0.0
+    },
+    "knockback": 0.2
+    },
+    "soundEvents": {
+      "DEFLECT": "fiskheroes:shield_deflect",
+      "DISARM": "fiskheroes:shield_disarm"
+  }
+}

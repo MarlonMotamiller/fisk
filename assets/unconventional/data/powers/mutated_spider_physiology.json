@@ -1,0 +1,145 @@
+{
+  "name": "Mutated Spider Physiology",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.0,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "canRoll": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.0,
+      "soundEvents": {
+        "BOOST": "unconventional:miles_venom_boost"
+      }
+    },
+    "fiskheroes:transformation|invisibility_transformation": {
+      "key": "INVIS",
+      "transformation": {
+        "toggleData": "unconventional:dyn/invisibility",
+        "timerData": "unconventional:dyn/invisibility_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:cooldown|invisibility": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/invisibility",
+        "cooldownData": "unconventional:dyn/invisibility_cooldown",
+        "duration": 170,
+        "recovery": 0.2
+      }
+    },
+    "fiskheroes:wall_crawling": {
+    },
+    "fiskheroes:regeneration": {
+      "factor": 3.5
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [9, 19, 20]
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [1.15, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [2.0, 0.6]
+    },
+    "fiskheroes:slow_motion": {
+      "isToggle": false
+    },
+    "fiskheroes:invisibility": {
+      "isToggle": true
+    },
+    "fiskheroes:flight": {
+      "speed": 0.0
+    },
+    "fiskheroes:hover": {
+    },
+    "fiskheroes:energy_manipulation": {
+      "chargeTime": 6,
+      "range": 0.0,
+      "damageProfile": {
+        "damage": 12.0,
+        "types": {
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": false,
+          "LIGHTNING_STRIKE": 0.01
+        }
+      },
+      "soundEvents": {
+        "CHARGE": "unconventional:miles_venom_charge"
+      }
+    },
+    "fiskheroes:damage_bonus": {
+      "amount": 3.0,
+      "damageBonus": {
+        "data": "unconventional:dyn/venom_boost_cooldown",
+        "uses": 6
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "isToggle": true, 
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "ENERGY": 1.0,
+          "ELECTRICITY": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 30,
+          "DAMAGE_DROPOFF": 0.4,
+          "EFFECTS": [
+            {
+              "id": "fiskheroes:flashbang",
+              "duration": 140,
+              "amplifier": 2,
+              "chance": 1
+            },
+            {
+              "id": "fiskheroes:disable_speed",
+              "duration": 80,
+              "amplifier": 1,
+              "chance": 0.4
+            }
+          ]
+        }
+      },
+      "chargeTime": 15,
+      "duration": 35,
+      "cooldownTime": 20,
+      "range": 25.0,
+      "radius": 1000.0,
+      "canDoGriefing": true,
+      "soundEvents": {
+        "CHARGE": "unconventional:miles_outburst_chargeup",
+        "SHOOT": "unconventional:miles_outburst_shooting",
+        "SHOOT_STOP": [],
+        "BEAM_AMBIENT": []
+      }
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/miles_invisibility.png",
+      "data": "(1- entity.getInterpolatedData('unconventional:dyn/invisibility_cooldown'))*0.7595 + 14/79"
+    }, 
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/miles_venom.png",
+      "data": "var f = entity.getInterpolatedData('unconventional:dyn/venom_boost_cooldown');  f<1/3 ? f*0.7595 + 13/79 : f>1/3 && f<2/3 ? f*0.7595 + 14/79 : f*0.7595 + 15/79 "
+    }
+  ]
+}

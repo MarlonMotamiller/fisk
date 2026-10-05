@@ -1,0 +1,100 @@
+{
+  "name": "",
+  "modifiers": {
+    "fiskheroes:transformation|pose": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/posing",
+        "timerData": "unconventional:dyn/pose_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|pose_cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/posing",
+        "cooldownData": "unconventional:dyn/pose_cooldown",
+        "duration": -1,
+        "recovery": 2.0
+      }
+    },
+
+    "fiskheroes:transformation|pose1": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/pose1",
+        "timerData": "unconventional:dyn/pose1_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|pose1_cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/pose1",
+        "cooldownData": "unconventional:dyn/pose1_cooldown",
+        "duration": -1,
+        "recovery": 2.0
+      }
+    },
+
+    "fiskheroes:transformation|pose2": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/pose2",
+        "timerData": "unconventional:dyn/pose2_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|pose2_cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/pose2",
+        "cooldownData": "unconventional:dyn/pose2_cooldown",
+        "duration": -1,
+        "recovery": 2.0
+      }
+    },
+
+    "fiskheroes:transformation|pose3": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/pose3",
+        "timerData": "unconventional:dyn/pose3_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|pose3_cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/pose3",
+        "cooldownData": "unconventional:dyn/pose3_cooldown",
+        "duration": -1,
+        "recovery": 2.0
+      }
+    },
+
+    "fiskheroes:transformation|pose4": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/pose4",
+        "timerData": "unconventional:dyn/pose4_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|pose4_cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/pose4",
+        "cooldownData": "unconventional:dyn/pose4_cooldown",
+        "duration": -1,
+        "recovery": 2.0
+      }
+    },
+
+    "fiskheroes:transformation|pose5": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/pose5",
+        "timerData": "unconventional:dyn/pose5_timer",
+        "time": 5
+      }
+    },
+    "fiskheroes:cooldown|pose5_cooldown": {
+      "cooldown": {
+        "toggleData": "unconventional:dyn/pose5",
+        "cooldownData": "unconventional:dyn/pose5_cooldown",
+        "duration": -1,
+        "recovery": 2.0
+      }
+    }
+  }
+}

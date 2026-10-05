@@ -1,0 +1,4 @@
+{data} = curve {data}
+{rightArm_rotX} @ {data} -> 0.1{rightArm_rotX} - 1.3
+{rightArm_rotY} -= 0.8{data}
+{rightArm_rotZ} += 0.2{data}

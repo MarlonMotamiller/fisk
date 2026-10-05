@@ -1,0 +1,253 @@
+
+# FINAL UPDATE FOR 1.7.10
+Unconventional Heropack Update "2.3.0" Change-Log:
+
+**[A]** = Added
+**[R]** = Rework
+**[U]** = Update
+**[H]** = Hidden
+
+# DC
+- Arkham Knight (Rocksteady) **[A]**
+- Cyborg (DCEU) **[A]**
+- Superman (DCU) **[A]**
+- The Flash (DCEU) **[A]**
+- The Flash (DCEU, Justice League) **[A]**
+- Wonder Woman (DCEU) **[A]**
+
+
+Unconventional Heropack Update "2.2.5" Change-Log:
+- Fixed Taskmaster's Sword being the Old One
+- Added Ronin's Sword to Hawkeye's Usable Equipment
+
+
+Unconventional Heropack Update "2.2.4" Change-Log:
+- Added a Shield Blocking Animation to All Characters which can Block with a Captain America Shield/Soldier Boy Shield
+- Fixed Ghost's Skin Layering
+- Fixed Bucky Barnes's M249 Saw sticking thru his body while in the Equipment Slot
+- Fixed Radioactive Man's Timer Vanishing When it Hits 0
+
+# Marvel
+- Ronin **[A]**
+	- To Obtain in Survival, you must have Sabri's Enhanced Heropack
+
+==
+
+- Red Guardian **[U]**
+	- New Skin
+- Spider-Man (Miles Morales, Spider-Verse) **[U]**
+	- New Skins
+
+==
+
+STAT UPDATES:
+- Bucky Barnes:
+	- Buffed Vibranium Arm
+		- Health: 80 -> 95
+	- Buffed Regeneration: 250% -> 275%
+	- Removed Nausea Immunity
+- Captain America (John Walker):
+	- Buffed Regeneration: 200% -> 250%
+- Ghost:
+	- Tweaked Augments
+- Hawkeye (Clint Barton):
+	- Nerfed Punch Damage: 6 -> 5.5
+	- Nerfed Sprint Speed: 20% -> 15%
+	- Tweaked Augments
+- Red Guardian:
+	- Buffed Regeneration: 150% -> 200%
+- Wanda Maximoff:
+	- Buffed Psionic Blasts
+		- Damage: 12 -> 14.5
+		- Cooldown: 18 -> 15 - In Ticks (20 Ticks = 1 Second) 
+	- Buffed Psionic Shield
+		- Health: 100 -> 135
+	- Buffed Psionic Beam
+		- Damage: 7.75 -> 8
+- Winter Soldier:
+	- Buffed Regeneration: 250% -> 275%
+	- Removed Nausea Immunity
+- Five (The Umbrella Academy)
+	- Nerfed Punch Damage: 3 -> 2
+
+
+Unconventional Heropack Update "2.2.3" Change-Log:
+- Given "Cycle Arrow" Keybind to Artemis (Young Justice), Tigress (Young Justice), Taskmaster, Hawkeye (Clint Barton) and Hawkeye (Kate Bishop)
+- Fixed Spelling in "Nuclear Radiation Generation"
+- Fixed Captain America (John Walker)'s Bloody Shield appearing on his US Agent Alt
+- Updated the "Duality of ShueShue" node's appearance to match ShueShue's Skin, as well as the current Moon Knight skin
+
+
+Unconventional Heropack Update "2.2.2" Change-Log:
+- Fixed Remap for uhp:the_batman -> unconventional:batman_reeves
+- Fixed Mosquito/Metal Head Offset
+
+
+Unconventional Heropack Update "2.2.1" Change-Log:
+- Fixed Remap for uhp:batman_ak  -> unconventional:batman_rocksteady
+- Fixed Remap for uhp:robin_ak  -> unconventional:robin_rocksteady
+
+
+Unconventional Heropack Update "2.2.0" Change-Log:
+
+
+**[A]** = Added
+**[R]** = Rework
+**[U]** = Update
+**[H]** = Hidden
+
+# Marvel
+- Winter Soldier **[A]**
+	- Crouch to Switch to The Underbarrel Grenade Launcher while holding the M4A1, same to go back to M4A1
+- Yellowjacket **[A]**
+- Nick Fury **[A]**
+- Weapon XI (X-Men) **[A]**
+	- To Obtain in Survival, you must have Sabri's Enhanced Heropack
+
+===
+
+- Captain America | John Walker **[U]**
+	- New Skin
+	- New US Agent Alt Skin
+	- Given Colt M1911
+	- IS ABLE TO USE GUNS
+- Black Cat (Insomniac) **[U]**
+	- New Ponytail
+	- Color Coded Grenades
+- Bucky Barnes **[R]**
+	- New Skin
+	- Given Gerber MK2 Knife
+	- Given SIG-Sauer P220ST
+	- Given M249 Saw
+	- New Responsive Animations when Hit while Blocking
+	- IS ABLE TO USE GUNS
+- Spider-Man | Miles Morales (Insomniac) **[R]**
+	- 2020 Alt **[A]**
+	- Complete Rework of the Venom Charge
+		- Now Uses up Charges when using Venom Abilities
+			- Venom Punch
+				- Cost: 1 Charge
+			- Venom Boost
+				- Cost: 1 Charge
+			- Venom Burst **[A]**
+				- Cost: 3 Charges
+		- To Charge Up: Punch, Swing, Shoot Webs
+	- New Invisibility Timer
+	- Updated Visual for Venom Charge on Arms
+	- Added Perching when Crouching for 2+ Seconds
+	- Added Superhero Landing
+	- 2 New Trick Animations
+- Electro **[R]**
+	- New Ability to use Subatomic Batteries to Boost ur abilities.
+	- Given Lightning Cast
+- Hawkeye | Clint Barton **[U]**
+	- Endgame Alt **[A]**
+	- New Skin
+	- IS ABLE TO USE GUNS
+- Ghost **[U]**
+	- Added Idle Sounds
+	- Now Requires Marksmanship Node for Unlock
+	- IS ABLE TO USE GUNS
+- E.D.I.T.H. **[U]**
+	- New Model
+	- Can now Bind to Player's UUID
+- Taskmaster **[R]**
+	- New Skin
+	- New Backpack Model
+	- Hood Toggle
+	- Removed Grappling (Adding It was an Oversight)
+	- Weapon Cycle
+		- Claws
+		- Blades
+	- New Shield Blocking while holding the Taskmaster Sword while the Shield is in the Suit
+	- Given Chippa Rhino 60DS
+	- Given New Sword
+	- IS ABLE TO USE GUNS
+- Pietro Maximoff **[U]**
+	- Running Sounds
+- Wanda Maximoff **[R]**
+	- Reworked Keybinds
+	- New Reworked Blast Visual
+	- New Reworked Beam Visuals
+	- While holding Vision, you are able to Force his Intangibility on/off.
+
+
+# DC
+- Batman (DCEU, Tactical) **[A]**
+	- Goggles Alt
+- Deathstroke (Rocksteady) **[A]**
+	- Eyepatch Alt
+- Rip Hunter **[U]**
+	- Added Cowboy Hat Alt
+	- Added Time Master, Cowboy Hat Alt
+
+===
+
+- Artemis (Young Justice) **[U]**
+	- New Skin
+	- New Ponytail
+- Batman (Rocksteady) **[R]**
+	- Beyond Alt **[A]**
+	- Futura Knight Alt **[A]**
+	- New Skin
+	- Detective Vision Update
+		- New Toggle Key instead of Mask Toggle
+	- New Drive Copying Ability
+		- When holding a USB, u are able to Copy the Data, and Paste(Crouch to See Paste Key) it on another USB, as well as Delete the Data from a USB.
+	- Given Explosive Gel Gun
+	- Grapple Animation
+	- Added Sliding
+		- Tap Crouch while Sprinting to activate.
+	- Added Screen Tilting while Gliding
+- Robin (Rocksteady) **[R]**
+	- Hood Toggle
+	- Given Explosive Gel Gun
+	- Given New Bo-Staff-Shield
+	- Grapple Animation
+	- Added Sliding
+		- Tap Crouch while Sprinting to activate.
+	- Added Screen Tilting while Gliding
+- Batman (Reeves) **[U]**
+	- New Skin
+- Tigress (Young Justice) **[R]**
+	- Polar Alt **[A]**
+	- New Skin
+	- Given Crossbow
+- The Spoiler (Comics) **[U]**
+	- New Skin
+
+==
+
+- Batman (Telltale) **[H]**
+- Catwoman (Telltale) **[H]**
+- Emiko Adachi **[H]**
+- The Signal (Comics) **[H]**
+- Black Lightning (Old Days) = This suit has been Merged with Fisk's Superheroes Black Lightning
+
+
+# Other
+- Radioactive Man **[A]**
+	- To Obtain in Survival, you must have Secret Heroes Heropack
+- Mosquito **[A]**
+	- Creetle Alt
+	- Metal Alt
+
+===
+
+- Five (The Umbrella Academy) **[U]**
+	- Mask Alt **[A]**
+	- Suit Alt **[A]**
+	- New Skin
+	- Given Fire Axe
+	- New Teleporting Animation
+	- IS ABLE TO USE GUNS
+- Soldier Boy (The Boys) **[U]**
+	- New Skin
+	- Given Colt M1911
+	- IS ABLE TO USE GUNS
+
+
+# KNOWN ISSUES
+- Black Cat's Ponytail Flails messes up a bit during Swinging.
+- Detective Mode stays on the Last Entity in the scan even after it dies/vanishes, and allows u to keep the number going higher if u Cycle.
+- Yellowjackets Stingers sometimes Instantly Go Back while boosting.

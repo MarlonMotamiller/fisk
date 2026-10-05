@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:yellow.jacket.beam.shooting",
+  "condition": "entity.getData('fiskheroes:beam_shooting') > 0",
+  "pitch": "0.9 + Math.random() * 0.3",
+  "fadeOut": 10
+}

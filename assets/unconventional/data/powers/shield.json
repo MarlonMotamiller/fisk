@@ -1,0 +1,12 @@
+{
+  "name": "Shield",
+  "modifiers": {
+    "fiskheroes:transformation": {
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 20
+      }
+    }
+  }
+}

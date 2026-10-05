@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:mosquito.flight.loop",
+  "override": "unconventional:funcs/mosquito_flight_loop",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

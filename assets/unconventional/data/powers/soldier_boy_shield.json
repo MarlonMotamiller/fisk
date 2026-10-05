@@ -1,0 +1,26 @@
+{
+  "name": "Vought Produced Shield",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "isToggle": true,
+        "shield": {
+          "health": 80.0,
+          "regeneration": 8.0,
+          "recoveryDelay": 40,
+          "cooldown": 80
+        },
+        "coverage": {
+          "yawRadius": 45.0,
+          "pitchRadius": 45.0,
+          "yawOffset": 0.0,
+          "pitchOffset": 0.0
+        },
+        "knockback": 0.1,
+        "soundEvents": {
+          "ENABLE": "fiskheroes:utility_belt_switch",
+          "DISABLE": "fiskheroes:utility_belt_switch",
+          "DEFLECT": "fiskheroes:shield_deflect"
+        }
+    }
+  }
+}

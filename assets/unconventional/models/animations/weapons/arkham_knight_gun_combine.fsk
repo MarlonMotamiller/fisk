@@ -1,0 +1,75 @@
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{right} = 1-{data_2}
+{left} = {data_2}
+
+;DATA=======================================================================================
+
+;{anim} = curve min(animate2({data_0}, length, delay, turn on time, turn off time), 1)
+{anim0} = curve min(animate2({data_0}, 0.8, 0.0, 0.3, 0.2), 1)
+{anim1} = curve min(animate2({data_0}, 0.6, 0.2, 0.2, 0.4), 1)
+{anim1_gun} = curve min(animate2({data_0}, 10, 0.3, 0.15, 0.15), 1)
+{anim1_1_gun} = curve min(animate2({data_0}, 10, 0.4, 0.05, 0.15), 1)
+{anim2} = curve min(animate2({data_0}, 1, 0.7, 0.3, 0.3), 1)
+{anim2_1} = curve min(animate2({data_0}, 0.2, 0.8, 0.1, 0.1), 1){data_1}
+{anim2_gun} = curve min(animate2({data_0}, 10, 0.7, 0.3, 0.15), 1)
+{anim2_1_gun} = curve min(animate2({data_0}, 10, 0.8, 0.2, 0.15), 1)
+{anim3} = curve min(animate2({data_0}, 0.2, 0.8, 0.1, 0.1), 1)
+
+{animf} = curve min(animate2({data_0}, 10, 0.75, 0.15, 0.15), 1)
+
+
+;PLAYER=====================================================================================
+{rightArm_rotX} -= 100'{anim0}{data_1}
+{rightArm_rotY} += 20'{anim0}{data_1}
+{rightArm_rotZ} += 10'{anim0}{data_1}
+
+{rightArm_rotX} -= 10'sin(pi{anim1}){data_1}
+{rightArm_posY} += 2{anim1}{data_1}
+{rightArm_posZ} += 1{anim1}{data_1}
+
+{rightArm_rotX} @ {anim2} -> -74'
+{rightArm_rotY} @ {anim2} -> -27.5'
+{rightArm_rotZ} @ {anim2} -> -5'
+
+{rightArm_posX} @ {anim2} -> -4.4
+{rightArm_posY} @ {anim2} -> 2
+{rightArm_posZ} @ {anim2} -> 2.15
+
+{leftArm_rotX} @ {anim2} -> -72' 
+{leftArm_rotY} @ {anim2} -> 19'
+{leftArm_rotZ} @ {anim2} -> 5'
+
+{leftArm_rotY} @ {anim2_1} -> -25'
+{leftArm_posZ} -= 3.25{anim2_1} 
+
+{leftArm_posX} @ {anim2} -> 5.25
+{leftArm_posY} @ {anim2} -> 2.6
+{leftArm_posZ} @ {anim2} -> -1.6
+
+
+;WEAPON=====================================================================================
+{cross_posZ} += 5{anim1_gun}{right}
+{cross_back_rotX} += 90'{anim1_1_gun}{right}
+
+{cube_low_rotZ} += 45'{anim2_gun}{right}
+
+;{scope_posZ} += 0.2{anim2_gun}{left}
+{scope_posY} -= 0.15{anim2_gun}{left}
+{scope_rotX} += 90'{anim2_gun}{left}
+
+{scope_extend2_posY} -= 1{anim2_1_gun}{left}
+{scope_extend_posY} -= 1{anim2_1_gun}{left}
+{scope_extend_ov2_posY} -= 1{anim2_1_gun}{left}
+{scope_extend_ov_posY} += 1{anim2_1_gun}{left}
+
+{cannon_ov_posZ} -= 5{anim2_gun}{left}
+{cannon_posZ} -= 3.8{anim2_gun}{left}
+
+{right_ov_posZ} += 1{anim2_gun}{left}
+{left_ov_posZ} += 1{anim2_gun}{left}
+
+{handle_rot_rotX} @ {anim2_gun}{left} -> 90'
+{handle_rot_posY} += 1.5{anim2_gun}{left}
+{handle_rot_posZ} += 0.5{anim2_gun}{left}
+;FP=========================================================================================

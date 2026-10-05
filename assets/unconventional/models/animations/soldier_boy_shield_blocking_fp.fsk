@@ -1,0 +1,7 @@
+{data} = curve {data}
+
+out "firstPerson" (true)
+out "translate" (-0.3{data}, -0.0{data}, 0.1{data})
+out "rotate" (-5{data}, 1, 0, 0)
+out "rotate" (-50{data}, 0, 1, 0)
+out "rotate" (-10{data}, 0, 0, 1)

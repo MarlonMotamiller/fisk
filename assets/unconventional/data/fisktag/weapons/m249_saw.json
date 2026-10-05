@@ -1,0 +1,49 @@
+{
+  "name": "M249 Saw",
+  "permission": "USE_GUN",
+  "holdingPose": "DOUBLE",
+  "cooldown": 0,
+  "damageProfile": {
+    "damage": 3,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "activation": {
+    "type": "AUTO",
+    "windup": 0,
+    "rate": 3,
+    "maxDuration": 104,
+    "spinAnimation": false
+  },
+  "ammo": {
+    "amount": 50,
+    "reloadTime": 45
+  },
+  "scope": {
+    "zoom": 0.45
+  },
+  "spread": {
+    "fallingFactor": 0.95,
+    "scopingFactor": 0.3
+  },
+  "recoil": {
+    "amount": 1.6,
+    "cameraShake": 1.8
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.0,
+      "speed": 25.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:m249_saw_shooting"
+  }
+}

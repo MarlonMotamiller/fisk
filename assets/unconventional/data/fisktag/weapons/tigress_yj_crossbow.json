@@ -1,0 +1,50 @@
+{
+  "name": "Crossbow",
+  "permission": "USE_CROSSBOW",
+  "holdingPose": "SINGLE",
+  "isHidden": false,
+  "cooldown": 5,
+  "damageProfile": {
+    "damage": 5.0,
+    "types": {
+      "SHARP": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "activation": {
+    "type": "PRECHARGED",
+    "chargeTime": 1
+  },
+  "ammo": {
+    "amount": 12,
+    "reloadTime": 35
+  },
+  "scope": {
+    "zoom": 0.2
+  },
+  "spread": {
+    "sprintingFactor": 1.0,
+    "fallingFactor": 0.4,
+    "sneakingFactor": 0.1
+  },
+  "recoil": {
+    "amount": 0.1,
+    "cameraShake": 0.1
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 0.4,
+      "range": 48.0,
+      "speed": 8.0,
+      "trail": 2,
+      "hitRadius": 0.4
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:crossbow_shooting"
+  }
+}

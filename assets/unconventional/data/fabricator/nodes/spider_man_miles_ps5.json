@@ -1,0 +1,14 @@
+{
+  "suit": "unconventional:spider_man_miles_ps5",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:spiderverse",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:spider_man_ps4",
+    "unconventional:unconventional"
+  ]
+}

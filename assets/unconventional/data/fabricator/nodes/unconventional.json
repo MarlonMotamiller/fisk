@@ -1,0 +1,11 @@
+{
+  "display": {
+    "name": "Unconventional Heropack",
+    "description": "Also try \u00A7d\u00A7lSecret Heroes",
+    "icon": {
+      "texture": "unconventional:textures/gui/nodes/unconventional_node.png"
+    }
+  },
+  "autoUnlock": false,
+  "requirements": [ ]
+}

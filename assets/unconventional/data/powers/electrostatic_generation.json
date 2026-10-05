@@ -1,0 +1,302 @@
+{
+  "name": "Electrostatic Generation",
+  "modifiers": {
+    "fiskheroes:energy_projection|energy_proj_0": {
+      "damageProfile": {
+        "damage": 3.5,
+        "types": {
+          "ELECTRICITY": 1,
+          "ENERGY": 0.6
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 45
+        }
+      },
+      "range": 18.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "BEAM_AMBIENT": ["unconventional:electro_beam_start", "unconventional:electro_beam_loop", "unconventional:electro_beam_music_loop"]
+      }
+	},
+		"fiskheroes:energy_projection|energy_proj_1": {
+		  "damageProfile": {
+			"damage": 4.0,
+			"types": {
+			  "ELECTRICITY": 1,
+			  "ENERGY": 0.6
+			},
+			"properties": {
+			  "COOK_ENTITY": true,
+			  "HEAT_TRANSFER": 42.5
+			}
+		  },
+		  "range": 18.0,
+		  "radius": 0.2,
+		  "soundEvents": {
+			"BEAM_AMBIENT": ["unconventional:electro_beam_start", "unconventional:electro_beam_loop", "unconventional:electro_beam_music_loop"]
+		  }
+		},
+		"fiskheroes:energy_projection|energy_proj_2": {
+		  "damageProfile": {
+			"damage": 4.5,
+			"types": {
+			  "ELECTRICITY": 1,
+			  "ENERGY": 0.6
+			},
+			"properties": {
+			  "COOK_ENTITY": true,
+			  "HEAT_TRANSFER": 40
+			}
+		  },
+		  "range": 18.0,
+		  "radius": 0.2,
+		  "soundEvents": {
+			"BEAM_AMBIENT": ["unconventional:electro_beam_start", "unconventional:electro_beam_loop", "unconventional:electro_beam_music_loop"]
+		  }
+		},
+		"fiskheroes:energy_projection|energy_proj_3": {
+		  "damageProfile": {
+			"damage": 5.0,
+			"types": {
+			  "ELECTRICITY": 1,
+			  "ENERGY": 0.6
+			},
+			"properties": {
+			  "COOK_ENTITY": true,
+			  "HEAT_TRANSFER": 37.5
+			}
+		  },
+		  "range": 18.0,
+		  "radius": 0.2,
+		  "soundEvents": {
+			"BEAM_AMBIENT": ["unconventional:electro_beam_start", "unconventional:electro_beam_loop", "unconventional:electro_beam_music_loop"]
+		  }
+		},
+		"fiskheroes:energy_projection|energy_proj_4": {
+		  "damageProfile": {
+			"damage": 5.5,
+			"types": {
+			  "ELECTRICITY": 1,
+			  "ENERGY": 0.6
+			},
+			"properties": {
+			  "COOK_ENTITY": true,
+			  "HEAT_TRANSFER": 35
+			}
+		  },
+		  "range": 18.0,
+		  "radius": 0.2,
+		  "soundEvents": {
+			"BEAM_AMBIENT": ["unconventional:electro_beam_start", "unconventional:electro_beam_loop", "unconventional:electro_beam_music_loop"]
+		  }
+		},
+		"fiskheroes:energy_projection|energy_proj_5": {
+		  "damageProfile": {
+			"damage": 6.0,
+			"types": {
+			  "ELECTRICITY": 1,
+			  "ENERGY": 0.6
+			},
+			"properties": {
+			  "COOK_ENTITY": true,
+			  "HEAT_TRANSFER": 32.5
+			}
+		  },
+		  "range": 18.0,
+		  "radius": 0.2,
+		  "soundEvents": {
+			"BEAM_AMBIENT": ["unconventional:electro_beam_start", "unconventional:electro_beam_loop", "unconventional:electro_beam_music_loop"]
+		  }
+		},
+    "fiskheroes:controlled_flight|flight_0": {
+      "speed": 0.1,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.3,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop"
+      }
+	},
+		"fiskheroes:controlled_flight|flight_1": {
+		  "speed": 0.1,
+		  "boostSpeed": 0.25,
+		  "canBoost": true,
+		  "collision": {
+			"blocks": {
+			  "stopFlying": false,
+			  "takeDamage": false
+			},
+			"entities": {
+			  "stopFlying": false,
+			  "dealDamage": true
+			}
+		  },
+		  "knockback": 0.3,
+		  "soundEvents": {
+			"ENABLE": "fiskheroes:flight_loop"
+		  }
+		},
+		"fiskheroes:controlled_flight|flight_2": {
+		  "speed": 0.1,
+		  "boostSpeed": 0.3,
+		  "canBoost": true,
+		  "collision": {
+			"blocks": {
+			  "stopFlying": false,
+			  "takeDamage": false
+			},
+			"entities": {
+			  "stopFlying": false,
+			  "dealDamage": true
+			}
+		  },
+		  "knockback": 0.3,
+		  "soundEvents": {
+			"ENABLE": "fiskheroes:flight_loop"
+		  }
+		},
+		"fiskheroes:controlled_flight|flight_3": {
+		  "speed": 0.1,
+		  "boostSpeed": 0.35,
+		  "canBoost": true,
+		  "collision": {
+			"blocks": {
+			  "stopFlying": false,
+			  "takeDamage": false
+			},
+			"entities": {
+			  "stopFlying": false,
+			  "dealDamage": true
+			}
+		  },
+		  "knockback": 0.3,
+		  "soundEvents": {
+			"ENABLE": "fiskheroes:flight_loop"
+		  }
+		},
+		"fiskheroes:controlled_flight|flight_4": {
+		  "speed": 0.1,
+		  "boostSpeed": 0.4,
+		  "canBoost": true,
+		  "collision": {
+			"blocks": {
+			  "stopFlying": false,
+			  "takeDamage": false
+			},
+			"entities": {
+			  "stopFlying": false,
+			  "dealDamage": true
+			}
+		  },
+		  "knockback": 0.3,
+		  "soundEvents": {
+			"ENABLE": "fiskheroes:flight_loop"
+		  }
+		},
+		"fiskheroes:controlled_flight|flight_5": {
+		  "speed": 0.1,
+		  "boostSpeed": 0.45,
+		  "canBoost": true,
+		  "collision": {
+			"blocks": {
+			  "stopFlying": false,
+			  "takeDamage": false
+			},
+			"entities": {
+			  "stopFlying": false,
+			  "dealDamage": true
+			}
+		  },
+		  "knockback": 0.3,
+		  "soundEvents": {
+			"ENABLE": "fiskheroes:flight_loop"
+		  }
+		},
+    "fiskheroes:teleportation|tp_0": {
+      "canReachMoon": false,
+      "range": 96.0,
+      "soundEvents": {
+        "TELEPORT": ["unconventional:electro_teleport", "unconventional:electro_teleport_music"]
+      }
+    },
+		"fiskheroes:teleportation|tp_1": {
+		  "canReachMoon": false,
+		  "range": 116.0,
+		  "soundEvents": {
+			"TELEPORT": ["unconventional:electro_teleport", "unconventional:electro_teleport_music"]
+		  }
+		},
+		"fiskheroes:teleportation|tp_2": {
+		  "canReachMoon": false,
+		  "range": 136.0,
+		  "soundEvents": {
+			"TELEPORT": ["unconventional:electro_teleport", "unconventional:electro_teleport_music"]
+		  }
+		},
+		"fiskheroes:teleportation|tp_3": {
+		  "canReachMoon": false,
+		  "range": 156.0,
+		  "soundEvents": {
+			"TELEPORT": ["unconventional:electro_teleport", "unconventional:electro_teleport_music"]
+		  }
+		},
+		"fiskheroes:teleportation|tp_4": {
+		  "canReachMoon": false,
+		  "range": 176.0,
+		  "soundEvents": {
+			"TELEPORT": ["unconventional:electro_teleport", "unconventional:electro_teleport_music"]
+		  }
+		},
+		"fiskheroes:teleportation|tp_5": {
+		  "canReachMoon": false,
+		  "range": 196.0,
+		  "soundEvents": {
+			"TELEPORT": ["unconventional:electro_teleport", "unconventional:electro_teleport_music"]
+		  }
+		},
+
+	"fiskheroes:lightning_cast": {
+		"damageProfile": {
+			"damage": 8.0,
+			"types": {
+				"ELECTRICITY": 1.0
+			},
+			"properties": {
+				"COOK_ENTITY": true,
+				"LIGHTNING_STRIKE": 0.15
+			}
+		},
+		"range": 48.0,
+		"chainRadius": 2.5,
+		"cooldownTime": 30,
+		"soundEvents": {
+			"SHOOT": "fiskheroes:black_lightning_lightning_cast"
+		}
+	},
+    "fiskheroes:shadowform": {
+      "isToggle": true,
+      "soundEvents": {
+        "ENABLE": ["unconventional:electro_energyform_enable", "unconventional:electro_energyform_loop", "unconventional:electro_energyform_music_loop"],
+        "DISABLE": ["unconventional:electro_energyform_disable", "unconventional:electro_energyform_music_disable"]
+      }
+    }
+  },
+  "hud": [
+	{
+      "type": "PROGRESS",
+      "texture": "unconventional:textures/gui/bars/electro_charge.png",
+      "data": "var equipment = entity.getWornChestplate().nbt().getTagList('Equipment'); equipment.tagCount()>0 ? Math.max(1- equipment.getCompoundTag(0).getCompoundTag('Item').getFloat('Damage')/1000, 0.0001) : 0"
+    }
+  ]
+}

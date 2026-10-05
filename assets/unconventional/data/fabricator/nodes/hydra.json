@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "Hydra"
+    },
+    "icon": {
+      "texture": "unconventional:textures/gui/nodes/hydra.png"
+    }
+  },
+  "requirements": [ 
+    "unconventional:unconventional"
+  ],
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 10
+  }
+}

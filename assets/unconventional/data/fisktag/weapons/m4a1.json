@@ -1,0 +1,49 @@
+{
+  "name": "M4A1 Carbine",
+  "permission": "USE_GUN",
+  "holdingPose": "DOUBLE",
+  "cooldown": 0,
+  "damageProfile": {
+    "damage": 3,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "activation": {
+    "type": "AUTO",
+    "windup": 0,
+    "rate": 2,
+    "maxDuration": 104,
+    "spinAnimation": false
+  },
+  "ammo": {
+    "amount": 30,
+    "reloadTime": 30
+  },
+  "scope": {
+    "zoom": 0.45
+  },
+  "spread": {
+    "fallingFactor": 0.95,
+    "scopingFactor": 0.2
+  },
+  "recoil": {
+    "amount": 1.2,
+    "cameraShake": 1.4
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.0,
+      "speed": 25.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:m4a1_shooting"
+  }
+}

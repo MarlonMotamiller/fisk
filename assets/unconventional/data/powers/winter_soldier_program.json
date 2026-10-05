@@ -1,0 +1,42 @@
+{
+  "name": "Winter Soldier Program",
+  "modifiers": {
+    "fiskheroes:regeneration": {
+      "factor": 3.75
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [19, 20]
+    },
+    "fiskheroes:arrow_catching": {
+	  },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 160,
+          "uses": 1
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+	  },
+    "fiskheroes:shield_throwing": {
+      "cooldownTime": 45,
+      "soundEvents": {
+        "THROW": "fiskheroes:shield_throw"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "SHIELD_THROW",
+      "transformation": {
+        "toggleData": "unconventional:dyn/shield_throw",
+        "timerData": "unconventional:dyn/shield_throw_timer",
+        "time": 4
+      },
+      "isToggle": false
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.4, 0.0]
+    }
+  }
+}

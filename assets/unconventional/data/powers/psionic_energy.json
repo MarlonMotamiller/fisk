@@ -1,0 +1,142 @@
+{
+  "name": "Psionic Energy",
+  "modifiers": {
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "soundEvents": {
+        "GRAB": ["unconventional:wanda_telekinesis_grab", "unconventional:wanda_telekinesis_loop"]
+      }
+    },
+    "fiskheroes:repulsor_blast": {
+      "damageProfile": {
+        "damage": 14.5,
+        "types": {
+          "ENERGY": 1.0,
+          "MAGIC": 0.75
+        },
+        "properties": {
+          "ADD_KNOCKBACK": 1.0,
+          "HIT_COOLDOWN": 0.0
+        }
+      },
+      "range": 52.0,
+      "speed": 10.0,
+      "spread": 0.5,
+      "radius": 0.2,
+      "cooldownTime": 15,
+      "soundEvents": {
+        "SHOOT": "unconventional:wanda_throw"
+      }
+    },
+    "fiskheroes:shield": {
+      "isToggle": true,
+      "shield": {
+        "health": 135.0,
+        "regeneration": 13.0,
+        "recoveryDelay": 60,
+        "cooldown": 140
+      },
+      "coverage": {
+        "yawRadius": 50.0,
+        "pitchRadius": 50.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.15,
+      "soundEvents": {
+        "BLOCK_START": "unconventional:wanda_shield"
+      }
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 8.0,
+        "types": {
+          "ENERGY": 1.0,
+          "MAGIC": 0.75
+        }
+      },
+      "chargeTime": 5,
+      "duration": 40,
+      "cooldownTime": 30,
+      "range": 35.0,
+      "radius": 0.30,
+      "soundEvents": {
+        "BEAM_AMBIENT": "unconventional:wanda_shooting",
+        "SHOOT_STOP": "unconventional:wanda_stop"
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.08,
+      "boostSpeed": 0.1,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": ["unconventional:wanda_flight_start", "unconventional:wanda_flight_loop1", "unconventional:wanda_flight_loop2"]
+      }
+    },
+    "fiskheroes:controlled_flight|boosted": {
+      "speed": 0.08,
+      "boostSpeed": 0.12,
+      "canBoost": false,
+      "barrelRoll": {
+        "duration": 10,
+        "speed": 0.2,
+        "drag": 0.0
+      },
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "soundEvents": {
+        "ENABLE": ["unconventional:wanda_flight_start", "unconventional:wanda_flight_loop1", "unconventional:wanda_flight_loop2"]
+      }
+    },
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:blindness": {
+          "sequence": "wss",
+          "cooldown": 200
+        }
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "PHASING",
+      "transformation": {
+        "toggleData": "unconventional:dyn/vision_intangible_toggle",
+        "timerData": "unconventional:dyn/vision_intangible_toggle_timer",
+        "time": 1
+      }
+    },
+    "fiskheroes:transformation|fist": {
+      "key": "CHARGE_FIST",
+      "transformation": {
+        "toggleData": "unconventional:dyn/psionic_fists",
+        "timerData": "unconventional:dyn/psionic_fists_timer",
+        "time": 6
+      }
+    }
+  },
+  "hud": [{
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "entity.getData('fiskheroes:beam_charging') ? 0 : entity.getInterpolatedData('fiskheroes:beam_charge')"
+    }
+  ]
+}

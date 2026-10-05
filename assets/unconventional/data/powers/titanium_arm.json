@@ -1,0 +1,23 @@
+{
+  "name": "Titanium Arm",
+  "modifiers": {
+    "fiskheroes:shield": {
+      "isToggle": false,
+      "shield": {
+        "health": 60.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 25,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 30.0,
+        "pitchRadius": 30.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "soundEvents": {
+        "DEFLECT": "fiskheroes:shield_deflect"
+      }
+    }
+  }
+}

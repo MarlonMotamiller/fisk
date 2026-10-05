@@ -1,0 +1,75 @@
+{
+  "name": "Arkham Knight Suit",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.2,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "canRoll": true,
+      "barrelRoll": {
+        "duration": 21,
+        "speed": 0.1,
+        "drag": 0.0
+      },
+      "diveSpeedRetention": 0.5,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": true
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.0
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:batarang": {
+          "cooldown": 10,
+          "uses": 2,
+          "damageProfile": {
+            "damage": 8.0,
+            "types": {
+              "SHURIKEN": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.6,
+              "HIT_COOLDOWN": 0
+            }
+          }
+        },
+        "fiskheroes:freeze_grenade": {
+          "cooldown": 500,
+          "uses": 2,
+          "damageProfile": {
+            "damage": 14.0,
+            "types": {
+              "COLD": 0.5,
+              "EXPLOSION": 0.6
+            }
+          }
+        },
+        "fiskheroes:smoke_pellet": {
+          "cooldown": 100,
+          "uses": 1
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+      "factor": 0.6
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/sliding_timer.png",
+      "data": "var x = entity.getData('unconventional:dyn/sliding_cooldown'); x == 0 ? 0 : 1 - x"
+    }
+  ]
+}

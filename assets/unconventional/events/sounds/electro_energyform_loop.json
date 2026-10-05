@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:electro.energyform.loop",
+  "condition": "fiskheroes:shadowform",
+  "volume": 0.4,
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 5
+}

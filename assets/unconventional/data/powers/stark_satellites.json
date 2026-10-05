@@ -1,0 +1,48 @@
+{
+  "name": "S.T.A.R.K. Satellites",
+  "modifiers": {
+    "fiskheroes:spellcasting": {
+      "spells": {
+        "fiskheroes:drones": {
+          "sequence": "",
+          "cooldown": 200,
+          "centerDist": 5.0,
+          "quantity": 4,
+          "range": 28.0,
+          "damageProfile": {
+            "damage": 3.0,
+            "types": {
+              "BULLET": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 1.0
+            }
+          }
+        },
+        "fiskheroes:duplication": {
+          "sequence": "",
+          "cooldown": 60,
+          "quantity": 6
+        },
+        "fiskheroes:blindness": {
+          "sequence": "",
+          "cooldown": 40,
+          "duration": 100,
+          "range": 32.0
+        }
+      },
+      "soundEvents": {
+        "CAST_FAIL": "fiskheroes:spell_fail"
+      }
+    },
+    "fiskheroes:shadowdome": {
+	}
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "0x68FFEF",
+      "data": "fiskheroes:lightsout_timer"
+    }
+  ]
+}

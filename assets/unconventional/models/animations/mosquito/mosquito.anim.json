@@ -1,0 +1,6 @@
+{
+  "inputs": [
+    "unconventional:mosquito/header_mosquito",
+    "unconventional:mosquito/mosquito",
+  ]
+}

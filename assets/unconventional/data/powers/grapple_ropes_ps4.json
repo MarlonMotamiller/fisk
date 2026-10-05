@@ -1,0 +1,28 @@
+{
+  "name": "Grapple Ropes (PS4)",
+  "modifiers": {
+    "fiskheroes:leaping": {
+      "leapAmount": [0.9, 0.25]
+    },
+    "fiskheroes:leaping|springboard": {
+      "leapAmount": [1.4, 0.6]
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 20,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "unconventional:grapple_shoot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "unconventional:grapple_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 48.0,
+      "cooldownTime": 26,
+      "soundEvents": {
+        "SHOOT": "unconventional:grapple_shoot"
+      }
+    }
+  }
+}

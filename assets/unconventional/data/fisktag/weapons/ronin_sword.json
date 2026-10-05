@@ -1,0 +1,8 @@
+{
+  "name": "Ronin's Sword",
+  "permission": "MELEE_RONIN_SWORD",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 7.0
+  }
+}

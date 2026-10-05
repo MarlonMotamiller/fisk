@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:deadpool.xmen.origins.chargeup",
+  "condition": "fiskheroes:beam_charging",
+  "pitch": "0.6 + Math.random() * 0.2",
+  "fadeOut": 5
+}

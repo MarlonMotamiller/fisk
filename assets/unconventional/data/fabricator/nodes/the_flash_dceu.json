@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:the_flash_dceu",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal2",
+    "fiskheroes:regeneration2",
+    "fiskheroes:melee",
+    "fiskheroes:speed_force",
+    "unconventional:unconventional",
+    "unconventional:the_flash_dceu_jl"
+  ]
+}

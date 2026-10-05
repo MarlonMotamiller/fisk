@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:radioactive.man.shield.deflect",
+  "pitch": "0.8 + Math.random() * 0.2",
+  "fadeOut": 10
+}

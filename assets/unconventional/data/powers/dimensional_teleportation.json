@@ -1,0 +1,14 @@
+{
+  "name": "Dimensional Teleportation",
+  "modifiers": {
+    "fiskheroes:shape_shifting": {
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0,
+      "soundEvents": {
+        "TELEPORT": "fiskheroes:breach"
+      }
+    }
+  }
+}

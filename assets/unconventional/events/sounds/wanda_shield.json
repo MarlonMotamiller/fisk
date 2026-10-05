@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.shield",
+  "condition": "fiskheroes:shield_blocking",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 10
+}

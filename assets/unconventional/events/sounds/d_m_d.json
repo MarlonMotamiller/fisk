@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:dm.d",
+  "volume": 0.6,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

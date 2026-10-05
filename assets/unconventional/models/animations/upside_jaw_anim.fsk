@@ -1,0 +1,4 @@
+{data} = curve {data}
+
+{jawl1_rotX} @ {data} -'> -40'
+{jawl2_rotX} @ {data} -'> -40'

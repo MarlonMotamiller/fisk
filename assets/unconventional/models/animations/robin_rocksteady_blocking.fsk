@@ -1,0 +1,65 @@
+{data} = curve {data}
+
+{head_rotX} -= 30'{data}
+{head_rotY} += 0'{data}
+{head_rotZ} += 0'{data}
+{head_posX} @ {data} -> 0
+{head_posY} @ {data} -> 0
+{head_posZ} @ {data} -> 0
+
+
+{body_rotX} @ {data} -> 0'
+{body_rotY} @ {data} -> -22.5'
+{body_rotZ} @ {data} -> 5'
+{body_posX} @ {data} -> 0
+{body_posY} @ {data} -> 0
+{body_posZ} @ {data} -> 0
+
+
+{rightArm_rotX} @ {data} -> -112'
+{rightArm_rotY} -= 20'{data}
+{rightArm_rotZ} += 7.5'{data}
+
+{rightArm_posX} @ {data} -> -4.5
+{rightArm_posY} @ {data} -> 2
+{rightArm_posZ} @ {data} -> -0.25
+
+
+{leftArm_rotX} @ {data} -> -120'
+{leftArm_rotY} += 37.5'{data}
+{leftArm_rotZ} -= 32.5'{data}
+
+{leftArm_posX} @ {data} -> 5
+{leftArm_posY} @ {data} -> 3
+{leftArm_posZ} @ {data} -> 0
+
+{d} = sin(pi{data})
+{rightLeg_rotX} -= 28'{data}
+{rightLeg_rotY} @ {data} -> 0'
+{rightLeg_rotZ} @ {data} -> 0'
+
+{rightLeg_posX} @ {data} -> -3
+{rightLeg_posY} @ {data} -> 10
+{rightLeg_posZ} @ {data} -> -3
+
+{rightLeg_rotX} += 0'{d}
+{rightLeg_posY} -= 0{d}
+{rightLeg_posZ} -= 0{d}
+
+
+{leftLeg_rotX} -= 25'{data}
+{leftLeg_rotY} @ {data} -> -10'
+{leftLeg_rotZ} @ {data} -> 0'
+
+{leftLeg_posX} @ {data} -> 2
+{leftLeg_posY} @ {data} -> 11.5
+{leftLeg_posZ} @ {data} -> -0
+
+{leftLeg_rotX} += 0'{d}
+{leftLeg_posZ} -= 0{d}
+
+out "pivot" (0, 0.56, 0)
+out "translate" (0, -0.08{data}, 0.0{data})
+out "rotate" (0{data}, 0, 0, 1)
+out "rotate" (-0{data}, 0, 1, 0)
+out "rotate" (-30{data}, 1, 0, 0)

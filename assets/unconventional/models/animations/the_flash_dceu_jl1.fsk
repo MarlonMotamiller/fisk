@@ -1,0 +1,39 @@
+{flash_pose_jl1_time}={data}
+{flash_pose_jl1_0}=curve animate2({flash_pose_jl1_time},10,0,0.5,9.5)
+
+{head_rotX} @ {flash_pose_jl1_0} -> 10'
+{head_posX} @ {flash_pose_jl1_0} -> 3
+{head_posY} @ {flash_pose_jl1_0} -> 6
+{head_posZ} @ {flash_pose_jl1_0} -> -2
+
+{body_rotX} @ {flash_pose_jl1_0} -> 10'
+{body_rotY} @ {flash_pose_jl1_0} -> -1.2'
+{body_rotZ} @ {flash_pose_jl1_0} -> 7.3'
+{body_posX} @ {flash_pose_jl1_0} -> 3
+{body_posY} @ {flash_pose_jl1_0} -> 6
+{body_posZ} @ {flash_pose_jl1_0} -> -2
+
+{rightArm_rotX} @ {flash_pose_jl1_0} -> 37.2'
+{rightArm_rotY} @ {flash_pose_jl1_0} -> 27.2'
+{rightArm_rotZ} @ {flash_pose_jl1_0} -> 26'
+{rightArm_posX} @ {flash_pose_jl1_0} -> -1.75
+{rightArm_posY} @ {flash_pose_jl1_0} -> 7
+{rightArm_posZ} @ {flash_pose_jl1_0} -> 0.5
+
+{leftArm_rotX} @ {flash_pose_jl1_0} -> -120.3'
+{leftArm_rotY} @ {flash_pose_jl1_0} -> 8.5'
+{leftArm_rotZ} @ {flash_pose_jl1_0} -> -50'
+{leftArm_posX} @ {flash_pose_jl1_0} -> 8
+{leftArm_posY} @ {flash_pose_jl1_0} -> 11
+{leftArm_posZ} @ {flash_pose_jl1_0} -> -2
+
+{rightLeg_rotX} @ {flash_pose_jl1_0} -> 7'
+{rightLeg_rotY} @ {flash_pose_jl1_0} -> -5.5'
+{rightLeg_rotZ} @ {flash_pose_jl1_0} -> 61.8'
+{rightLeg_posY} @ {flash_pose_jl1_0} -> 17
+
+{leftLeg_rotX} @ {flash_pose_jl1_0} -> 53'
+{leftLeg_rotY} @ {flash_pose_jl1_0} -> -55.5'
+{leftLeg_posX} @ {flash_pose_jl1_0} -> 9.90
+{leftLeg_posY} @ {flash_pose_jl1_0} -> 15.5
+{leftLeg_posZ} @ {flash_pose_jl1_0} -> -4

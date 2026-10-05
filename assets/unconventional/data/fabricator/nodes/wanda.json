@@ -1,0 +1,13 @@
+{
+  "suit": "unconventional:wanda",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:flight",
+    "fiskheroes:object_manipulation",
+    "fiskheroes:ranged3",
+    "fiskheroes:defense2",
+    "fiskheroes:vision",
+    "fiskheroes:magic",
+    "unconventional:unconventional"
+  ]
+}

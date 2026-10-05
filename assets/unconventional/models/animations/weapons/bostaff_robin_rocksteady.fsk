@@ -1,0 +1,6 @@
+{data} = curve min(animate2({data}, 0.255, 0.75, 0.25, 0.05), 1)
+
+{top_posY} @ {data} -> 6
+
+{bottom_posY} @ {data} -> 6
+

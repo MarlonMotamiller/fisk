@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "fiskheroes:flight/hover/default",
+    "unconventional:flight/boost/superman_dcu",
+    "unconventional:flight/boost/superman_dcu2"
+  ]
+}

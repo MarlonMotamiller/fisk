@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:sss_og",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:traversal",
+    "fiskheroes:regeneration",
+    "fiskheroes:defense",
+    "fiskheroes:melee2",
+    "fiskheroes:captain_america",
+    "unconventional:unconventional"
+  ]
+}

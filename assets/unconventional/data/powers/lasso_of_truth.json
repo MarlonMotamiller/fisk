@@ -1,0 +1,15 @@
+{
+  "name": "Lasso of Hestia",
+  "modifiers": {
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 7,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "unconventional:web_shoot_miles_ps5",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    }
+  }
+}

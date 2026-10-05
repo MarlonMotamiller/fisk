@@ -1,0 +1,41 @@
+{
+  "name": "Arkham Knight Pistols",
+  "permission": "USE_GUN",
+  "holdingPose": "DUAL",
+  "cooldown": 3,
+  "damageProfile": {
+    "damage": 6.0,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+
+  "ammo": {
+    "amount": 6,
+    "reloadTime": 25
+  },
+  "spread": {
+    "sprintingFactor": 1.5,
+    "fallingFactor": 1.6,
+    "scopingFactor": 0.8
+  },
+  "recoil": {
+    "amount": 0.8,
+    "cameraShake": 1.0
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 1.5,
+      "speed": 15.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": ["unconventional:arkham_knight_pistol_shooting", "unconventional:arkham_knight_pistol_shooting_base"]
+  }
+}

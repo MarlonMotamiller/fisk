@@ -1,0 +1,12 @@
+{
+  "particles": {
+    "texture": "unconventional:textures/heroes/marvel/miles_punching.png",
+    "motion": 0.1,
+    "speed": 1.0,
+    "fade": 20,
+    "density": 1,
+    "differ": 1,
+    "opacity": 4,
+    "scale": 0.4
+  }
+}

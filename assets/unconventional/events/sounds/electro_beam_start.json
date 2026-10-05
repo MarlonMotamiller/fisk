@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:suit.blacklightning.flight.enable",
+  "condition": "fiskheroes:energy_projection",
+  "pitch": "0.8 + Math.random() * 0.35",
+  "fadeOut": 2
+}

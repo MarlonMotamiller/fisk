@@ -1,0 +1,50 @@
+{
+  "name": "CZ Vz. 61 E Skorpion",
+  "permission": "USE_GUN",
+  "holdingPose": "SINGLE",
+  "cooldown": 0,
+  "damageProfile": {
+    "damage": 1.5,
+    "types": {
+      "BULLET": 1.0
+    },
+    "properties": {
+      "HIT_COOLDOWN": 0,
+      "REDUCE_KNOCKBACK": 0.75
+    }
+  },
+  "activation": {
+    "type": "AUTO",
+    "windup": 0,
+    "rate": 2,
+    "maxDuration": 104,
+    "spinAnimation": false,
+	"moveSlowdown": 0.2
+  },
+  "ammo": {
+    "amount": 20,
+    "reloadTime": 30
+  },
+  "scope": {
+    "zoom": 0.35
+  },
+  "spread": {
+    "fallingFactor": 1.5,
+    "scopingFactor": 0.3
+  },
+  "recoil": {
+    "amount": 0.5,
+    "cameraShake": 1.3
+  },
+  "projectiles": [
+    {
+      "type": "BEAM",
+      "spread": 3.0,
+      "speed": 25.0,
+      "trail": 1
+    }
+  ],
+  "soundEvents": {
+    "SHOOT": "unconventional:scorpion_shooting"
+  }
+}

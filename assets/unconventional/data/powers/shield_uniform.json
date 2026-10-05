@@ -1,0 +1,16 @@
+{
+  "name": "S.H.I.E.L.D Uniform",
+  "modifiers": {
+    "fiskheroes:damage_resistance|fire": {
+      "damageType": "FIRE",
+      "factor": 0.3
+    },
+	"fiskheroes:damage_resistance|bullet": {
+      "damageType": "BULLET",
+      "factor": 0.75
+    },
+	"fiskheroes:fire_resistance": {
+      "duration": 60
+    }
+  }
+}

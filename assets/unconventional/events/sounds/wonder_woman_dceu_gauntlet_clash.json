@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wonder.woman.dceu.gauntlet.clash",
+  "condition": "fiskheroes:beam_shooting",
+  "pitch": "0.8 + Math.random() * 0.2",
+  "fadeOut": 50
+}

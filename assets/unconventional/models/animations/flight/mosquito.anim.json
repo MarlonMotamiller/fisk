@@ -1,0 +1,6 @@
+{
+  "inputs": [
+    "unconventional:flight/header",
+    "unconventional:flight/mosquito",
+  ]
+}

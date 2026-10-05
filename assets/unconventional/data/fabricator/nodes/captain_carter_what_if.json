@@ -1,0 +1,13 @@
+{
+  "suit": "unconventional:captain_carter_what_if",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:vibranium",
+    "fiskheroes:traversal",
+    "fiskheroes:regeneration2",
+    "fiskheroes:defense2",
+    "fiskheroes:melee2",
+    "fiskheroes:ranged3",
+    "unconventional:unconventional"
+  ]
+}

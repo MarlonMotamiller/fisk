@@ -1,0 +1,5 @@
+{reload} = {data_1}
+
+
+{sliding_part_rotX} += 35'min(sin(pi{reload})*3, 1)
+

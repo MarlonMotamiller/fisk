@@ -1,0 +1,113 @@
+{fix}= curve animate2({data},1,0,0.05,0.15)
+{rightArm_rotX} @ {fix} -> 0'
+{rightArm_rotY} @ {fix} -> 0'
+{rightArm_rotZ} @ {fix} -> 0'
+{rightArm_posZ} @ {fix} -> 0
+
+{leftArm_rotX} @ {fix} -> 0'
+{leftArm_rotY} @ {fix} -> 0'
+{leftArm_rotZ} @ {fix} -> 0'
+{leftArm_posZ} @ {fix} -> 0
+
+{m4a1_reload_time}={data}
+{m4a1_reload_0}=curve animate2({m4a1_reload_time},0.3333333333,0,0.2083333333,0.125)
+{m4a1_reload_1}=curve animate2({m4a1_reload_time},0.2083333333,0.20833333333333334,0.125,0.0833333333)
+{m4a1_reload_2}=curve animate2({m4a1_reload_time},0.25,0.3333333333333333,0.0833333333,0.1666666667)
+{m4a1_reload_3}=curve animate2({m4a1_reload_time},0.25,0.4166666666666667,0.1666666667,0.0833333333)
+{m4a1_reload_4}=curve animate2({m4a1_reload_time},0.125,0.5833333333333334,0.0833333333,0.0416666667)
+{m4a1_reload_5}=curve animate2({m4a1_reload_time},0.125,0.6666666666666666,0.0416666667,0.0833333333)
+{m4a1_reload_6}=curve animate2({m4a1_reload_time},0.2916666667,0.7083333333333334,0.0833333333,0.2083333333)
+{m4a1_reload_7}=curve animate2({m4a1_reload_time},0.4166666667,0,0.2083333333,0.2083333333)
+{m4a1_reload_8}=curve animate2({m4a1_reload_time},0.375,0.20833333333333334,0.2083333333,0.1666666667)
+{m4a1_reload_9}=curve animate2({m4a1_reload_time},0.2083333333,0.5833333333333334,0.0833333333,0.125)
+{m4a1_reload_10}=curve animate2({m4a1_reload_time},0.3333333333,0.6666666666666666,0.125,0.2083333333)
+{m4a1_reload_11}=curve animate2({m4a1_reload_time},0.3333333333,0,0.2916666667,0.0416666667)
+{m4a1_reload_12}=curve animate2({m4a1_reload_time},0.125,0.2916666666666667,0.0416666667,0.0833333333)
+{m4a1_reload_13}=curve animate2({m4a1_reload_time},0.125,0.3333333333333333,0.0833333333,0.0416666667)
+{m4a1_reload_14}=curve animate2({m4a1_reload_time},0.0833333333,0.4166666666666667,0.0416666667,0.0416666667)
+{m4a1_reload_15}=curve animate2({m4a1_reload_time},0.1666666667,0.4583333333333333,0.0416666667,0.125)
+{m4a1_reload_16}=curve animate2({m4a1_reload_time},0.2083333333,0.5,0.125,0.0833333333)
+{m4a1_reload_17}=curve animate2({m4a1_reload_time},0.125,0.625,0.0833333333,0.0416666667)
+{m4a1_reload_18}=curve animate2({m4a1_reload_time},0.0833333333,0.7083333333333334,0.0416666667,0.0416666667)
+{m4a1_reload_19}=curve animate2({m4a1_reload_time},0.25,0.75,0.0416666667,0.2083333333)
+{m4a1_reload_20}=curve animate2({m4a1_reload_time},0.4166666667,0.2916666666666667,0.0416666667,0.375)
+{m4a1_reload_21}=curve animate2({m4a1_reload_time},0.4166666667,0.3333333333333333,0.375,0.0416666667)
+
+{rightArm_rotX}+=-96.271905137'{m4a1_reload_0}
+{rightArm_rotY}+=-45.5949469997'{m4a1_reload_0}
+{rightArm_rotZ}+=-7.6211973766'{m4a1_reload_0}
+{rightArm_rotX}+=-96.2261955868'{m4a1_reload_1}
+{rightArm_rotY}+=-45.9213528333'{m4a1_reload_1}
+{rightArm_rotZ}+=-11.174097915'{m4a1_reload_1}
+{rightArm_rotX}+=-96.271905137'{m4a1_reload_2}
+{rightArm_rotY}+=-45.5949469997'{m4a1_reload_2}
+{rightArm_rotZ}+=-7.6211973766'{m4a1_reload_2}
+{rightArm_rotX}+=-96.271905137'{m4a1_reload_3}
+{rightArm_rotY}+=-45.5949469997'{m4a1_reload_3}
+{rightArm_rotZ}+=-7.6211973766'{m4a1_reload_3}
+{rightArm_rotX}+=-96.271905137'{m4a1_reload_4}
+{rightArm_rotY}+=-45.5949469997'{m4a1_reload_4}
+{rightArm_rotZ}+=-7.6211973766'{m4a1_reload_4}
+{rightArm_rotX}+=-101.2670160879'{m4a1_reload_5}
+{rightArm_rotY}+=-45.1598202773'{m4a1_reload_5}
+{rightArm_rotZ}+=-4.1161560557'{m4a1_reload_5}
+{rightArm_rotX}+=-96.271905137'{m4a1_reload_6}
+{rightArm_rotY}+=-45.5949469997'{m4a1_reload_6}
+{rightArm_rotZ}+=-7.6211973766'{m4a1_reload_6}
+{rightArm_posX}+=-1{m4a1_reload_7}
+{rightArm_posY}+=3{m4a1_reload_7}
+{rightArm_posZ}+=-1{m4a1_reload_7}
+{rightArm_posX}+=-1{m4a1_reload_8}
+{rightArm_posY}+=3{m4a1_reload_8}
+{rightArm_posZ}+=-1{m4a1_reload_8}
+{rightArm_posX}+=-1{m4a1_reload_3}
+{rightArm_posY}+=3{m4a1_reload_3}
+{rightArm_posZ}+=-1{m4a1_reload_3}
+{rightArm_posX}+=-1{m4a1_reload_9}
+{rightArm_posY}+=3{m4a1_reload_9}
+{rightArm_posZ}+=-1{m4a1_reload_9}
+{rightArm_posX}+=-1{m4a1_reload_10}
+{rightArm_posY}+=3{m4a1_reload_10}
+{rightArm_posZ}+=-1{m4a1_reload_10}
+
+{leftArm_rotX}+=-92.5280096556'{m4a1_reload_11}
+{leftArm_rotY}+=13.7472256159'{m4a1_reload_11}
+{leftArm_rotZ}+=-13.8703569736'{m4a1_reload_11}
+{leftArm_rotX}+=-98.0215522636'{m4a1_reload_12}
+{leftArm_rotY}+=10.8415344817'{m4a1_reload_12}
+{leftArm_rotZ}+=-15.9310722531'{m4a1_reload_12}
+{leftArm_rotX}+=-67.1187165759'{m4a1_reload_13}
+{leftArm_rotY}+=9.8447872266'{m4a1_reload_13}
+{leftArm_rotZ}+=-23.901228288'{m4a1_reload_13}
+{leftArm_rotX}+=-65.0517188789'{m4a1_reload_14}
+{leftArm_rotY}+=10.4988784884'{m4a1_reload_14}
+{leftArm_rotZ}+=-26.3526954281'{m4a1_reload_14}
+{leftArm_rotX}+=-67.1187165759'{m4a1_reload_15}
+{leftArm_rotY}+=9.8447872266'{m4a1_reload_15}
+{leftArm_rotZ}+=-23.901228288'{m4a1_reload_15}
+{leftArm_rotX}+=-77.1187165759'{m4a1_reload_16}
+{leftArm_rotY}+=9.8447872266'{m4a1_reload_16}
+{leftArm_rotZ}+=-23.901228288'{m4a1_reload_16}
+{leftArm_rotX}+=-97.5280096556'{m4a1_reload_17}
+{leftArm_rotY}+=13.7472256159'{m4a1_reload_17}
+{leftArm_rotZ}+=-13.8703569736'{m4a1_reload_17}
+{leftArm_rotX}+=-95.0280096556'{m4a1_reload_18}
+{leftArm_rotY}+=13.7472256159'{m4a1_reload_18}
+{leftArm_rotZ}+=-13.8703569736'{m4a1_reload_18}
+{leftArm_rotX}+=-95.0280096556'{m4a1_reload_19}
+{leftArm_rotY}+=13.7472256159'{m4a1_reload_19}
+{leftArm_rotZ}+=-13.8703569736'{m4a1_reload_19}
+{leftArm_posY}+=1{m4a1_reload_11}
+{leftArm_posZ}+=-2{m4a1_reload_11}
+{leftArm_posX}+=0.5{m4a1_reload_20}
+{leftArm_posY}+=1{m4a1_reload_20}
+{leftArm_posZ}+=-1.5{m4a1_reload_20}
+{leftArm_posX}+=0.5{m4a1_reload_21}
+{leftArm_posY}+=1{m4a1_reload_21}
+{leftArm_posZ}+=-1.5{m4a1_reload_21}
+{leftArm_posX}+=0.5{m4a1_reload_18}
+{leftArm_posY}+=1{m4a1_reload_18}
+{leftArm_posZ}+=-1.5{m4a1_reload_18}
+{leftArm_posX}+=0.5{m4a1_reload_19}
+{leftArm_posY}+=1{m4a1_reload_19}
+{leftArm_posZ}+=-1.5{m4a1_reload_19}

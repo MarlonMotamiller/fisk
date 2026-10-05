@@ -1,0 +1,10 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.aim",
+  "condition": "fiskheroes:aiming",
+  "volume": 0.5,
+  "pitch": "0.95 + Math.random() * 0.2",
+  "loop": true,
+  "fadeIn": 20,
+  "fadeOut": 20
+}

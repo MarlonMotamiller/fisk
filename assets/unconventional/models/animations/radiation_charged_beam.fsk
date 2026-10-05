@@ -1,0 +1,49 @@
+{data_0} = curve {data_0}*(1-{data_1})
+
+
+;{head_posY} += {data_0}
+;{head_posZ} -= {data_0}
+{head_rotX} @ {data_0} -> 60'
+{rightArm_rotX} @ {data_0} -> -55'
+{rightArm_rotY} @ {data_0} -'> -30'
+{rightArm_rotZ} @ {data_0} -> -7'
+{leftArm_rotX} @ {data_0} -> -65'
+{leftArm_rotY} @ {data_0} -'> 40'
+{leftArm_rotZ} @ {data_0} -> -20'
+
+{rightLeg_posX} @ {data_0} -> -2.25
+{rightLeg_posY} @ {data_0} -> 3.5
+{rightLeg_posZ} @ {data_0} -> -1.5
+{rightLeg_rotX} @ {data_0} -> -30'
+{rightLeg_rotZ} @ {data_0} -> -2'
+{leftLeg_posX} @ {data_0} -> 2.25
+{leftLeg_posY} @ {data_0} -> 2.5
+{leftLeg_posZ} @ {data_0} -> -1.5
+{leftLeg_rotX} @ {data_0} -> -30'
+{leftLeg_rotZ} @ {data_0} -> 5'
+
+
+{head_rotX} @ {data_1} -> -20'
+{rightArm_rotX} @ {data_1} -> 26'
+{rightArm_rotY} @ {data_1} -'> -11'
+{rightArm_rotZ} @ {data_1} -> 46'
+{leftArm_rotX} @ {data_1} -> 28'
+{leftArm_rotY} @ {data_1} -'> -2'
+{leftArm_rotZ} @ {data_1} -> -47'
+
+{rightLeg_rotX} @ {data_1} -> 13'
+{rightLeg_rotY} @ {data_1} -> 13'
+{rightLeg_rotZ} @ {data_1} -> 21'
+
+{leftLeg_rotX} @ {data_1} -> 16'
+{leftLeg_rotY} @ {data_1} -> -13'
+{leftLeg_rotZ} @ {data_1} -> -23'
+
+
+out "pivot" (0, 0.6, 0)
+out "rotate" (-20{data_0}, 1, 0, 0)
+
+out "rotate" (5{data_1}, 1, 0, 0)
+
+out "translate" (0, -0.15{data_0}, 0.1{data_0})
+

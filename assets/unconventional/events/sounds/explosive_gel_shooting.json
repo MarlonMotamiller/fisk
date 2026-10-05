@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:explosive.gel.shooting",
+  "pitch": "0.8 + Math.random() * 0.2",
+  "volume": 2.0,
+  "fadeOut": 20
+}

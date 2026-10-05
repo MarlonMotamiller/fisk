@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:radioactive.man.shield.off",
+  "fadeOut": 10
+}

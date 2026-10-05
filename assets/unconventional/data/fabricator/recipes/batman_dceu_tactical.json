@@ -1,0 +1,9 @@
+{
+  "items": {
+    "fiskheroes:tutridium_gem": 4,
+    "fiskheroes:superhero_helmet{HeroType:fiskheroes:batman_dceu}": 1,
+    "fiskheroes:superhero_chestplate{HeroType:fiskheroes:batman_dceu}": 1,
+    "fiskheroes:superhero_leggings{HeroType:fiskheroes:batman_dceu}": 1,
+    "fiskheroes:superhero_boots{HeroType:fiskheroes:batman_dceu}": 1
+  }
+}

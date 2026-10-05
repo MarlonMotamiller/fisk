@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.telekinesis.grab",
+  "condition": "fiskheroes:telekinesis",
+  "pitch": "0.8 + Math.random() * 0.25",
+  "fadeOut": 5
+}

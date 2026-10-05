@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:mob.creetle.hurt",
+  "volume": 1,
+  "pitch": "1.6 - Math.random() * 0.2"
+}

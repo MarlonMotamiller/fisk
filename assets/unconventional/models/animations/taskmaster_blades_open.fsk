@@ -1,0 +1,19 @@
+{taskmaster_blade_anim_time}={data}
+{taskmaster_blade_anim_0}=curve animate2({taskmaster_blade_anim_time},9.5,0.5,0.5,9)
+{taskmaster_blade_anim_1}=curve animate2({taskmaster_blade_anim_time},0.65,0,0.36,0.29)
+{taskmaster_blade_anim_2}=curve animate2({taskmaster_blade_anim_time},0.64,0.36,0.29,0.35)
+{taskmaster_blade_anim_3}=curve animate2({taskmaster_blade_anim_time},9.35,0.65,0.35,9)
+
+{armor_back_rotX}+=-2.5'{taskmaster_blade_anim_0}
+{armor_back_posX}+=-0.25{taskmaster_blade_anim_1}
+{armor_back_posX}+=-0.25{taskmaster_blade_anim_2}
+{armor_back_posZ}+=0.3{taskmaster_blade_anim_2}
+{armor_back_posX}+=-0.25{taskmaster_blade_anim_3}
+{armor_back_posZ}+=0.55{taskmaster_blade_anim_3}
+
+{armor_front_rotX}+=2.5'{taskmaster_blade_anim_0}
+{armor_front_posX}+=-0.25{taskmaster_blade_anim_1}
+{armor_front_posX}+=-0.25{taskmaster_blade_anim_2}
+{armor_front_posZ}+=-0.3{taskmaster_blade_anim_2}
+{armor_front_posX}+=-0.25{taskmaster_blade_anim_3}
+{armor_front_posZ}+=-0.55{taskmaster_blade_anim_3}

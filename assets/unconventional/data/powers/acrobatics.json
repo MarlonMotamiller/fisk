@@ -1,0 +1,82 @@
+{
+  "name": "Acrobatics",
+  "modifiers": {
+	"fiskheroes:leaping|acrobatics_leap_1_0": {
+      "leapAmount": [0.8, 0.1]
+    },
+    "fiskheroes:leaping|acrobatics_leap_2_0": {
+      "leapAmount": [0.6, 0.15]
+    },
+    "fiskheroes:leaping|acrobatics_leap_3_0": {
+      "leapAmount": [0.4, 0.25]
+    },
+    "fiskheroes:leaping|acrobatics_leap_4_0": {
+      "leapAmount": [0.2, 0.35]
+    },
+    "fiskheroes:leaping|acrobatics_leap_5_0": {
+      "leapAmount": [0.1, 0.45]
+    },
+	"fiskheroes:leaping|acrobatics_leap_1_1": {
+      "leapAmount": [1.8, 0.2]
+    },
+    "fiskheroes:leaping|acrobatics_leap_2_1": {
+      "leapAmount": [1.4, 0.4]
+    },
+    "fiskheroes:leaping|acrobatics_leap_3_1": {
+      "leapAmount": [1.0, 0.6]
+    },
+    "fiskheroes:leaping|acrobatics_leap_4_1": {
+      "leapAmount": [0.6, 0.8]
+    },
+    "fiskheroes:leaping|acrobatics_leap_5_1": {
+      "leapAmount": [0.4, 1]
+    },
+
+    "fiskheroes:transformation": {
+      "key": "REVERSE_ACROBATICS",
+      "transformation": {
+        "toggleData": "unconventional:dyn/trick_reverse_toggle",
+        "timerData": "unconventional:dyn/trick_reverse_timer",
+        "time": 0
+      },
+      "isToggle": false
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_1_0": {
+      "leapAmount": [-2.8, 0.1]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_2_0": {
+      "leapAmount": [-2.6, 0.15]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_3_0": {
+      "leapAmount": [-2.4, 0.25]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_4_0": {
+      "leapAmount": [-2.2, 0.35]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_5_0": {
+      "leapAmount": [-2.1, 0.45]
+    },
+	"fiskheroes:leaping|acrobatics_reverse_leap_1_1": {
+      "leapAmount": [-2.8, 0.2]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_2_1": {
+      "leapAmount": [-2.4, 0.4]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_3_1": {
+      "leapAmount": [-2.0, 0.6]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_4_1": {
+      "leapAmount": [-2.6, 0.8]
+    },
+    "fiskheroes:leaping|acrobatics_reverse_leap_5_1": {
+      "leapAmount": [-2.4, 1]
+    }
+  },
+  "hud": [
+	  {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/leap_charge.png",
+      "data": "var t: entity.getData('unconventional:dyn/trick_count'); t == 2 ? 1 : t == 1 ? 0.5 : t == 0 && entity.isOnGround() ? 0.25 : 0"
+    }
+  ]
+}

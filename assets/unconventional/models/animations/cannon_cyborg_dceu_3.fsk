@@ -1,0 +1,16 @@
+{data_0} = curve {data_0}
+
+{1} = 1-{data_0}
+
+;{cannon_base_1_ov_posY} -= 4{1}
+{cannon_base_1_ov_posY} @ {1} -> 6
+;{cannon_base_1_ov_rotY} -= 45'{1}
+{cannon_base_1_ov_rotY} @ {1} -> 0
+
+;{cannon_1_posY} -= 9{1}
+;{cannon_3_posY} -= 4{1}
+{cannon_1_posY} @ {1} -> 0
+{cannon_3_posY} @ {1} -> 2
+
+;{cannon_top_posY} -= 16{1}
+{cannon_top_posY} @ {1} -> 2

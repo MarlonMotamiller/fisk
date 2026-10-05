@@ -1,0 +1,9 @@
+{
+  "particles": [
+    {
+      "type": "SUBATOMIC_CHARGE",
+      "amount": 18,
+      "randOffset": [0.4, 0.4, 0.4]
+    }
+  ]
+}

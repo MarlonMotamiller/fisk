@@ -1,0 +1,10 @@
+{
+  "suit": "unconventional:black_canary_e2",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:black_canary_dinah",
+    "fiskheroes:melee",
+    "fiskheroes:marksmanship",
+    "unconventional:unconventional"
+  ]
+}

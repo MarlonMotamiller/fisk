@@ -1,0 +1,14 @@
+{
+  "particles": [
+    {
+      "condition": "!firstPerson && entity.getData('fiskheroes:dyn/superhero_landing_ticks')>0",
+      "type": "minecraft:largeexplode",
+      "anchor": "rightArm",
+      "amount": 10,
+      "offset": [0.0, 14.0, 0.0],
+      "randOffset": [4.0, 0.0, 4.0],
+      "motion": [0.0, 0.0, 0.0],
+	  "randMotion": [1.2, 0.0, 1.2]
+    }
+  ]
+}

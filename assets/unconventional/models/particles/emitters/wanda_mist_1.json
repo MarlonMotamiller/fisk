@@ -1,0 +1,19 @@
+{
+  "particles": [
+    {
+      "condition": "entity.getInterpolatedData('fiskheroes:lightsout_timer')",
+      "type": "SPARK",
+      "amount": 15,
+      "offset": {
+        "tp": [-0.4, -0.81, 0.0],
+        "fp": [-0.3, -0.3, 0.1]
+      },
+      "motion": [0.0, 0.0, 0.0],
+      "randOffset": [0.1, 0.1, 0.1],
+      "randMotion": [0.01, 0.0, 0.01],
+      "mirror": true,
+      "lockFPRot": true,
+      "lockFPYaw": true
+    }
+  ]
+}

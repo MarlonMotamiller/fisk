@@ -1,0 +1,9 @@
+{data} = sin(pi{data})
+
+{rightArm_rotX} @ {data} -> -0.55pi
+{rightArm_rotY} -= 0.9{data}
+{rightArm_rotZ} -= 0.4{data}
+
+{leftArm_rotX} @ {data} -> -0.55pi
+{leftArm_rotY} -= -0.9{data}
+{leftArm_rotZ} -= -0.4{data}

@@ -1,0 +1,13 @@
+{
+  "texture": "unconventional:marvel/cap_carter_shield/lights/<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(4 * entity.getInterpolatedData('fiskheroes:dyn/nanite_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 4
+      }
+    }
+  },
+  "isDynamic": true
+}

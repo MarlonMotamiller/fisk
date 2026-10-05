@@ -1,0 +1,5 @@
+{rightArm_rotX} = 1.0{rightArm_rotX} - 15'
+
+{leftArm_rotX} += {rightArm_rotX}
+{leftArm_rotY} = -{rightArm_rotY}
+{leftArm_rotZ} = -{rightArm_rotZ}

@@ -1,0 +1,45 @@
+{m} = curve(clamp(-{motY}, 0, 2) / 2)
+{horVel} = sqrt({motX}^2 + {motZ}^2)
+{pitch} = atan2({motY}, {horVel})
+{data} = curve {data}
+
+{x} = {data}curve clamp(-{motY}, 0, 1)
+
+
+{head_rotY} @ {x} -> max(0.6{pitch}, 15')
+{head_rotZ} @ {x} -> max(0.6{pitch}, -20')
+
+{body_rotY} @ {x} -> 5'
+{body_rotZ} @ {x} -> 5'
+
+{rightArm_posX} @ {x} -> -5
+{rightArm_posY} @ {m} -> 2.2
+{rightArm_posZ} @ {m} -> -0.5
+
+{leftArm_posX} @ {x} -> 6.2
+{leftArm_posZ} @ {x} -> -1
+
+{rightArm_rotX} @ {m} -> -25'
+{rightArm_rotY} @ {m} -> 0.45
+{rightArm_rotZ} @ {m} -> 0.0
+{leftArm_rotX} @ {m} -> -35'
+{leftArm_rotY} @ {m} -> -115'
+{leftArm_rotZ} @ {m} -> -175'
+
+{rightLeg_posX} @ {x} -> -5.5
+{rightLeg_posY} @ {x} -> 11
+{rightLeg_posZ} @ {m} -> -2.5
+
+{rightLeg_rotX} @ {x} -> 20'
+{rightLeg_rotY} @ {x} -> 50'
+{rightLeg_rotZ} @ {m} -> -15'
+
+{leftLeg_rotX} @ {x} -> 0.0
+{leftLeg_rotY} @ {x} -> -10'
+{leftLeg_rotZ} @ {m} -> 0.0 + 0.05{m}
+
+
+out "pivot" (0, 0.6, 0)
+out "rotate" (0.8{m}{data}({pitch} - -200') / 1', 0, 0, 1)
+
+out "rotate" (0.8{m}{data}({pitch} - -200') / 1', -1, 0, 0)

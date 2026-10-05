@@ -1,0 +1,9 @@
+{
+  "suit": "unconventional:kate_bishop",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:archery",
+    "unconventional:hawkeye",
+    "unconventional:unconventional"
+  ]
+}

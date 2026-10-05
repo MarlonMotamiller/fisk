@@ -1,0 +1,25 @@
+{data_0} = {data_0}
+{data_1} = {data_1}
+{data_2} = {data_2}
+
+{head_posY} += 10{data_0}
+{head_posZ} -= 4{data_0}
+
+{head_rotX} -= 0.35{head_rotX}{data_0}
+
+
+{rightArm_posY} += 14{data_0}
+{leftArm_posY} += 14{data_0}
+
+{rightArm_posX} -= 4{data_0}
+{leftArm_posX} += 4{data_0}
+
+{rightArm_posZ} -= 8{data_0}
+{leftArm_posZ} -= 8{data_0}
+
+{rightArm_rotX} @ {data_1} -> 0 - 75'*{data_4}
+
+{leftArm_rotX} @ {data_2} -> 0 - 75'*{data_4}
+
+{head_posZ} += 4.5{data_3}
+

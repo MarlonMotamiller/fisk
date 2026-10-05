@@ -1,0 +1,124 @@
+{
+  "name": "Bloodsport Suit",
+  "modifiers": {
+    "fiskheroes:projectile_immunity": {
+    },
+    "fiskheroes:web_swinging": {
+      "isToggle": false,
+      "cooldownTime": 60,
+      "soundEvents": {
+        "SHOOT": "unconventional:grapple_shoot",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "unconventional:grapple_stress_loop"]
+      }
+    },
+    "fiskheroes:fire_resistance": {
+      "duration": 30
+    },
+    "fiskheroes:flame_blast": {
+      "damageProfile": {
+        "damage": 3.5,
+        "types": {
+          "FIRE": 1.0
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 160,
+          "IGNITE": 2
+        }
+      },
+      "range": 10.0
+    },
+	"fiskheroes:transformation|flameblast": {
+      "transformation": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "timerData": "fiskheroes:dyn/nanite_timer",
+        "time": 10
+      },
+      "soundEvents": {
+        "ENABLE": "unconventional:bloodsport_chest_gun_shoot"
+      }
+    },
+    "fiskheroes:cooldown|flameblast_cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:dyn/nanites",
+        "cooldownData": "fiskheroes:dyn/nanite_cooldown",
+        "duration": 100,
+        "recovery": 1.0
+      }
+    },
+    "fiskheroes:transformation|main_gun": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/main_gun",
+        "timerData": "unconventional:dyn/main_gun_timer",
+        "time": 12
+      },
+      "soundEvents": {
+        "ENABLE": "unconventional:bloodsport_chest_gun_shoot",
+		    "DISABLE": "unconventional:bloodsport_chest_gun_shoot"
+      }
+    },
+    "fiskheroes:transformation|main_gun_upgrade1": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/main_gun_upgrade1",
+        "timerData": "unconventional:dyn/main_gun_upgrade1_timer",
+        "time": 12
+      }
+    },
+    "fiskheroes:transformation|main_gun_upgrade2": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/main_gun_upgrade2",
+        "timerData": "unconventional:dyn/main_gun_upgrade2_timer",
+        "time": 12
+      }
+    },
+    "fiskheroes:transformation|main_gun_upgrade3": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/main_gun_upgrade3",
+        "timerData": "unconventional:dyn/main_gun_upgrade3_timer",
+        "time": 12
+      }
+    },
+    "fiskheroes:transformation|sword": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/sword",
+        "timerData": "unconventional:dyn/sword_timer",
+        "time": 20
+      }
+    },
+    "fiskheroes:transformation|flamethrower": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/flamethrower",
+        "timerData": "unconventional:dyn/flamethrower_timer",
+        "time": 10
+      }
+    },
+    "fiskheroes:transformation|pistol": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/pistol",
+        "timerData": "unconventional:dyn/pistol_timer",
+        "time": 4
+      }
+    },
+    "fiskheroes:transformation|chest_guns": {
+      "transformation": {
+        "toggleData": "unconventional:dyn/chest_guns",
+        "timerData": "unconventional:dyn/chest_guns_timer",
+        "time": 20
+      }
+    }
+  },
+  "hud": [
+
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/fuel.png",
+      "data": "entity.getHeldItem().nbt().getString('WeaponType').startsWith('unconventional:bloodsport_flamethrower') ? entity.getData('fiskheroes:dyn/nanite_cooldown') == 1 ? 0.1 : 1- entity.getData('fiskheroes:dyn/nanite_cooldown') : 0"
+    },
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/flash_phasing_bar.png",
+      "data": "entity.getData('unconventional:dyn/cooldown_1')"
+    }
+  ]
+}

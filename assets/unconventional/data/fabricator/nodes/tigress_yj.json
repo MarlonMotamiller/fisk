@@ -1,0 +1,10 @@
+{
+  "suit": "unconventional:tigress_yj",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:archery",
+    "fiskheroes:melee2",
+    "unconventional:artemis_yj",
+    "unconventional:unconventional"
+  ]
+}

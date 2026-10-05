@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:electro.beam.music.loop",
+  "condition": "fiskheroes:energy_projection",
+  "loop": true,
+  "fadeOut": 10
+}

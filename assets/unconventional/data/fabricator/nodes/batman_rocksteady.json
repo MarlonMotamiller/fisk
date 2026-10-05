@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:batman_rocksteady",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:traversal",
+    "fiskheroes:defense",
+    "fiskheroes:melee",
+    "fiskheroes:ranged2",
+    "fiskheroes:object_manipulation",
+    "unconventional:unconventional"
+  ]
+}

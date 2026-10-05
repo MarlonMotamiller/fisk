@@ -1,0 +1,38 @@
+{data} = curve {data}
+
+{head_posX} += 1.3{data}
+{head_posY} += 0.7{data}
+{head_posZ} -= 3.6{data}
+
+{head_rotZ} += 2.0'{data}
+
+{body_posX} += 1.0{data}
+{body_posY} += 0.5{data}
+{body_posZ} -= 2.5{data}
+
+{body_rotX} += 14'{data}
+{body_rotZ} += 5'{data}
+
+{leftArm_posX} += 0.5{data}
+{leftArm_posY} += 1.0{data}
+{leftArm_posZ} -= 2.5{data}
+
+{leftArm_rotZ} -= 10'{data}
+
+{rightArm_posX} += 1.2{data}
+{rightArm_posY} -= 0.5{data}
+{rightArm_posZ} -= 3.0{data}
+
+{rightArm_rotY} -= 23'{data} 
+{rightArm_rotZ} += 10'{data}
+
+
+{leftLeg_rotZ} -= 7'{data}
+{rightLeg_rotZ} += 6'{data}
+
+{leftLeg_rotX} -= 0.5{data}{leftLeg_rotX} 
+{rightLeg_rotX} -= 0.5{data}{rightLeg_rotX} 
+
+{leftArm_rotX} -= 0.5{data}{leftArm_rotX} 
+{rightArm_rotX} -= 0.5{data}{rightArm_rotX} 
+

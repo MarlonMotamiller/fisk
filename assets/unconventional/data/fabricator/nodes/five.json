@@ -1,0 +1,10 @@
+{
+  "suit": "unconventional:five",
+  "requirements": [
+    "fiskheroes:tier1",
+    "fiskheroes:melee3",
+    "fiskheroes:marksmanship",
+    "fiskheroes:teleportation",
+    "unconventional:unconventional"
+  ]
+}

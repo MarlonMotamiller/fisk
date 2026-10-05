@@ -1,0 +1,8 @@
+{
+  "suit": "unconventional:artemis_yj",
+  "requirements": [
+    "fiskheroes:tier2_3",
+    "fiskheroes:archery",
+    "unconventional:unconventional"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "0": "unconventional:the_flash_dceu_jl1",
+    "1": "unconventional:the_flash_dceu_jl2"
+  },
+  "sequence": [
+    {
+      "data": { "index": 0, "range": [0.0, 0.4] },
+      "input": "0"
+    },
+    {
+      "data": { "index": 0, "range": [0.4, 1.0] },
+      "input": "1"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{rightArm_rotX} -= 1.25pi*sin(pi{data})
+{rightArm_posZ} -= 0.75pi*sin(pi{data})
+{rightArm_rotY} -= -0.5sin(pi{data})

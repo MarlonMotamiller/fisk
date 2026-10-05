@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:flash.jl.dceu.takeoff",
+  "condition": {
+    "start": "!entity.isInWater() && entity.isOnGround() && entity.getData('fiskheroes:speed') > 1",
+    "continue": "entity.getData('fiskheroes:speeding')"
+  },
+  "volume": "Math.min(0.0 + (entity.getData('fiskheroes:speed') - 1) * 0.5, 1)",
+  "pitch": "1.0 - Math.random() * 0.3",
+  "fadeOut": 5
+}

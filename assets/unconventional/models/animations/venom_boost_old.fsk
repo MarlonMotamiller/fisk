@@ -1,0 +1,77 @@
+; data_0 = flight_timer
+; data_1 = flight_boost_timer
+
+{data_0} = curve {data_0}
+{data_1} = curve {data_1}
+{x} = 1 - {data_0}
+
+; Boosted/stationary "base" positioning
+{rightArm_rotX} @ {data_0} -> 15'{data_1}
+{rightArm_rotY} *= {x}
+{rightArm_rotZ} @ {data_0} -> 12' + 10'{data_1}
+{leftArm_rotX} @ {data_0} -> 15'{data_1}
+{leftArm_rotY} *= {x}
+{leftArm_rotZ} @ {data_0} -> -12' - 10'{data_1}
+{rightLeg_rotX} @ {data_0} -> 15'{data_1}
+{rightLeg_rotY} *= {x}
+{rightLeg_rotZ} *= {x}
+{leftLeg_rotX} @ {data_0} -> 15'{data_1}
+{leftLeg_rotY} *= {x}
+{leftLeg_rotZ} *= {x}
+{head_rotX} @ {data_1} -> -40'
+
+; ==============================================
+{vel} = sqrt({motX}^2 + {motZ}^2)
+{dir} = sqrt({lookX}^2 + {lookZ}^2)
+
+{d} = acos clamp(if({dir} > 0 && {vel} > 0, ({motX}{lookX} + {motZ}{lookZ}) / {vel} / {dir}, 1), -1, 1)
+{d1} = signum({motX}{lookZ} - {motZ}{lookX})
+
+{cosa} = cos({bodyYaw}')
+{sina} = sin({bodyYaw}')
+{strafe} = {motX}{cosa} + {motZ}{sina}
+{forward} = {motZ}{cosa} - {motX}{sina}
+{hover} = {data_0}(1 - {data_1})
+
+;out "pivot" (0, 0.56{hover}, 0)
+
+; Boosted animation
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{rightArm_rotX} += {x}
+{leftArm_rotX} -= {x}
+{rightLeg_rotX} += 0.3{x}
+{leftLeg_rotX} -= 0.3{x}
+
+
+
+; Moving animation
+{x} = 30{hover}min(1.5{vel}, 1)
+;out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+;out "rotate" (-{x}clamp({forward}, -0.5, 2), 1, 0, 0)
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+{head_rotX} -= 30'clamp({forward}, -2, 2)
+{rightArm_rotX} += 0.3{forward} - 0.4{adx}
+{rightArm_rotZ} += 0.3{adz} + 0.4{strafe}
+{leftArm_rotX} += 0.3{forward} - 0.4{adx}
+{leftArm_rotZ} -= 0.3{adz} - 0.4{strafe}
+{rightLeg_posZ} -= 2.25{adz}
+{rightLeg_posY} -= 0.5{adz}
+{rightLeg_rotX} += 0.4{forward}
+{rightLeg_rotZ} += 0.05{adz} + 0.4{strafe}
+{leftLeg_rotX} += 0.5{forward}
+{leftLeg_rotZ} -= 0.05{adz} - 0.4{strafe}
+
+
+{d} *= {data_0} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (-{data_0}({pitch} + 70), 1, 0, 0)
+out "rotate" ({d1}{d}, 0, 1, 0)
+out "rotate" (-{d1}{d}{x}, 0, 0, 1)
+out "rotate" ({d}{x}, 1, 0, 0)
+out "translate" (0, -0.8{data_0}, 0)

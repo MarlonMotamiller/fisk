@@ -1,0 +1,9 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:mosquito.doomslayer.music.loop",
+  "condition": "fiskheroes:flying",
+  "volume": 1,
+  "loop": true,
+  "fadeIn": 0,
+  "fadeOut": 10
+}

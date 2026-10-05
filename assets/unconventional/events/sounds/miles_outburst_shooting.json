@@ -1,0 +1,7 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:miles.outburst.shooting",
+  "condition": "fiskheroes:beam_shooting",
+  "pitch": "0.9 + Math.random() * 0.1",
+  "fadeOut": 15
+}

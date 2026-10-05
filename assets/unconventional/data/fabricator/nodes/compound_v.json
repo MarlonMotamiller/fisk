@@ -1,0 +1,67 @@
+{
+  "display": {
+    "name": {
+      "translate": "Compound V"
+    },
+    "icon": {
+      "texture": "unconventional:textures/gui/nodes/compound_v.png"
+    }
+  },
+  "requirements": [ 
+    "unconventional:unconventional"
+  ],
+  "price": {
+    "IRID_GOLD": 6,
+    "XP_LEVELS": 25
+  },
+  "criteria": {
+    "velocity_nine": {
+      "trigger": "fiskheroes:item_crafted",
+      "description": {
+        "translate": "Manufacture a vile of Velocity-9"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CRAFTED"
+        },
+        "check": "item.name() == 'fiskheroes:velocity_nine'"
+      }
+    },
+    "thick": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "description": {
+        "translate": "Brew and Consume a Thick Potion"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CONSUMED"
+        },
+        "check": "item.name() == 'minecraft:potion' && item.damage() == 32"
+      }
+    },
+    "regen": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "description": {
+        "translate": "Brew and Consume a prolonged Regeneration Potion"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CONSUMED"
+        },
+        "check": "item.name() == 'minecraft:potion' && item.damage() == 8257"
+      }
+    },
+    "strength2": {
+      "trigger": "fiskheroes:item_consumed_by_player",
+      "description": {
+        "translate": "Brew and Consume an elevated version of a Strength Potion"
+      },
+      "condition": {
+        "variables": {
+          "item": "ITEM_BEING_CONSUMED"
+        },
+        "check": "item.name() == 'minecraft:potion' && item.damage() == 8233"
+      }
+    }
+  }
+}

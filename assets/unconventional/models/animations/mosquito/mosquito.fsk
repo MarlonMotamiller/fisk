@@ -1,0 +1,258 @@
+;{x} = 15{hover}min(1.5{vel}, 1)
+;out "rotate" ({x}clamp({strafe}, -2, 2), 0, 0, 1)
+;out "rotate" (-{x}clamp({forward}, -2, 2), 1, 0, 0)
+
+{x} = {hover}min(2{vel}, 1)
+{strafe} *= {x}
+{forward} *= {x}
+{adx} = abs {strafe}
+{adz} = abs {forward}
+
+;{head_hor} = if(({lookX} * {lookZ}) > 0 , ({lookX} + {lookZ}), ({lookX} - {lookZ}))
+
+;flight ============================================
+;{head_rotY} -= {pitch}'
+
+;{head_rotX} -=  {bodyYaw}'
+
+
+{rightwing_rotY} += {data_0}*75'
+{leftwing_rotY} -= {data_0}*75'
+
+{rightfrontleg_rotX} += {hover}*25' - 0.4{strafe}
+{rightfrontleg_rotY} += {data_0}*25' + {hover}*10'
+
+{leftfrontleg_rotX} += {hover}25' + 0.4{strafe}
+{leftfrontleg_rotY} -= {data_0}*25' + {hover}*10'
+
+{rflsecondjoint_rotZ} += {hover}*85' + 0.3{strafe} - 0.4{forward}
+
+{lflsecondjoint_rotZ} -= {hover}85' - 0.3{strafe} - 0.4{forward}
+
+{rflthirdjoint_rotZ} += 0.3{strafe} + 0.3{forward}
+
+{lflthirdjoint_rotZ} -= 0.3{strafe} + 0.3{forward}
+
+{rflfinaljoint_rotZ} -= 0.6{adz}
+{lflfinaljoint_rotZ} += 0.6{adz}
+
+{rightmiddleleg_rotX} += {hover}*35' + 0.1{forward}
+{leftmiddleleg_rotX} += {hover}35' + 0.1{forward}
+
+{rightmiddleleg_rotZ} += 0.5{strafe}
+{leftmiddleleg_rotZ} += 0.5{strafe} 
+
+{rmlsecondjoint_rotX} -= 0.9{forward}
+{lmlsecondjoint_rotX} -= 0.9{forward}
+
+{rmlsecondjoint_rotZ} += {hover}*75'
+{lmlsecondjoint_rotZ} -= {hover}*75'
+
+{rmlthirdjoint_rotZ} -= {hover}*15' - 0.3{strafe} + 0.3{forward}
+{lmlthirdjoint_rotZ} += {hover}*15'+ 0.3{strafe} + 0.3{forward}
+
+{rmlfinaljoint_rotZ} -= {hover}*8' - 0.2{strafe}
+{lmlfinaljoint_rotZ} += {hover}*8' + 0.2{strafe}
+
+{rightbackleg_rotX} += {data_0}*55' + 0.6{strafe}
+{rightbackleg_rotY} += {data_0}*20' 
+{rightbackleg_rotZ} -= {data_0}*90' 
+
+{leftbackleg_rotX} += {data_0}*55' - 0.6{strafe}
+{leftbackleg_rotY} -= {data_0}*20' 
+{leftbackleg_rotZ} += {data_0}*90' 
+
+{rblsecondjoint_rotX} += 0.5{strafe}
+{rblsecondjoint_rotY} -= {data_0}*20' 
+{rblsecondjoint_rotZ} += {data_0}*80' + 0.4{forward}
+
+{lblsecondjoint_rotX} -= 0.5{strafe}
+{lblsecondjoint_rotY} += {data_0}*20' 
+{lblsecondjoint_rotZ} -= {data_0}*80' + 0.4{forward}
+
+{rblthirdjoint_rotZ} += {hover}*65' - 0.6{forward}
+{lblthirdjoint_rotZ} -= {hover}*65' - 0.6{forward}
+
+{rblfinaljoint_rotX} += 0.6{strafe}
+{lblfinaljoint_rotX} -= 0.6{strafe}
+
+;{wings_rotX} -= {data_0}*45'
+
+{torso_rotX} -= {data_0}*35'
+{torso_rotY} -= 0.4{strafe} 
+
+
+{thorax_rotY} -= 0.6{strafe} 
+
+;flight_boost ============================================
+{x1} = min({vel}, 1){data_1}{d1}{d} / 2.5
+
+;{rightfrontleg_rotY} += 0.6{strafe}
+
+;{leftfrontleg_rotY} -= - 0.6{strafe}
+
+{rightmiddleleg_rotX} -= {data_1}*5'
+{leftmiddleleg_rotX} -= {data_1}*5'
+{rightmiddleleg_rotY} += {data_1}*20'
+{leftmiddleleg_rotY} -= {data_1}*20'
+{rightmiddleleg_rotZ} -= {data_1}*35'
+{leftmiddleleg_rotZ} += {data_1}*35'
+
+{rmlsecondjoint_rotZ} += {data_1}*50'
+{lmlsecondjoint_rotZ} -= {data_1}*50'
+
+{rmlthirdjoint_rotZ} -= {data_1}*50' - 0.3{x1}
+{lmlthirdjoint_rotZ} += {data_1}*50' + 0.3{x1}
+
+{rmlfinaljoint_rotZ} -= 0.3{x1}
+{lmlfinaljoint_rotZ} += 0.3{x1}
+
+{rblthirdjoint_rotZ} -= {data_0}*65'
+{lblthirdjoint_rotZ} += {data_0}*65'
+
+{rblfinaljoint_rotY} += 0.3{x1}
+{lblfinaljoint_rotY} -= 0.3{x1}
+
+;flight_loop ============================================
+{rightwing_rotZ} += sin(4*pi*{data_3})*20'
+{leftwing_rotZ} -= sin(4*pi*{data_3})*20'
+
+{rightwing_rotY} += sin(2*pi*{data_3})*10'
+{leftwing_rotY} -= sin(2*pi*{data_3})*10'
+
+;loop_20
+{rightantenna_rotX} -= sin(2*pi*{data_4}+0.2)*10'
+{leftantenna_rotX} -= sin(2*pi*{data_4}-0.2)*10'
+
+{rightwing_rotX} -= sin(2*pi*{data_4}+0.2)*2'
+{leftwing_rotX} -= sin(2*pi*{data_4}-0.2)*2'
+
+;loop_40
+{thorax_rotX} -= sin(2*pi*{data_5}+0.5)*7'
+{booty_rotX} -= sin(2*pi*{data_5}+0.5)*4'
+
+{rightwing_rotZ} -= sin(2*pi*{data_5}+0.2)*2'
+{leftwing_rotZ} -= sin(2*pi*{data_5}-0.2)*2'
+
+{nose_rotX} += sin(2*pi*{data_5}-0.2)*2'
+
+
+;levitate ============================================
+
+{vel_lev} = sqrt({motX}^2 + {motZ}^2) + (0.3{motY})^2
+{vel_lev} = 1 - curve min(1.5{vel_lev}, 1)
+{data_6} = {vel_lev}curve({data_6})
+{data_7} = 0.2{data_6}sin(2pi{data_7})
+{y} = {data_6} + {data_7}
+
+{torso_rotX} -= 0.2{data_7}
+
+{rightfrontleg_rotX} += 0.2{data_7}
+{leftfrontleg_rotX} -= 0.3{data_7}
+
+{rflsecondjoint_rotY} -= 0.7{data_7}
+{lflsecondjoint_rotY} += 0.9{data_7}
+
+{rflsecondjoint_rotZ} += 0.6{data_7}
+{lflsecondjoint_rotZ} += 0.4{data_7}
+
+{rflfinaljoint_rotZ} += 0.3{data_7}
+{lflfinaljoint_rotZ} -= 0.7{data_7}
+
+
+{rightmiddleleg_rotX} -= 0.2{data_7}
+{leftmiddleleg_rotX} += 0.2{data_7}
+
+{rmlsecondjoint_rotZ} += 0.9{data_7}
+{lmlsecondjoint_rotZ} -= 0.7{data_7}
+
+{rmlthirdjoint_rotZ} -= 0.7{data_7}
+{lmlthirdjoint_rotZ} += 0.9{data_7}
+
+
+{rightbackleg_rotZ} += 0.4{data_7}
+{leftbackleg_rotZ} -= 0.5{data_7}
+
+{rblsecondjoint_rotY} += 0.2{data_7}
+{lblsecondjoint_rotY} += 0.2{data_7} 
+
+{lblthirdjoint_rotZ} += 0.3{data_7}
+{rblthirdjoint_rotZ} -= 0.3{data_7}
+
+{lblfinaljoint_rotZ} += 0.7{data_7}
+{rblfinaljoint_rotZ} += 0.7{data_7}
+
+;walking ================================================
+
+{limbSwingAmount} *= (1-{data_0})
+
+;{rightfrontleg_rotX} += {hover}*25' - 0.4{strafe}
+;{rightfrontleg_rotY} += {data_0}*25' + {hover}*10'
+
+;{leftfrontleg_rotX} += {hover}25' + 0.4{strafe}
+;{leftfrontleg_rotY} -= {data_0}*25' + {hover}*10'
+
+
+	{rightfrontleg_rotY} -= 0.6{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	{leftfrontleg_rotY} -= 0.6{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+	{rightfrontleg_rotZ} += 0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	{leftfrontleg_rotZ} += 0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+	{rflthirdjoint_rotZ} += 0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	{lflthirdjoint_rotZ} += 0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+{rightmiddleleg_rotY} += 0.5{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+{leftmiddleleg_rotY} += 0.5{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+{rightmiddleleg_rotZ} -=  0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+{leftmiddleleg_rotZ} -=  0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+{rmlthirdjoint_rotZ} += 0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+{lmlthirdjoint_rotZ} += 0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+	{rightbackleg_rotY} -= 0.4{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	{leftbackleg_rotY} -= 0.4{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+	{rightbackleg_rotZ} +=  0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	{leftbackleg_rotZ} +=  0.1{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	
+	{rblthirdjoint_rotZ} +=  0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+	{lblthirdjoint_rotZ} +=  0.2{limbSwingAmount}cos(0.6662{limbSwing} - 0.4)
+
+;item_in_hand ================================================
+
+{rightfrontleg_rotX} @ {data_9} -> 2.5'
+{leftfrontleg_rotX} @ {data_8} -> -2.5'
+
+{rightfrontleg_rotY} @ {data_9} -> 40'
+{leftfrontleg_rotY} @ {data_8} -> -40'
+
+{rightfrontleg_rotZ} @ {data_9} -> 0'
+{leftfrontleg_rotZ} @ {data_8} -> 0'
+
+	{rflthirdjoint_rotZ} @ {data_9} -> 5'
+	{lflthirdjoint_rotZ} @ {data_8} -> -5'
+	
+	{rflsecondjoint_rotZ} @ {data_9} -> 0'
+	{lflsecondjoint_rotZ} @ {data_8} -> 0'
+	
+	{rflsecondjoint_rotY} @ {data_9} -> 0'
+	{lflsecondjoint_rotY} @ {data_8} -> 0'
+	
+	{rflfinaljoint_rotZ} @ {data_9} -> 5'
+	{lflfinaljoint_rotZ} @ {data_8} -> -5'
+	
+;aiming =================================================
+	
+{nose_rotX} -= 15'{data_10}
+	
+;fp_anim ================================================
+
+
+{head_posZ} += 14{data_12}
+
+{nose_rotX} -= 40'{data_12}
+{sting_rotY} -= 1'{data_12}
+{nose_posZ} -= 4.5{data_12}
+;{nose_posY} += {data_12}

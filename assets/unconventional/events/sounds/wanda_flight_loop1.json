@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.flight.loop1",
+  "override": "unconventional:funcs/wanda_flight_loop1",
+  "loop": true,
+  "fadeIn": 10,
+  "fadeOut": 20
+}

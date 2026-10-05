@@ -1,0 +1,11 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:ghost.idle.loop",
+  "condition": {
+    "start": "entity.getWornChestplate().suitType() == 'unconventional:ghost'",
+    "continue": "entity.isWearingFullSuit() && entity.getWornChestplate().suitType() == 'unconventional:ghost'"
+  },
+  "loop": true,
+  "fadeIn": 4,
+  "fadeOut": 8
+}

@@ -1,0 +1,10 @@
+{
+  "particles": [
+    {
+      "type": "SMOKE",
+      "amount": 5,
+      "randOffset": [0.2, 0.1, 0.2],
+      "randMotion": [0.0, 0.1, 0.0]
+    }
+  ]
+}

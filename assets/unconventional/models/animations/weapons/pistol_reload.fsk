@@ -1,0 +1,76 @@
+{fix}= curve animate2({data},1,0,0.05,0.15)
+{rightArm_rotX} @ {fix} -> 0'
+
+{leftArm_rotX} @ {fix} -> 0'
+
+{pistol_reload_time}={data}
+{pistol_reload_0}=curve animate2({pistol_reload_time},0.2916666667,0,0.1666666667,0.125)
+{pistol_reload_1}=curve animate2({pistol_reload_time},0.25,0.16666666666666666,0.125,0.125)
+{pistol_reload_2}=curve animate2({pistol_reload_time},0.3333333333,0.2916666666666667,0.125,0.2083333333)
+{pistol_reload_3}=curve animate2({pistol_reload_time},0.25,0.4166666666666667,0.2083333333,0.0416666667)
+{pistol_reload_4}=curve animate2({pistol_reload_time},0.25,0.625,0.0416666667,0.2083333333)
+{pistol_reload_5}=curve animate2({pistol_reload_time},0.3333333333,0.6666666666666666,0.2083333333,0.125)
+{pistol_reload_6}=curve animate2({pistol_reload_time},0.4583333333,0.2916666666666667,0.125,0.3333333333)
+{pistol_reload_7}=curve animate2({pistol_reload_time},0.5833333333,0.4166666666666667,0.3333333333,0.25)
+{pistol_reload_8}=curve animate2({pistol_reload_time},0.2916666667,0,0.2083333333,0.0833333333)
+{pistol_reload_9}=curve animate2({pistol_reload_time},0.2083333333,0.20833333333333334,0.0833333333,0.125)
+{pistol_reload_10}=curve animate2({pistol_reload_time},0.125,0.625,0.0416666667,0.0833333333)
+{pistol_reload_11}=curve animate2({pistol_reload_time},0.2083333333,0.6666666666666666,0.0833333333,0.125)
+{pistol_reload_12}=curve animate2({pistol_reload_time},0.25,0.75,0.125,0.125)
+{pistol_reload_13}=curve animate2({pistol_reload_time},0.4166666667,0,0.2083333333,0.2083333333)
+{pistol_reload_14}=curve animate2({pistol_reload_time},0.5416666667,0.20833333333333334,0.2083333333,0.3333333333)
+
+{rightArm_rotX}+=-42.696528979'{pistol_reload_0}
+{rightArm_rotY}+=10.1457463318'{pistol_reload_0}
+{rightArm_rotZ}+=-36.4010232557'{pistol_reload_0}
+{rightArm_rotX}+=-47.696528979'{pistol_reload_1}
+{rightArm_rotY}+=10.1457463318'{pistol_reload_1}
+{rightArm_rotZ}+=-36.4010232557'{pistol_reload_1}
+{rightArm_rotX}+=-42.696528979'{pistol_reload_2}
+{rightArm_rotY}+=10.1457463318'{pistol_reload_2}
+{rightArm_rotZ}+=-36.4010232557'{pistol_reload_2}
+{rightArm_rotX}+=-44.4582993686'{pistol_reload_3}
+{rightArm_rotY}+=-46.2693294033'{pistol_reload_3}
+{rightArm_rotZ}+=16.4227292486'{pistol_reload_3}
+{rightArm_rotX}+=-44.4582993686'{pistol_reload_4}
+{rightArm_rotY}+=-46.2693294033'{pistol_reload_4}
+{rightArm_rotZ}+=16.4227292486'{pistol_reload_4}
+{rightArm_rotX}+=-44.4582993686'{pistol_reload_5}
+{rightArm_rotY}+=-46.2693294033'{pistol_reload_5}
+{rightArm_rotZ}+=16.4227292486'{pistol_reload_5}
+{rightArm_posZ}+=-2{pistol_reload_0}
+{rightArm_posX}+=0.25{pistol_reload_1}
+{rightArm_posZ}+=-1.75{pistol_reload_1}
+{rightArm_posZ}+=-2{pistol_reload_6}
+{rightArm_posX}+=0.25{pistol_reload_7}
+{rightArm_posY}+=0.25{pistol_reload_7}
+{rightArm_posZ}+=-2{pistol_reload_7}
+
+{leftArm_rotX}+=-24.7720541532'{pistol_reload_8}
+{leftArm_rotY}+=-19.0177250882'{pistol_reload_8}
+{leftArm_rotZ}+=51.1783034406'{pistol_reload_8}
+{leftArm_rotX}+=-26.2341588361'{pistol_reload_9}
+{leftArm_rotY}+=-16.8636360741'{pistol_reload_9}
+{leftArm_rotZ}+=55.9216086434'{pistol_reload_9}
+{leftArm_rotX}+=-24.7720541532'{pistol_reload_2}
+{leftArm_rotY}+=-19.0177250882'{pistol_reload_2}
+{leftArm_rotZ}+=51.1783034406'{pistol_reload_2}
+{leftArm_rotX}+=-75.1698599941'{pistol_reload_3}
+{leftArm_rotY}+=47.8251244452'{pistol_reload_3}
+{leftArm_rotZ}+=-31.9556078146'{pistol_reload_3}
+{leftArm_rotX}+=-75.1698599941'{pistol_reload_10}
+{leftArm_rotY}+=47.8251244452'{pistol_reload_10}
+{leftArm_rotZ}+=-31.9556078146'{pistol_reload_10}
+{leftArm_rotX}+=-95.7410128932'{pistol_reload_11}
+{leftArm_rotY}+=45.7530246494'{pistol_reload_11}
+{leftArm_rotZ}+=-42.7887257111'{pistol_reload_11}
+{leftArm_rotX}+=-75.1698599941'{pistol_reload_12}
+{leftArm_rotY}+=47.8251244452'{pistol_reload_12}
+{leftArm_rotZ}+=-31.9556078146'{pistol_reload_12}
+{leftArm_posY}+=1{pistol_reload_13}
+{leftArm_posZ}+=-2{pistol_reload_13}
+{leftArm_posY}+=1{pistol_reload_14}
+{leftArm_posZ}+=-2{pistol_reload_14}
+{leftArm_posX}+=-0.75{pistol_reload_7}
+{leftArm_posY}+=0.43{pistol_reload_7}
+{leftArm_posZ}+=-1.61{pistol_reload_7}

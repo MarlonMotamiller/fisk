@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "fiskheroes:ambient.flight",
+  "override": "unconventional:funcs/super_speed_move_loop_wind",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

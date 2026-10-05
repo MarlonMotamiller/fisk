@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:electro.energyform.music.disable",
+  "condition": "!entity.getData('fiskheroes:shadowform')",
+  "fadeOut": 10
+}

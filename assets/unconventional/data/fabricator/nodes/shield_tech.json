@@ -1,0 +1,17 @@
+{
+  "display": {
+    "name": {
+      "translate": "S.H.I.E.L.D. Tech"
+    },
+    "icon": {
+      "texture": "unconventional:textures/gui/nodes/shield_tech.png"
+    }
+  },
+  "requirements": [ 
+    "unconventional:unconventional"
+  ],
+  "price": {
+    "TUTRIDIUM": 2,
+    "XP_LEVELS": 10
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "name": "Nuclear Radiation Generation",
+  "modifiers": {
+    "fiskheroes:energy_projection|energy_proj_0": {
+      "damageProfile": {
+        "damage": 3.5,
+        "types": {
+          "RADIATION": 1,
+          "ENERGY": 0.6
+        },
+        "properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 45,
+		      "EFFECTS": [
+                {
+                  "id": "minecraft:poison",
+                  "duration": 60,
+                  "amplifier": 2,
+                  "chance": 1
+                },
+				        {
+                  "id": "minecraft:slowness",
+                  "duration": 30,
+                  "amplifier": 1,
+                  "chance": 0.1
+                }
+		      ]
+        }
+      },
+      "range": 22.0,
+      "radius": 0.2,
+      "soundEvents": {
+        "BEAM_AMBIENT": ["unconventional:radiation_beam"]
+      }
+	},
+	"fiskheroes:charged_beam": {
+	  "isToggle": true, 
+      "damageProfile": {
+        "damage": 10.0,
+        "types": {
+          "RADIATION": 1,
+          "ENERGY": 0.6
+        },
+		"properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 30,
+		      "DAMAGE_DROPOFF": 0.4,
+		      "EFFECTS": [
+                {
+                  "id": "minecraft:poison",
+                  "duration": 200,
+                  "amplifier": 2,
+                  "chance": 1
+                },
+				        {
+                  "id": "minecraft:slowness",
+                  "duration": 200,
+                  "amplifier": 1,
+                  "chance": 0.2
+                },
+				        {
+                  "id": "minecraft:wither",
+                  "duration": 36000,
+                  "amplifier": 1,
+                  "chance": 0.005
+                }
+		      ]
+        }
+      },
+      "chargeTime": 40,
+      "duration": 30,
+      "cooldownTime": 40,
+      "range": 32.0,
+      "radius": 1000.0,
+      "canDoGriefing": true,
+      "soundEvents": {
+        "CHARGE": "unconventional:radiation_outburst_chargeup",
+        "SHOOT": "unconventional:radiation_outburst_shooting",
+        "SHOOT_STOP": [],
+        "BEAM_AMBIENT": []
+      }
+    },
+    "fiskheroes:controlled_flight|flight_false": {
+      "speed": 0.1,
+      "boostSpeed": 0.1,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.3,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop"
+      }
+	},
+	"fiskheroes:controlled_flight|flight_true": {
+      "speed": 0.0,
+      "boostSpeed": 0.0,
+      "canBoost": false,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.3,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop"
+      }
+	},
+	"fiskheroes:shield": {
+	  "isToggle":false,
+      "shield": {
+        "health": 85.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 60,
+        "cooldown": 60
+      },
+      "coverage": {
+        "yawRadius": 65.0,
+        "pitchRadius": 70.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "soundEvents": {
+        "BLOCK_START": "unconventional:radioactive_man_shield_on",
+        "BLOCK_STOP": "unconventional:radioactive_man_shield_off",
+        "DEFLECT": "unconventional:radioactive_man_shield_deflect"
+      }
+    },
+	"fiskheroes:projectile_immunity": {
+    },
+	"fiskheroes:metal_skin": {
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:damage_immunity|explosion": {
+      "damageType": "EXPLOSION"
+    },
+	"fiskheroes:damage_immunity|radiation": {
+      "damageType": "RADIATION"
+    },
+	"fiskheroes:damage_weakness": {
+      "damageType": "COLD",
+      "factor": 1.2
+    },
+	"fiskheroes:thorns": {
+      "damageProfile": {
+        "types": {
+          "RADIATION": 1.0
+        },
+		"properties": {
+          "COOK_ENTITY": true,
+          "HEAT_TRANSFER": 45,
+		  "EFFECTS": [
+                {
+                  "id": "minecraft:poison",
+                  "duration": 40,
+                  "amplifier": 1,
+                  "chance": 1
+                }
+		  ]
+        }
+      },
+      "factor": 0.1
+    },
+	"fiskheroes:healing_factor|healing_factor_0": {
+      "delay": 130,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:healing_factor|healing_factor_1": {
+      "delay": 100,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:healing_factor|healing_factor_2": {
+      "delay": 60,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+	"fiskheroes:healing_factor|healing_factor_3": {
+      "delay": 40,
+      "soundEvents": {
+        "HEAL": "fiskheroes:healing_factor"
+      }
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": ["minecraft:poison", "minecraft:wither"]
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/radioactive_man_bar.png",
+      "data": "0.848*entity.getInterpolatedData('fiskheroes:dyn/nanite_cooldown')+12/79"
+    }
+  ]
+}

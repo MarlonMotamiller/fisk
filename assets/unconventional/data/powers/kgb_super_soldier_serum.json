@@ -1,0 +1,14 @@
+{
+  "name": "K.G.B. Super Soldier Serum",
+  "modifiers": {
+    "fiskheroes:regeneration": {
+      "factor": 3.0
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [9, 19, 20]
+    },
+    "fiskheroes:leaping": {
+      "leapAmount": [0.2, 0.0]
+    }
+  }
+}

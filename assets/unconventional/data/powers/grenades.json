@@ -1,0 +1,93 @@
+{
+  "name": "power.fiskheroes.grenades.name",
+  "modifiers": {
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 150,
+          "uses": 2,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "SOUND": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 1.25,
+              "EFFECTS": [
+                {
+                  "id": "fiskheroes:flashbang",
+                  "duration": 40,
+                  "amplifier": 0,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:blindness",
+                  "duration": 20,
+                  "amplifier": 0,
+                  "chance": 1
+                },
+                {
+                  "id": "minecraft:nausea",
+                  "duration": 45,
+                  "amplifier": 0,
+                  "chance": 0.6
+                }
+              ]
+            }
+          },
+          "isInstant": true,
+          "affectsUser": true,
+          "fuseTime": 30,
+          "radius": 8.0
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    },
+    "fiskheroes:equipment|emp": {
+      "equipment": {
+        "fiskheroes:grenade": {
+          "cooldown": 300,
+          "uses": 1,
+          "damageProfile": {
+            "damage": 2.0,
+            "types": {
+              "ELECTRICITY": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 1.5,
+              "EFFECTS": [
+                {
+                  "id": "fiskheroes:tutridium",
+                  "duration": 80,
+                  "amplifier": 0,
+                  "chance": 1.0
+                },
+                {
+                  "id": "fiskheroes:disable_phasing",
+                  "duration": 80,
+                  "amplifier": 0,
+                  "chance": 0.75
+                },
+                {
+                  "id": "fiskheroes:disable_speed",
+                  "duration": 70,
+                  "amplifier": 0,
+                  "chance": 0.25
+                }
+              ]
+            }
+          },
+          "isInstant": true,
+          "affectsUser": false,
+          "fuseTime": 30,
+          "radius": 4.0
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:utility_belt_switch"
+      }
+    }
+  }
+}

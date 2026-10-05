@@ -1,0 +1,45 @@
+out "pivot" (0, 0.56{data_1}, 0)
+
+{x} = min({vel}, 1){data_1}{d1}{d} / 2.5
+{head_rotX} += 10'{data_1}
+
+{body_rotY} -= 15'{data_1}
+
+
+{rightArm_rotX} -= 100'{data_1}
+{rightArm_rotY} += 38'{data_1}
+{rightArm_rotZ} += 42'{data_1}
+
+{rightArm_posY} -= {data_1}
+{rightArm_posZ} -= 2{data_1}
+
+{leftArm_rotX} += 12'{data_1} + 0.5abs({x})
+{leftArm_rotY} -= 18'{data_1}
+{leftArm_rotZ} -= 32'{data_1}
+
+{leftArm_posY} += {data_1}
+{leftArm_posZ} += 2{data_1}
+
+{rightLeg_posX} -= 2{data_1}
+{rightLeg_posY} -= 3{data_1}
+{rightLeg_posZ} -= 5.5{data_1}
+{rightLeg_rotX} += 45'{data_1} - 0.3{x}
+{rightLeg_rotY} += 15'{data_1}
+{rightLeg_rotZ} += 5'{data_1}
+
+{leftLeg_rotX} += 25'{data_1} + 0.3{x}
+{leftLeg_rotY} -= 5'{data_1}
+{leftLeg_rotZ} -= 3'{data_1}
+
+{leftLeg_posY} += 0.5{data_1}
+{leftLeg_posZ} += 0.5{data_1}
+
+{pitch_clamp} = clamp({pitch}, -50, 90)
+
+{d} *= {data_1} / 1'
+{x} = min({vel} / 2, 1) / 2
+out "rotate" (-{data_1}({pitch_clamp} + 40), 1, 0, 0)
+out "rotate" ( 0.2({d1}{d}) , 0, 1, 0)
+out "rotate" ( 0.2(-{d1}{d}{x}) , 0, 0, 1)
+out "rotate" ( 0.2({d}{x}) , 1, 0, 0)
+;out "translate" (0, -0.8{data_1}, 0)

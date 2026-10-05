@@ -1,0 +1,107 @@
+{fix}= curve animate2({data},1,0,0.05,0.15)
+{rightArm_rotX} @ {fix} -> 0'
+{rightArm_rotY} @ {fix} -> 0'
+{rightArm_rotZ} @ {fix} -> 0'
+{rightArm_posZ} @ {fix} -> 0
+
+{leftArm_rotX} @ {fix} -> 0'
+{leftArm_rotY} @ {fix} -> 0'
+{leftArm_rotZ} @ {fix} -> 0'
+{leftArm_posZ} @ {fix} -> 0
+
+
+{five_teleport_jump_time}={data}
+{five_teleport_jump_0}=curve animate2({five_teleport_jump_time},0.7916666667,0,0.1666666667,0.625)
+{five_teleport_jump_1}=curve animate2({five_teleport_jump_time},0.8333333333,0.16666666666666666,0.625,0.2083333333)
+{five_teleport_jump_2}=curve animate2({five_teleport_jump_time},0.25,0,0.1666666667,0.0833333333)
+{five_teleport_jump_3}=curve animate2({five_teleport_jump_time},0.1666666667,0.16666666666666666,0.0833333333,0.0833333333)
+{five_teleport_jump_4}=curve animate2({five_teleport_jump_time},0.1666666667,0.25,0.0833333333,0.0833333333)
+{five_teleport_jump_5}=curve animate2({five_teleport_jump_time},0.1666666667,0.3333333333333333,0.0833333333,0.0833333333)
+{five_teleport_jump_6}=curve animate2({five_teleport_jump_time},0.25,0.4166666666666667,0.0833333333,0.1666666667)
+{five_teleport_jump_7}=curve animate2({five_teleport_jump_time},0.25,0.5,0.1666666667,0.0833333333)
+{five_teleport_jump_8}=curve animate2({five_teleport_jump_time},0.125,0.6666666666666666,0.0833333333,0.0416666667)
+{five_teleport_jump_9}=curve animate2({five_teleport_jump_time},0.0833333333,0.75,0.0416666667,0.0416666667)
+{five_teleport_jump_10}=curve animate2({five_teleport_jump_time},0.2083333333,0.7916666666666666,0.0416666667,0.1666666667)
+{five_teleport_jump_11}=curve animate2({five_teleport_jump_time},0.8333333333,0,0.1666666667,0.6666666667)
+{five_teleport_jump_12}=curve animate2({five_teleport_jump_time},0.8333333333,0.16666666666666666,0.6666666667,0.1666666667)
+{five_teleport_jump_13}=curve animate2({five_teleport_jump_time},0.2916666667,0.5,0.1666666667,0.125)
+{five_teleport_jump_14}=curve animate2({five_teleport_jump_time},0.3333333333,0.6666666666666666,0.125,0.2083333333)
+{five_teleport_jump_15}=curve animate2({five_teleport_jump_time},0.3333333333,0,0.1666666667,0.1666666667)
+{five_teleport_jump_16}=curve animate2({five_teleport_jump_time},0.3333333333,0.16666666666666666,0.1666666667,0.1666666667)
+{five_teleport_jump_17}=curve animate2({five_teleport_jump_time},0.3333333333,0.3333333333333333,0.1666666667,0.1666666667)
+
+{head_posZ}+=-1{five_teleport_jump_0}
+{head_posZ}+=-1{five_teleport_jump_1}
+
+{body_rotX}+=10'{five_teleport_jump_2}
+{body_rotX}+=10.0374230459'{five_teleport_jump_3}
+{body_rotY}+=-4.9238497548'{five_teleport_jump_3}
+{body_rotZ}+=-0.870384675'{five_teleport_jump_3}
+{body_rotX}+=10'{five_teleport_jump_4}
+{body_rotX}+=10.0374230459'{five_teleport_jump_5}
+{body_rotY}+=-4.9238497548'{five_teleport_jump_5}
+{body_rotZ}+=-0.870384675'{five_teleport_jump_5}
+{body_rotX}+=10'{five_teleport_jump_6}
+{body_rotX}+=10'{five_teleport_jump_7}
+{body_rotX}+=10.0374230459'{five_teleport_jump_8}
+{body_rotY}+=4.9238497548'{five_teleport_jump_8}
+{body_rotZ}+=0.870384675'{five_teleport_jump_8}
+{body_rotX}+=10'{five_teleport_jump_9}
+{body_rotX}+=8.0075226715'{five_teleport_jump_10}
+{body_rotY}+=-2.475654945'{five_teleport_jump_10}
+{body_rotZ}+=-0.3481494408'{five_teleport_jump_10}
+{body_posZ}+=-2{five_teleport_jump_11}
+{body_posZ}+=-2{five_teleport_jump_12}
+
+{rightArm_rotX}+=-75.4543213362'{five_teleport_jump_2}
+{rightArm_rotY}+=-27.3995355437'{five_teleport_jump_2}
+{rightArm_rotZ}+=5.2334484203'{five_teleport_jump_2}
+{rightArm_rotX}+=-82.5213109954'{five_teleport_jump_3}
+{rightArm_rotY}+=-32.2567415104'{five_teleport_jump_3}
+{rightArm_rotZ}+=18.8303368176'{five_teleport_jump_3}
+{rightArm_rotX}+=-75.4543213362'{five_teleport_jump_4}
+{rightArm_rotY}+=-27.3995355437'{five_teleport_jump_4}
+{rightArm_rotZ}+=5.2334484203'{five_teleport_jump_4}
+{rightArm_rotX}+=-82.5213109954'{five_teleport_jump_5}
+{rightArm_rotY}+=-32.2567415104'{five_teleport_jump_5}
+{rightArm_rotZ}+=18.8303368176'{five_teleport_jump_5}
+{rightArm_rotX}+=-90.9806534681'{five_teleport_jump_6}
+{rightArm_rotY}+=-30.7408137624'{five_teleport_jump_6}
+{rightArm_rotZ}+=36.5668363524'{five_teleport_jump_6}
+{rightArm_rotX}+=-75.4543213362'{five_teleport_jump_13}
+{rightArm_rotY}+=-27.3995355437'{five_teleport_jump_13}
+{rightArm_rotZ}+=5.2334484203'{five_teleport_jump_13}
+{rightArm_rotX}+=-43.682733429'{five_teleport_jump_14}
+{rightArm_rotY}+=27.6936051387'{five_teleport_jump_14}
+{rightArm_rotZ}+=31.9473492903'{five_teleport_jump_14}
+{rightArm_posZ}+=-3{five_teleport_jump_15}
+{rightArm_posZ}+=-3{five_teleport_jump_16}
+{rightArm_posZ}+=-3{five_teleport_jump_17}
+{rightArm_posZ}+=-3{five_teleport_jump_13}
+
+{leftArm_rotX}+=-76.8099346698'{five_teleport_jump_2}
+{leftArm_rotY}+=29.6712948185'{five_teleport_jump_2}
+{leftArm_rotZ}+=-4.6780504013'{five_teleport_jump_2}
+{leftArm_rotX}+=-83.0962374198'{five_teleport_jump_3}
+{leftArm_rotY}+=36.347824774'{five_teleport_jump_3}
+{leftArm_rotZ}+=-15.3736818222'{five_teleport_jump_3}
+{leftArm_rotX}+=-76.8099346698'{five_teleport_jump_4}
+{leftArm_rotY}+=29.6712948185'{five_teleport_jump_4}
+{leftArm_rotZ}+=-4.6780504013'{five_teleport_jump_4}
+{leftArm_rotX}+=-83.0962374198'{five_teleport_jump_5}
+{leftArm_rotY}+=36.347824774'{five_teleport_jump_5}
+{leftArm_rotZ}+=-15.3736818222'{five_teleport_jump_5}
+{leftArm_rotX}+=-99.6642394137'{five_teleport_jump_6}
+{leftArm_rotY}+=30.8921172103'{five_teleport_jump_6}
+{leftArm_rotZ}+=-48.3624098219'{five_teleport_jump_6}
+{leftArm_rotX}+=-76.8099346698'{five_teleport_jump_13}
+{leftArm_rotY}+=29.6712948185'{five_teleport_jump_13}
+{leftArm_rotZ}+=-4.6780504013'{five_teleport_jump_13}
+{leftArm_rotX}+=-49.3061771583'{five_teleport_jump_14}
+{leftArm_rotY}+=-18.8609054809'{five_teleport_jump_14}
+{leftArm_rotZ}+=-36.7027163826'{five_teleport_jump_14}
+{leftArm_posZ}+=-3{five_teleport_jump_15}
+{leftArm_posZ}+=-3{five_teleport_jump_16}
+{leftArm_posZ}+=-3{five_teleport_jump_17}
+{leftArm_posZ}+=-3{five_teleport_jump_13}
+{leftArm_posZ}+=-3{five_teleport_jump_14}

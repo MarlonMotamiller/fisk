@@ -1,0 +1,6 @@
+{
+  "inputs": [
+    "fiskheroes:flight/header",
+    "unconventional:flight/gliding/default"
+  ]
+}

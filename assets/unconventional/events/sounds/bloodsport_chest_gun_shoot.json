@@ -1,0 +1,5 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:bloodsport.chest.gun.shoot",
+  "pitch": "0.85 + Math.random() * 0.3"
+}

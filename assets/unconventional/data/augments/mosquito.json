@@ -1,0 +1,6 @@
+{
+  "attributes": {
+    "DAMAGE_REDUCTION": [0, 5],
+    "MAX_HEALTH": [0, 5]
+  }
+}

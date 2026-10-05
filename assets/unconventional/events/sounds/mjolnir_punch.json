@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:thor.mjolnir.punch",
+  "condition": "entity.getHeldItem().name() == 'fisktag:weapon' && entity.getHeldItem().nbt().getString('WeaponType') == 'unconventional:mjolnir'",
+  "fadeOut": 5,
+  "volume": 1.0,
+  "pitch": "0.9 + Math.random() * 0.3"
+}

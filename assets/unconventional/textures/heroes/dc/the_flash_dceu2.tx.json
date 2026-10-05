@@ -1,0 +1,13 @@
+{
+  "texture": "unconventional:dc/xor/the_flash_dceu2/<TIMER>",
+  "getters": {
+    "TIMER": {
+      "key": "Math.ceil(24 * entity.getInterpolatedData('unconventional:dyn/speedforce_timer')) | 0",
+      "values": {
+        "min": 0,
+        "max": 24
+      }
+    }
+  },
+  "isDynamic": true
+}

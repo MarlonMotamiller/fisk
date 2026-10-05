@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:ghost.invisibility.enable",
+  "volume": 0.8,
+  "pitch": "1.1 - Math.random() * 0.2"
+}

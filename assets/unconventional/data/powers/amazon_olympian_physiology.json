@@ -1,0 +1,65 @@
+{
+  "name": "Amazon-Olympian Hybrid Physiology",
+  "modifiers": {
+	"fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.08,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": true,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": true,
+          "dealDamage": true
+        }
+      },
+      "knockback": 0.4,
+      "soundEvents": {
+        "ENABLE": ["fiskheroes:flight_loop", "fiskheroes:flight_cape_loop"],
+        "BOOST": ["fiskheroes:flight_boost", "fiskheroes:flight_boost_super"],
+        "IMPACT_ENTITY": "fiskheroes:flight_impact_entity"
+      }
+    },
+	"fiskheroes:super_speed": {
+      "canUseTreadmill": false,
+      "canUseTachyons": false,
+      "soundEvents": {
+        "MOVE": ["fiskheroes:super_speed_move_loop_shazam_dceu", "fiskheroes:super_speed_move_loop_cape"],
+        "SPRINT": "fiskheroes:super_speed_sprint_shazam_dceu"
+      }
+    },
+    "fiskheroes:leaping|leap_0": {
+      "leapAmount": [1.5, 0.3]
+    },
+	  "fiskheroes:leaping|leap_1": {
+      "leapAmount": [3, 0.6]
+    },
+	  "fiskheroes:leaping|leap_2": {
+      "leapAmount": [5.0, 1.2]
+    },
+	  "fiskheroes:slow_motion": {
+		  "isToggle":false
+    },
+    "fiskheroes:fire_immunity": {
+    },
+    "fiskheroes:potion_immunity": {
+      "potionEffects": [7, 19, 20]
+    },
+    "fiskheroes:arrow_catching": {
+    }
+  },
+  "hud": [
+    {
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/flash_phasing_bar.png",
+      "data": "unconventional:dyn/dash_cooldown"
+    },
+	{
+      "type": "CHARGE",
+      "texture": "unconventional:textures/gui/bars/leap_charge.png",
+      "data": "unconventional:dyn/leap_cooldown"
+    }
+  ]
+}

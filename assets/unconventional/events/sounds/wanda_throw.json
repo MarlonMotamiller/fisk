@@ -1,0 +1,6 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:wanda.throw",
+  "volume": 0.9,
+  "pitch": "0.8 + Math.random() * 0.5"
+}

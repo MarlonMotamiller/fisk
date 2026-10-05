@@ -1,0 +1,11 @@
+{
+  "suit": "unconventional:electro",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:flight",
+    "fiskheroes:teleportation",
+    "fiskheroes:ranged2",
+    "fiskheroes:spider_man_webb",
+    "unconventional:unconventional"
+  ]
+}

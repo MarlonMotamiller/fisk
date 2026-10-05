@@ -1,0 +1,5 @@
+{data} = curve{data}
+
+{blade_root_posY} -= 12{data}
+{blade_root_posX} += 0.8{data}
+{blade_root_rotZ} += 5'{data}

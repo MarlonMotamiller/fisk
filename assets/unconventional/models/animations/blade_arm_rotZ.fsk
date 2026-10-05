@@ -1,0 +1,3 @@
+{data} = curve {data}
+{rightArm_rotZ} +=2.5'{data}
+{leftArm_rotZ} -=2.5'{data}

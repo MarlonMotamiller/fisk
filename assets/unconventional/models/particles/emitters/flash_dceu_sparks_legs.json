@@ -1,0 +1,18 @@
+{
+  "particles": [
+    {
+      "type": "SPARK",
+      "anchor": "rightLeg",
+      "amount": 4,
+      "offset": {
+        "tp": [ 0.0, 12.0, 0.0 ],
+        "fp": [ 3.0, 24.0, 0.0 ]
+      },
+      "randOffset": [1.0, 0.0, 1.0],
+      "motion": [ 0.0, 0.0, 0.0 ],
+      "randMotion": [ 0.0, 0.0, 0.0 ],
+      "mirror": true,
+      "lockFPYaw": true
+    }
+  ]
+}

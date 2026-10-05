@@ -1,0 +1,10 @@
+{
+  "particles": [
+    {
+      "type": "BLUE_FLAME",
+      "amount": 25,
+      "randOffset": [0.5, 0.5, 0.5],
+      "randMotion": [0.3, 0.3, 0.0]
+    }
+  ]
+}

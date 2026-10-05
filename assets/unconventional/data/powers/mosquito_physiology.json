@@ -1,0 +1,101 @@
+{
+  "name": "Mosquito Physiology",
+  "modifiers": {
+    "fiskheroes:controlled_flight": {
+      "speed": 0.07,
+      "boostSpeed": 0.16,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "knockback": 0.4,
+	  "soundEvents": {
+        "ENABLE": ["unconventional:mosquito_flight_loop"]
+      }
+    },
+	"fiskheroes:controlled_flight|flight_nether": {
+      "speed": 0.1,
+      "boostSpeed": 0.2,
+      "canBoost": true,
+      "collision": {
+        "blocks": {
+          "stopFlying": false,
+          "takeDamage": false
+        },
+        "entities": {
+          "stopFlying": false,
+          "dealDamage": false
+        }
+      },
+      "knockback": 0.4,
+	  "soundEvents": {
+        "ENABLE": ["unconventional:mosquito_flight_loop"]
+      }
+    },
+	"fiskheroes:energy_blast": {
+      "damageProfile": {
+        "damage": 10.5,
+        "types": {
+          "SHARP": 1.0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+            "id": "minecraft:nausea",
+            "duration": 200,
+            "amplifier": 10,
+            "chance": 1
+            }
+          ]
+		    }	
+      },
+      "range": 0.7,
+      "cooldownTime": 15
+    },
+	"fiskheroes:energy_blast|sting_nether": {
+      "damageProfile": {
+        "damage": 30.5,
+        "types": {
+          "SHARP": 1.0
+        },
+        "properties": {
+          "EFFECTS": [
+            {
+            "id": "minecraft:nausea",
+            "duration": 200,
+            "amplifier": 10,
+            "chance": 1
+            }
+          ]
+        }	
+      },
+      "range": 1.2,
+      "cooldownTime": 15
+    },
+	"fiskheroes:shield": {
+      "shield": {
+        "health": 300.0,
+        "regeneration": 15.0,
+        "recoveryDelay": 100,
+        "cooldown": 240
+      },
+      "coverage": {
+        "yawRadius": 180.0,
+        "pitchRadius": 180.0,
+        "yawOffset": 0.0,
+        "pitchOffset": 0.0
+      },
+      "knockback": 0.2,
+      "isToggle": false,
+      "soundEvents": {
+      }
+    }
+  }
+}

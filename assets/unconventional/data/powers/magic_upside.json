@@ -1,0 +1,65 @@
+{
+  "name": "Magic",
+  "modifiers": {
+    "fiskheroes:telekinesis": {
+      "telekinesis": {
+        "crushMelons": true,
+        "crushThrowables": true,
+        "squeezeChickens": true,
+        "explodeCreepers": true,
+        "destroyInanimates": true
+      },
+      "canGrab": {
+        "mobs": true,
+        "items": true,
+        "projectiles": true,
+        "inanimates": true
+      },
+      "soundEvents": {
+        "GRAB": ["unconventional:wanda_telekinesis_grab", "unconventional:wanda_telekinesis_loop"]
+      }
+    },
+    "fiskheroes:controlled_flight": {
+      "speed": 0.1,
+      "boostSpeed": 0.15,
+      "canBoost": false,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:flight_loop"
+      }
+    },
+    "fiskheroes:teleportation": {
+      "canReachMoon": true,
+      "range": 128.0
+    },
+    "fiskheroes:arrow_catching": {
+    },
+    "fiskheroes:charged_beam": {
+      "damageProfile": {
+        "damage": 6.5,
+        "types": {
+          "ENERGY": 1.0,
+          "MAGIC": 0.75
+        }
+      },
+      "chargeTime": 5,
+      "duration": 40,
+      "cooldownTime": 30,
+      "range": 35.0,
+      "radius": 0.20,
+      "soundEvents": {
+        "BEAM_AMBIENT": "unconventional:wanda_shooting",
+        "SHOOT_STOP": "unconventional:wanda_stop"
+      }
+    },
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5
+    }
+  },
+  "hud": [
+    {
+      "type": "CIRCLE",
+      "color": "fiskheroes:charged_beam",
+      "data": "fiskheroes:beam_charge"
+    }
+  ]
+}

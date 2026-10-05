@@ -1,0 +1,73 @@
+{
+  "name": "Web Shooters (Miles, PS5)",
+  "modifiers": {
+    "fiskheroes:web_swinging": {
+      "cooldownTime": 5,
+      "soundEvents": {
+        "ENABLE": "fiskheroes:web_swinging_enable",
+        "DISABLE": "fiskheroes:web_swinging_disable",
+        "SHOOT": "unconventional:web_shoot_miles_ps5",
+        "RELEASE": "fiskheroes:web_swinging_whoosh",
+        "SWING": ["fiskheroes:web_swinging", "fiskheroes:web_stress_loop"]
+      }
+    },
+    "fiskheroes:web_zip": {
+      "range": 48.0,
+      "cooldownTime": 20,
+      "soundEvents": {
+        "SHOOT": "unconventional:web_zip_miles_ps5"
+      }
+    },
+    "fiskheroes:equipment": {
+      "equipment": {
+        "fiskheroes:sticky_web": {
+          "cooldown": 13,
+          "uses": 5,
+          "dissolveTime": 120,
+          "soundEvents": {
+            "USE": "unconventional:web_shoot_miles_ps5"
+          }
+        },
+        "fiskheroes:impact_web": {
+          "cooldown": 15,
+          "uses": 6,
+          "damageProfile": {
+            "damage": 5.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "DAMAGE_DROPOFF": 0.4,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "USE": "unconventional:web_shoot_miles_ps5"
+          }
+        },
+        "fiskheroes:rapid_webs": {
+          "cooldown": 60,
+          "uses": 1,
+          "quantity": 4,
+          "damageProfile": {
+            "damage": 4.0,
+            "types": {
+              "BLUNT": 1.0
+            },
+            "properties": {
+              "REDUCE_KNOCKBACK": 0.5,
+              "DAMAGE_DROPOFF": 0.2,
+              "HIT_COOLDOWN": 0
+            }
+          },
+          "soundEvents": {
+            "SHOOT": "unconventional:web_shoot_miles_ps5"
+          }
+        }
+      },
+      "soundEvents": {
+        "SWITCH": "fiskheroes:web_switch"
+      }
+    }
+  }
+}

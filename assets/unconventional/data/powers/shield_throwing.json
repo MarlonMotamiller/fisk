@@ -1,0 +1,20 @@
+{
+  "name": "power.fiskheroes.shield_throwing.name",
+  "modifiers": {
+    "fiskheroes:shield_throwing": {
+      "cooldownTime": 40,
+      "soundEvents": {
+        "THROW": "fiskheroes:shield_throw"
+      }
+    },
+    "fiskheroes:transformation": {
+      "key": "SHIELD_THROW",
+      "transformation": {
+        "toggleData": "unconventional:dyn/shield_throw",
+        "timerData": "unconventional:dyn/shield_throw_timer",
+        "time": 4
+      },
+      "isToggle": false
+    }
+  }
+}

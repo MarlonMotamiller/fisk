@@ -1,0 +1,43 @@
+{
+  "name": "Quantum Mutation",
+  "modifiers": {
+    "fiskheroes:flight": {
+      "speed": 0.25
+    },
+    "fiskheroes:hover": {
+    },
+    "fiskheroes:cooldown": {
+      "cooldown": {
+        "toggleData": "fiskheroes:intangible",
+        "cooldownData": "fiskheroes:dyn/intangibility_cooldown",
+        "duration": 13,
+        "recovery": 2.0,
+        "soundEvents": {
+          "RECOVER": "unconventional:ghost_idle_loop"
+        }
+      }
+    },
+    "fiskheroes:intangibility": {
+      "isToggle": true,
+      "isAbsolute": true,
+      "soundEvents": {
+        "ENABLE": ["unconventional:ghost_intang_on", "unconventional:ghost_idle_loop"],
+        "DISABLE": "unconventional:ghost_intang_off"
+      }
+    },
+	  "fiskheroes:invisibility": {
+	    "isToggle": false,
+	    "soundEvents": {
+        "ENABLE": "unconventional:ghost_invis_on",
+        "DISABLE": "unconventional:ghost_invis_off"
+	    }
+	  }
+  },
+  "hud": [
+    {
+      "type": "PROGRESS",
+      "texture": "unconventional:textures/gui/bars/ghost_intangibility.png",
+      "data": "fiskheroes:dyn/intangibility_cooldown"
+    }
+  ]
+}

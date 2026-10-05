@@ -1,0 +1,12 @@
+{
+  "suit": "unconventional:black_bolt_comics",
+  "requirements": [
+    "fiskheroes:tier6_7",
+    "fiskheroes:flight",
+    "fiskheroes:defense2",
+    "fiskheroes:melee",
+    "fiskheroes:ranged3",
+    "unconventional:terrigen",
+    "unconventional:unconventional"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "fiskheroes:sound_base",
+  "sound": "unconventional:flash.dceu.move",
+  "override": "unconventional:funcs/super_speed_move_loop_the_flash_dceu",
+  "loop": true,
+  "fadeIn": 5,
+  "fadeOut": 5
+}

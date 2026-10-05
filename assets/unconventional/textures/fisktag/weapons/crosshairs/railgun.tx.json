@@ -1,0 +1,9 @@
+{
+  "texture": "fisktag:crosshairs/railgun_<CHARGE>",
+  "getters": {
+    "CHARGE": {
+      "key": "Math.min(Math.floor(entity.getData('fiskheroes:weapon_animation_timer') * 5), 5) | 0",
+      "values": [0, 1, 2, 3, 4, 5]
+    }
+  }
+}

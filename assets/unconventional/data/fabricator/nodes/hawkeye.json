@@ -1,0 +1,10 @@
+{
+  "suit": "unconventional:hawkeye",
+  "requirements": [
+    "fiskheroes:tier4_5",
+    "fiskheroes:archery",
+    "fiskheroes:marksmanship",
+    "unconventional:shield_tech",
+    "unconventional:unconventional"
+  ]
+}

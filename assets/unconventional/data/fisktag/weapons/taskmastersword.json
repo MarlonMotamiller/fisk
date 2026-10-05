@@ -1,0 +1,24 @@
+{
+  "name": "Taskmaster's Sword",
+  "permission": "MELEE_TASKMASTER_SWORD",
+  "holdingPose": "SINGLE",
+  "melee": {
+    "attackDamage": 7.0
+  },
+  "activation": {
+    "type": "SHIELD",
+    "shield": {
+      "health": 100.0,
+      "regeneration": 10.0,
+      "recoveryDelay": 30,
+      "cooldown": 80
+    },
+    "coverage": {
+      "yawRadius": 35.0,
+      "pitchRadius": 35.0,
+      "yawOffset": 0.0,
+      "pitchOffset": 0.0
+    },
+    "knockback": 0.2
+  }
+}

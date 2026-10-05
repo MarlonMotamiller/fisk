@@ -1,0 +1,12 @@
+{data} = curve min(animate2({data}, 0.255, 0.75, 0.25, 0.05), 1)
+
+{right1_posZ} @ {data} -> -4
+{right2_posZ} @ {data} -> -9
+{right3_posZ} @ {data} -> -14
+{right4_posZ} @ {data} -> -16
+
+{left1_posZ} @ {data} -> 4
+{left2_posZ} @ {data} -> 9
+{left3_posZ} @ {data} -> 14
+{left4_posZ} @ {data} -> 16
+
